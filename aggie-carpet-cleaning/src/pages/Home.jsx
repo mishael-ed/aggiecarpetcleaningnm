@@ -267,8 +267,6 @@ const Home = () => {
             </div>
           </div>
         </div>
-
-        <button className="floating-cta">Get In Touch</button>
       </footer>
     </div>
   );
