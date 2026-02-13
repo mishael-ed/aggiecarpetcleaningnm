@@ -15,7 +15,7 @@ const Home = () => {
           <ul className="nav-menu">
             <li><Link to="/">Home</Link></li>
             <li className="dropdown">
-              <span>Services ▼</span>
+              <span>Services</span>
               <ul className="dropdown-menu">
                 <li><Link to="/services/carpet-cleaning">Carpet Cleaning</Link></li>
                 <li><Link to="/services/furniture-rugs">Furniture and Rugs</Link></li>
@@ -25,7 +25,7 @@ const Home = () => {
               </ul>
             </li>
             <li className="dropdown">
-              <span>Info ▼</span>
+              <span>Info</span>
               <ul className="dropdown-menu">
                 <li><Link to="/info/areas-we-serve">Areas We Serve</Link></li>
                 <li><Link to="/info/reviews">Reviews</Link></li>
