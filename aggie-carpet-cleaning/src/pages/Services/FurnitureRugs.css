@@ -1,0 +1,226 @@
+.fr-page {
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+}
+
+/* ── Hero ── */
+.fr-hero {
+  background: linear-gradient(135deg, #e0f4fb 0%, #f0fbff 60%, #e8f8ff 100%);
+  padding: 5rem 3rem 6rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.fr-hero::before {
+  content: '';
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  border: 60px solid rgba(0,188,212,0.07);
+  top: -150px;
+  right: -100px;
+  pointer-events: none;
+}
+
+.fr-hero::after {
+  content: '';
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 40px solid rgba(0,188,212,0.07);
+  bottom: -80px;
+  left: 5%;
+  pointer-events: none;
+}
+
+.fr-hero-inner {
+  max-width: 900px;
+  position: relative;
+  z-index: 1;
+}
+
+.fr-hero-inner h1 {
+  font-size: 2.75rem;
+  font-weight: 800;
+  color: #1a3a4a;
+  line-height: 1.2;
+  margin-bottom: 1.25rem;
+  letter-spacing: -0.02em;
+}
+
+.fr-hero-inner h2 {
+  font-size: 1.75rem;
+  font-weight: 500;
+  color: #1a3a4a;
+  margin-bottom: 1.5rem;
+  line-height: 1.35;
+}
+
+.fr-hero-inner p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.8;
+  margin-bottom: 1.25rem;
+  max-width: 800px;
+}
+
+.fr-cta-line {
+  font-weight: 500;
+  color: #333 !important;
+  margin-bottom: 2rem !important;
+}
+
+.fr-connect-btn {
+  display: inline-block;
+  background: #00bcd4;
+  color: white;
+  padding: 0.9rem 2.25rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s;
+  box-shadow: 0 4px 14px rgba(0,188,212,0.3);
+}
+
+.fr-connect-btn:hover {
+  background: #0097a7;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0,188,212,0.4);
+}
+
+/* ── Dark Stains Section ── */
+.fr-stains {
+  background: white;
+  padding: 5rem 3rem 6rem;
+  position: relative;
+  overflow: hidden;
+}
+
+/* decorative circles */
+.fr-stains::before {
+  content: '';
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  border: 55px solid rgba(0,188,212,0.06);
+  top: -110px;
+  left: -90px;
+  pointer-events: none;
+}
+
+.fr-stains::after {
+  content: '';
+  position: absolute;
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  border: 38px solid rgba(0,188,212,0.06);
+  top: 45%;
+  left: 12%;
+  pointer-events: none;
+}
+
+.fr-stains-inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: start;
+  position: relative;
+  z-index: 1;
+}
+
+.fr-stains-text h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #1a3a4a;
+  line-height: 1.2;
+  margin-bottom: 1.25rem;
+  letter-spacing: -0.02em;
+}
+
+.fr-stains-text p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+/* 2-column checklist grid */
+.fr-checklist {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.fr-check-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: #f9fafb;
+  border: 1px solid #ebebeb;
+  border-radius: 8px;
+  padding: 0.875rem 1rem;
+  transition: border-color 0.2s;
+}
+
+.fr-check-item:hover {
+  border-color: #00bcd4;
+}
+
+.fr-checkmark {
+  width: 28px;
+  height: 28px;
+  min-width: 28px;
+  background: #00bcd4;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.fr-check-item span:last-child {
+  font-size: 0.9rem;
+  color: #2c3e50;
+}
+
+.fr-disclaimer {
+  font-size: 0.95rem !important;
+  color: #444 !important;
+  line-height: 1.7 !important;
+}
+
+/* Image */
+.fr-stains-image img {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .fr-hero { padding: 3rem 1.5rem 4rem; }
+  .fr-hero-inner h1 { font-size: 2rem; }
+  .fr-hero-inner h2 { font-size: 1.4rem; }
+
+  .fr-stains-inner {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .fr-stains-text h2 { font-size: 1.9rem; }
+
+  .fr-checklist { grid-template-columns: 1fr; }
+
+  .fr-stains-image img { height: 300px; }
+}

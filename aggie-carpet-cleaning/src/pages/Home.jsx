@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Home.css';
+import Navbar from '../Components/Navbar';
+import Footer from '../Components/Footer';
 
 const Home = () => {
   return (
