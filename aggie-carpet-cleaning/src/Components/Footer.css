@@ -10,14 +10,14 @@
 
 .social-icons {
   display: flex;
-  gap: 1.5rem;
+  gap: 1rem;
   justify-content: center;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 .social-icons a {
-  width: 42px;
-  height: 42px;
+  width: 48px;
+  height: 48px;
   background: rgba(255,255,255,0.1);
   border-radius: 50%;
   display: flex;
@@ -25,8 +25,12 @@
   justify-content: center;
   color: white;
   text-decoration: none;
-  font-size: 1rem;
   transition: all 0.3s;
+}
+
+.social-icons a svg {
+  width: 20px;
+  height: 20px;
 }
 
 .social-icons a:hover {
@@ -49,7 +53,7 @@
 
 .contact-info p,
 .copyright p {
-  color: rgba(255,255,255,0.7);
+  color: rgba(255,255,255,0.8);
   font-size: 0.9rem;
 }
 

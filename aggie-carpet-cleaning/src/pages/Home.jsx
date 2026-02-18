@@ -1,49 +1,13 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import './Home.css';
 import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer';
+import './Home.css';
 
 const Home = () => {
   return (
     <div className="home">
-      {/* Navbar */}
-      <nav className="navbar">
-        <div className="navbar-container">
-          <Link to="/" className="logo">
-            <img src="/logo.png" alt="Aggie Carpet Cleaning" />
-          </Link>
-
-          <ul className="nav-menu">
-            <li><Link to="/">Home</Link></li>
-            <li className="dropdown">
-              <span>Services</span>
-              <ul className="dropdown-menu">
-                <li><Link to="/services/carpet-cleaning">Carpet Cleaning</Link></li>
-                <li><Link to="/services/furniture-rugs">Furniture and Rugs</Link></li>
-                <li><Link to="/services/tile-grout">Tile and Grout</Link></li>
-                <li><Link to="/services/water-damage">Water Damage Restoration</Link></li>
-                <li><Link to="/services/mold-remediation">Mold Remediation</Link></li>
-              </ul>
-            </li>
-            <li className="dropdown">
-              <span>Info</span>
-              <ul className="dropdown-menu">
-                <li><Link to="/info/areas-we-serve">Areas We Serve</Link></li>
-                <li><Link to="/info/reviews">Reviews</Link></li>
-                <li><Link to="/info/faq">FAQ</Link></li>
-                <li><Link to="/info/blog">Blog</Link></li>
-              </ul>
-            </li>
-            <li><Link to="/contact">Contact</Link></li>
-          </ul>
-
-          <div className="cta-buttons">
-            <a href="tel:las-cruces" className="cta-btn">Call Us In Las Cruces</a>
-            <a href="tel:deming" className="cta-btn">Call Us In Deming</a>
-          </div>
-        </div>
-      </nav>
+      <Navbar />
 
       {/* Hero Section */}
       <section className="hero">
@@ -55,7 +19,7 @@ const Home = () => {
               AND DEMING, NM
             </h1>
             <p className="hero-subtitle">Partner with the pros at Aggie Carpet Cleaning</p>
-            <button className="hero-btn">Get In Touch</button>
+            <Link to="/contact" className="hero-btn">Get In Touch</Link>
           </div>
         </div>
 
@@ -95,7 +59,7 @@ const Home = () => {
       <section className="spanish-section">
         <div className="spanish-content">
           <h2>¡SE HABLA ESPAÑOL!</h2>
-          <button className="talk-btn">Talk With Us Now</button>
+          <Link to="/contact" className="talk-btn">Talk With Us Now</Link>
         </div>
       </section>
 
@@ -124,7 +88,7 @@ const Home = () => {
         <div className="restore-content">
           <h2>RESTORE YOUR FABRICS AND<br />FLOORING WITH ONE CALL</h2>
           <p>Schedule a consultation with our steam cleaning team today</p>
-          <button className="request-btn">Request Service</button>
+          <Link to="/contact" className="request-btn">Request Service</Link>
         </div>
       </section>
 
@@ -184,15 +148,27 @@ const Home = () => {
         
         <div className="features-grid">
           <div className="feature-card">
-            <div className="feature-icon">📍</div>
+            <div className="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="currentColor"/>
+              </svg>
+            </div>
             <p>We're locally owned and operated</p>
           </div>
           <div className="feature-card">
-            <div className="feature-icon">✓</div>
+            <div className="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" fill="currentColor"/>
+              </svg>
+            </div>
             <p>We're fully licensed and insured</p>
           </div>
           <div className="feature-card">
-            <div className="feature-icon">👍</div>
+            <div className="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z" fill="currentColor"/>
+              </svg>
+            </div>
             <p>We offer a satisfaction guarantee</p>
           </div>
         </div>
@@ -201,10 +177,10 @@ const Home = () => {
           See what our carpet cleaning company is all about – schedule a consultation with us today.
         </p>
 
-        <div className="google-badge">
+        <a href="https://www.google.com/maps/place/Aggie+Carpet+Cleaning/@32.4182087,-106.820094,9z/data=!3m1!4b1!4m6!3m5!1s0x627876fdc26ad2c3:0xbcdcadaac9968bde!8m2!3d32.4182087!4d-106.820094!16s%2Fg%2F11kqw890q9?entry=tts&g_ep=EgoyMDI1MTIwOS4wIPu8ASoASAFQAw%3D%3D&skid=03fede66-fd27-4eac-8ced-52512dbee6c8" target="_blank" rel="noreferrer" className="google-badge">
           <img src="https://www.gstatic.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt="Google" />
-          <div className="rating-text">CLICK HERE</div>
-        </div>
+          <span className="google-badge-text">CLICK<br />HERE</span>
+        </a>
       </section>
 
       {/* Service Area Section */}
@@ -248,28 +224,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="footer">
-        <div className="footer-content">
-          <div className="social-icons">
-            <a href="#" aria-label="Facebook"><i className="fab fa-facebook-f">f</i></a>
-            <a href="#" aria-label="Instagram"><i className="fab fa-instagram">📷</i></a>
-            <a href="#" aria-label="YouTube"><i className="fab fa-youtube">▶</i></a>
-            <a href="#" aria-label="Pinterest"><i className="fab fa-pinterest">P</i></a>
-            <a href="#" aria-label="TikTok"><i className="fab fa-tiktok">♪</i></a>
-          </div>
-
-          <div className="footer-info">
-            <div className="contact-info">
-              <p>Las Cruces, NM 88001</p>
-              <p>Deming, NM 88030</p>
-            </div>
-            <div className="copyright">
-              <p>Copyright © 2026 Aggie Carpet Cleaning | All Rights Reserved</p>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };
