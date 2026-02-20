@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import emailjs from '@emailjs/browser';
 import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer';
 import './Contact.css';
@@ -11,6 +12,8 @@ const Contact = () => {
     phone: '',
     message: '',
   });
+  const [sending, setSending] = useState(false);
+  const [status, setStatus] = useState('');
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -18,7 +21,39 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert('Message sent! We will get back to you shortly.');
+    setSending(true);
+    setStatus('');
+
+    // EmailJS configuration - REPLACE THESE WITH YOUR ACTUAL IDs
+    const serviceID = 'service_xracmjm';
+    const templateID = 'template_2fqzuxh';
+    const publicKey = 'nEYXwMZTclNB9EV5z';
+
+    const templateParams = {
+      from_name: `${formData.firstName} ${formData.lastName}`,
+      from_email: formData.email,
+      phone: formData.phone,
+      message: formData.message,
+      to_email: 'edmishaelbiz@gmail.com',
+    };
+
+    emailjs.send(serviceID, templateID, templateParams, publicKey)
+      .then(() => {
+        setStatus('success');
+        setFormData({
+          firstName: '',
+          lastName: '',
+          email: '',
+          phone: '',
+          message: '',
+        });
+        setSending(false);
+      })
+      .catch((error) => {
+        console.error('Email send failed:', error);
+        setStatus('error');
+        setSending(false);
+      });
   };
 
   return (
@@ -108,6 +143,18 @@ const Contact = () => {
 
               <p className="ct-required-note">All fields marked with an asterisk * are required</p>
 
+              {status === 'success' && (
+                <div className="ct-success-message">
+                  ✓ Message sent successfully! We'll get back to you soon.
+                </div>
+              )}
+
+              {status === 'error' && (
+                <div className="ct-error-message">
+                  ✗ Failed to send message. Please try calling us at (575) 649-3197.
+                </div>
+              )}
+
               {/* reCAPTCHA placeholder */}
               <div className="ct-recaptcha">
                 <div className="ct-recaptcha-box">
@@ -120,7 +167,9 @@ const Contact = () => {
                 </div>
               </div>
 
-              <button type="submit" className="ct-submit-btn">Send Message</button>
+              <button type="submit" className="ct-submit-btn" disabled={sending}>
+                {sending ? 'Sending...' : 'Send Message'}
+              </button>
             </form>
           </div>
 

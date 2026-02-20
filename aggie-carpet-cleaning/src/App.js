@@ -16,6 +16,7 @@ import TileGroutDeming from './pages/Blog/TileGroutDeming';
 import UpholsteryCleaningMesilla from './pages/Blog/UpholsteryCleaningMesilla';
 import WaterDamageHatch from './pages/Blog/WaterDamageHatch';
 import CarpetCleanersSunlandPark from './pages/Blog/CarpetCleanersSunlandPark';
+import MoldRemediationAnthony from './pages/Blog/MoldRemediationAnthony';
 import './App.css';
 
 function App() {
@@ -38,6 +39,7 @@ function App() {
         <Route path="/blog/finding-quality-upholstery-cleaning-mesilla" element={<UpholsteryCleaningMesilla />} />
         <Route path="/blog/water-damage-restoration-hatch" element={<WaterDamageHatch />} />
         <Route path="/blog/carpet-cleaners-sunland-park" element={<CarpetCleanersSunlandPark />} />
+        <Route path="/blog/mold-remediation-anthony" element={<MoldRemediationAnthony />} />
       </Routes>
     </Router>
   );
