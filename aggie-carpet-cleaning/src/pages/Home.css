@@ -329,15 +329,50 @@ body {
   }
 
   .service-cards {
-    grid-template-columns: 1fr;
-    position: static;
-    transform: none;
-    margin-top: 2rem;
-    bottom: auto;
+    grid-template-columns: 1fr !important;
+    position: static !important;
+    transform: none !important;
+    left: auto !important;
+    bottom: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 1.5rem !important;
+    gap: 1.5rem !important;
+    margin-top: 2rem !important;
+  }
+
+  .card {
+    width: 100%;
+    margin: 0;
   }
 
   .hero {
-    padding-bottom: 2rem;
+    padding-bottom: 2rem !important;
+    min-height: auto !important;
+    padding-top: 3rem !important;
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+
+  .hero-overlay {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .hero-content {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hero-content h1 {
+    font-size: 2.2rem;
+    line-height: 1.2;
+  }
+
+  .hero-subtitle {
+    font-size: 1.1rem;
   }
 
   .spanish-section {
