@@ -24,17 +24,17 @@ const Contact = () => {
     setSending(true);
     setStatus('');
 
-    // EmailJS configuration - REPLACE THESE WITH YOUR ACTUAL IDs
-    const serviceID = 'service_xracmjm';
-    const templateID = 'template_2fqzuxh';
-    const publicKey = 'nEYXwMZTclNB9EV5z';
+    // EmailJS configuration
+    const serviceID = 'YOUR_SERVICE_ID'; // Replace with your EmailJS service ID
+    const templateID = 'YOUR_TEMPLATE_ID'; // Replace with your EmailJS template ID
+    const publicKey = 'YOUR_PUBLIC_KEY'; // Replace with your EmailJS public key
 
     const templateParams = {
       from_name: `${formData.firstName} ${formData.lastName}`,
       from_email: formData.email,
       phone: formData.phone,
       message: formData.message,
-      to_email: 'edmishaelbiz@gmail.com',
+      to_email: 'aggiecarpetcleaninglc@gmail.com',
     };
 
     emailjs.send(serviceID, templateID, templateParams, publicKey)
@@ -66,11 +66,11 @@ const Contact = () => {
 
           {/* Left: Copy */}
           <div className="ct-copy">
-            <h1>PUT OUR CARPET CLEANING COMPANY TO WORK AROUND LAS CRUCES AND DEMING, NM</h1>
+            <h1>PUT OUR CARPET CLEANING COMPANY TO WORK AROUND LAS CRUCES, NM AND EL PASO, TX</h1>
             <h2>Contact Aggie Carpet Cleaning today</h2>
             <p>
               Thank you for your interest in Aggie Carpet Cleaning. Our expert steam cleaners offer a range
-              of home restoration services in the Las Cruces & Deming, NM areas. From carpet cleaning and
+              of home restoration services in the Las Cruces & El Paso, TX areas. From carpet cleaning and
               area rug cleaning to grout cleaning and water damage restoration services, we'll do what it
               takes to make your home look as good as new.
             </p>
@@ -183,7 +183,7 @@ const Contact = () => {
           <div className="ct-location-card">
             <h2>AGGIE CARPET CLEANING</h2>
             <h4>Our Location:</h4>
-            <p>Las Cruces, NM 88001</p>
+            <p>Las Cruces, NM</p>
             <h4>Call Us:</h4>
             <p>(575) 649-3197</p>
             <h4>Hours:</h4>
@@ -196,9 +196,9 @@ const Contact = () => {
           <div className="ct-location-card">
             <h2>AGGIE CARPET CLEANING</h2>
             <h4>Our Location:</h4>
-            <p>Deming, NM 88030</p>
+            <p>El Paso, TX</p>
             <h4>Call Us:</h4>
-            <p>(505) 538-5469</p>
+            <p>(915) 867-5309</p>
             <h4>Hours:</h4>
             <div className="ct-hours-row">
               <span>Mon – Sun</span>

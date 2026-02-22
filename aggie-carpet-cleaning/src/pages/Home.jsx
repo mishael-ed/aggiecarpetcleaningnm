@@ -16,7 +16,7 @@ const Home = () => {
             <h1>
               CHOOSE THE TRUSTED CARPET<br />
               CLEANING COMPANY IN LAS CRUCES<br />
-              AND DEMING, NM
+              AND EL PASO, TX
             </h1>
             <p className="hero-subtitle">Partner with the pros at Aggie Carpet Cleaning</p>
             <Link to="/contact" className="hero-btn">Get In Touch</Link>
@@ -45,13 +45,6 @@ const Home = () => {
               <div className="arrow-circle">→</div>
             </Link>
           </div>
-
-          <div className="card">
-            <h3>Water Damage Restoration</h3>
-            <Link to="/services/water-damage" className="card-arrow">
-              <div className="arrow-circle">→</div>
-            </Link>
-          </div>
         </div>
       </section>
 
@@ -71,11 +64,11 @@ const Home = () => {
           </div>
           <div className="cleaning-text">
             <h2>TAKE CLEANING TO ANOTHER LEVEL</h2>
-            <h3>Hire our carpet cleaning company in the Las Cruces and Deming, NM areas</h3>
+            <h3>Hire our carpet cleaning company in the Las Cruces and El Paso, TX areas</h3>
             <p>
               Dirty floors and furniture are typically the first aspects people notice about your home. 
               Revitalize your space with assistance from Aggie Carpet Cleaning. We provide a variety of 
-              steam cleaning services throughout Las Cruces and Deming, NM. You can trust us to eliminate 
+              steam cleaning services throughout Las Cruces and El Paso, TX. You can trust us to eliminate 
               dirt and grime from your fabrics and floors, restoring your home's appearance and fragrance 
               to that of being brand new.
             </p>
@@ -132,7 +125,7 @@ const Home = () => {
 
             <p className="outro-text">
               Leave it to us to refresh your living spaces. Reach out now for professional steam cleaning 
-              services in Las Cruces & Deming, NM.
+              services in Las Cruces & El Paso, TX.
             </p>
           </div>
 
@@ -215,7 +208,7 @@ const Home = () => {
                 <p>Sunland Park, NM</p>
               </div>
               <div className="city-column">
-                <p>Deming, NM</p>
+                <p>El Paso, TX</p>
                 <p>Columbus, NM</p>
                 <p>Radium Springs, NM</p>
               </div>

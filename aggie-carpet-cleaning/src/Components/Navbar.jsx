@@ -47,8 +47,6 @@ const Navbar = () => {
                 <li><Link to="/services/carpet-cleaning" onClick={closeMobileMenu}>Carpet Cleaning</Link></li>
                 <li><Link to="/services/furniture-rugs" onClick={closeMobileMenu}>Furniture and Rugs</Link></li>
                 <li><Link to="/services/tile-grout" onClick={closeMobileMenu}>Tile and Grout</Link></li>
-                <li><Link to="/services/water-damage" onClick={closeMobileMenu}>Water Damage Restoration</Link></li>
-                <li><Link to="/services/mold-remediation" onClick={closeMobileMenu}>Mold Remediation</Link></li>
               </div>
             </ul>
           </li>

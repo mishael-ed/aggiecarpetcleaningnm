@@ -13,9 +13,9 @@ const CarpetCleaning = () => {
       <section className="cp-hero">
         <div className="cp-hero-inner">
           <h1>REVITALIZE YOUR HOME'S INTERIOR TODAY</h1>
-          <h2>Book Carpet Cleaning in Las Cruces</h2>
+          <h2>Book Carpet Cleaning in Las Cruces and El Paso</h2>
           <p>
-            Are you looking to refresh your home in Las Cruces? Aggie Carpet Cleaning offers professional
+            Are you looking to refresh your home in Las Cruces and El Paso? Aggie Carpet Cleaning offers professional
             carpet cleaning services that will leave your carpets looking and feeling like new. As you walk
             through your freshly cleaned home, you'll notice the vibrant colors and the soft texture underfoot.
             We provide comprehensive carpet cleaning solutions tailored to your needs, whether it's a single
@@ -23,7 +23,7 @@ const CarpetCleaning = () => {
             fit seamlessly into your life.
           </p>
           <p>
-            In Las Cruces, maintaining clean carpets is essential for a healthy home environment. Our team uses
+            In Las Cruces and El Paso, maintaining clean carpets is essential for a healthy home environment. Our team uses
             advanced cleaning techniques and eco-friendly products to remove dirt, allergens, and stains
             effectively. You can expect a thorough job that not only cleans but also extends the life of your
             carpets. Trust Aggie Carpet Cleaning to deliver exceptional results every time.

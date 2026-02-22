@@ -16,19 +16,9 @@ const posts = [
     slug: 'finding-quality-upholstery-cleaning-mesilla',
   },
   {
-    title: "DEMING RESIDENT'S GUIDE TO TILE AND GROUT",
-    subtitle: "Deming Resident's Guide to Tile and Grout Cleaning",
-    slug: 'deming-guide-tile-grout-cleaning',
-  },
-  {
-    title: 'HOW TO FIND WATER DAMAGE RESTORATION IN HATCH',
-    subtitle: 'How to Find Water Damage Restoration in Hatch',
-    slug: 'water-damage-restoration-hatch',
-  },
-  {
-    title: 'WHAT TO EXPECT FROM MOLD REMEDIATION IN ANTHONY',
-    subtitle: 'What to Expect from Mold Remediation in Anthony',
-    slug: 'mold-remediation-anthony',
+    title: "EL PASO RESIDENT'S GUIDE TO TILE AND GROUT",
+    subtitle: "El Paso Resident's Guide to Tile and Grout Cleaning",
+    slug: 'el-paso-guide-tile-grout-cleaning',
   },
   {
     title: 'WHEN TO CALL CARPET CLEANERS IN SUNLAND PARK',

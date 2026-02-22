@@ -13,11 +13,11 @@ const FurnitureRugs = () => {
       <section className="fr-hero">
         <div className="fr-hero-inner">
           <h1>DON'T THROW OUT YOUR FAVORITE LOUNGER</h1>
-          <h2>Turn to us for upholstery cleaning services in Las Cruces and Deming, NM</h2>
+          <h2>Turn to us for upholstery cleaning services in Las Cruces and El Paso and El Paso, TX</h2>
           <p>
             After years of lounging on your favorite sofa, the fabric might start to look the worse for wear.
             But that doesn't mean you have to throw it out. Rely on Aggie Carpet Cleaning for upholstery
-            cleaning services in Las Cruces & Deming, NM. We'll remove stains and discoloring from your
+            cleaning services in Las Cruces and El Paso & El Paso, TX. We'll remove stains and discoloring from your
             fabrics and furniture to make them look fresh and new again.
           </p>
           <p className="fr-cta-line">

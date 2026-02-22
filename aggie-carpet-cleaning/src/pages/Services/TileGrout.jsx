@@ -13,12 +13,12 @@ const TileGrout = () => {
       <section className="tg-hero">
         <div className="tg-hero-inner">
           <h1>MAKE YOUR TILE SPARKLE AND SHINE</h1>
-          <h2>Get tile floor cleaning services in Las Cruces and Deming, NM</h2>
+          <h2>Get tile floor cleaning services in Las Cruces and El Paso and El Paso, TX</h2>
           <p>
             Tile and grout are naturally porous, so no matter how often you clean, it's only a matter of
             time before dirt gets trapped in the crevices. Luckily, Aggie Carpet Cleaning makes it easy to
-            bring back that new tile shine. We offer tile floor and grout cleaning services in Las Cruces &
-            Deming, NM. Using manual scrubbers and cleaners, we'll extract the dirt and grime from your tile
+            bring back that new tile shine. We offer tile floor and grout cleaning services in Las Cruces and El Paso &
+            El Paso, TX. Using manual scrubbers and cleaners, we'll extract the dirt and grime from your tile
             floors so that they shine like new once again.
           </p>
           <p className="tg-cta-line">

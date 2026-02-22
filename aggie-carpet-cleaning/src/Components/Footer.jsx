@@ -44,8 +44,8 @@ const Footer = () => {
 
         <div className="footer-info">
           <div className="contact-info">
-            <p>Las Cruces, NM 88001</p>
-            <p>Deming, NM 88030</p>
+            <p>Las Cruces, NM</p>
+            <p>El Paso, TX</p>
           </div>
           <div className="copyright">
             <p>Copyright © 2026 Aggie Carpet Cleaning | All Rights Reserved</p>
