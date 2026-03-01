@@ -62,7 +62,7 @@ const Navbar = () => {
         <ul className={`nav-menu ${mobileMenuOpen ? 'active' : ''}`}>
           <li><Link to="/" onClick={closeMobileMenu}>Home</Link></li>
           <li 
-            className="dropdown"
+            className={`dropdown ${activeDropdown === 'services' ? 'has-active-dropdown' : ''}`}
             onMouseEnter={() => window.innerWidth > 992 && setActiveDropdown('services')}
             onMouseLeave={() => window.innerWidth > 992 && setActiveDropdown(null)}
             onTouchStart={(e) => {
@@ -82,7 +82,7 @@ const Navbar = () => {
             </ul>
           </li>
           <li 
-            className="dropdown"
+            className={`dropdown ${activeDropdown === 'info' ? 'has-active-dropdown' : ''}`}
             onMouseEnter={() => window.innerWidth > 992 && setActiveDropdown('info')}
             onMouseLeave={() => window.innerWidth > 992 && setActiveDropdown(null)}
             onTouchStart={(e) => {

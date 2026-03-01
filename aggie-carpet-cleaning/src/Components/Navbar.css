@@ -244,6 +244,13 @@
   .nav-menu > li {
     width: 100%;
     padding: 0;
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* When a dropdown is active, lower z-index of all following siblings */
+  .dropdown.has-active-dropdown ~ li {
+    z-index: 0;
   }
 
   .nav-menu > li > a,
@@ -271,6 +278,12 @@
   .dropdown {
     width: 100%;
     position: relative;
+    z-index: 1;
+  }
+  
+  /* When dropdown is open, make it highest z-index */
+  .dropdown.has-active-dropdown {
+    z-index: 10005 !important;
   }
   
   /* When dropdown is open, add space below so next items don't overlap */
