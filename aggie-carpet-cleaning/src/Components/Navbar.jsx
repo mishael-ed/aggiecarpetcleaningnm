@@ -31,9 +31,18 @@ const Navbar = () => {
           onClick={toggleMobileMenu}
           aria-label="Toggle menu"
         >
-          <span></span>
-          <span></span>
-          <span></span>
+          {mobileMenuOpen ? (
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <line x1="6" y1="6" x2="26" y2="26" stroke="#1a3a4a" strokeWidth="4" strokeLinecap="round"/>
+              <line x1="26" y1="6" x2="6" y2="26" stroke="#1a3a4a" strokeWidth="4" strokeLinecap="round"/>
+            </svg>
+          ) : (
+            <>
+              <span></span>
+              <span></span>
+              <span></span>
+            </>
+          )}
         </button>
 
         <ul className={`nav-menu ${mobileMenuOpen ? 'active' : ''}`}>
