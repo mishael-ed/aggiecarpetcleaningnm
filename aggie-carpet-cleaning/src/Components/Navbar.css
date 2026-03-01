@@ -219,8 +219,7 @@
   /* Mobile dropdown - controlled by click */
   .dropdown-menu {
     position: static;
-    max-height: 0;
-    overflow: hidden;
+    display: none;
     opacity: 1;
     visibility: visible;
     transform: none;
@@ -229,11 +228,10 @@
     width: 100%;
     border-radius: 0;
     padding: 0;
-    transition: max-height 0.3s ease;
   }
 
   .dropdown-open .dropdown-menu {
-    max-height: 500px;
+    display: block;
   }
 
   .dropdown-menu li {
