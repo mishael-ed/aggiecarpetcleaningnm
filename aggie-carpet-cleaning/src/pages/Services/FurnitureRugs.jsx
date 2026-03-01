@@ -75,7 +75,6 @@ const FurnitureRugs = () => {
             <img
               src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800"
               alt="Furniture and upholstery cleaning"
-              alt="Upholstery cleaning equipment"
             />
           </div>
         </div>
