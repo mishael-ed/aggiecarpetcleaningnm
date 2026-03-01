@@ -270,6 +270,7 @@
 
   .dropdown {
     width: 100%;
+    position: relative;
   }
 
   .dropdown-menu {
@@ -279,11 +280,12 @@
     visibility: visible;
     transform: none;
     box-shadow: none;
-    background: transparent;
+    background: #f8f8f8;
     width: 100%;
     border-radius: 0;
     padding: 0;
     list-style: none;
+    z-index: 1000;
   }
 
   .dropdown-menu > div {
@@ -298,6 +300,8 @@
   .dropdown-menu li {
     padding: 0;
     list-style: none;
+    position: relative;
+    z-index: 1001;
   }
 
   .dropdown-menu a {
@@ -305,5 +309,9 @@
     font-size: 0.95rem;
     color: #555;
     display: block;
+    position: relative;
+    z-index: 1002;
+    pointer-events: auto;
+    cursor: pointer;
   }
 }

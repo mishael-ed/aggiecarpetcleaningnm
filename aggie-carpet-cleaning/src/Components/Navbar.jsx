@@ -21,21 +21,25 @@ const Navbar = () => {
     setActiveDropdown(activeDropdown === dropdown ? null : dropdown);
   };
 
-  // Close dropdown when clicking outside
+  // Close menu when clicking outside
   React.useEffect(() => {
     const handleClickOutside = (e) => {
-      // Only apply on mobile when dropdown is open
-      if (window.innerWidth > 992 || !activeDropdown) return;
+      if (window.innerWidth > 992) return;
       
-      // Check if click is outside dropdown menu
-      if (!e.target.closest('.dropdown-menu') && !e.target.closest('.dropdown > span')) {
+      // Close mobile menu if clicking outside
+      if (mobileMenuOpen && !e.target.closest('.nav-menu') && !e.target.closest('.hamburger')) {
+        closeMobileMenu();
+      }
+      
+      // Close dropdown when clicking outside (but not on dropdown trigger or menu items)
+      if (activeDropdown && !e.target.closest('.dropdown-menu') && !e.target.closest('.dropdown > span')) {
         setActiveDropdown(null);
       }
     };
 
     document.addEventListener('click', handleClickOutside);
     return () => document.removeEventListener('click', handleClickOutside);
-  }, [activeDropdown]);
+  }, [activeDropdown, mobileMenuOpen]);
 
   return (
     <nav className="navbar">
