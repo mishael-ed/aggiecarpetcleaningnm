@@ -60,6 +60,12 @@ const Navbar = () => {
             className="dropdown"
             onMouseEnter={() => window.innerWidth > 992 && setActiveDropdown('services')}
             onMouseLeave={() => window.innerWidth > 992 && setActiveDropdown(null)}
+            onTouchStart={(e) => {
+              if (window.innerWidth <= 992) {
+                e.stopPropagation();
+                toggleDropdown('services');
+              }
+            }}
           >
             <span onClick={() => window.innerWidth <= 992 && toggleDropdown('services')}>Services</span>
             <ul className={`dropdown-menu ${activeDropdown === 'services' ? 'active' : ''}`}>
@@ -74,6 +80,12 @@ const Navbar = () => {
             className="dropdown"
             onMouseEnter={() => window.innerWidth > 992 && setActiveDropdown('info')}
             onMouseLeave={() => window.innerWidth > 992 && setActiveDropdown(null)}
+            onTouchStart={(e) => {
+              if (window.innerWidth <= 992) {
+                e.stopPropagation();
+                toggleDropdown('info');
+              }
+            }}
           >
             <span onClick={() => window.innerWidth <= 992 && toggleDropdown('info')}>Info</span>
             <ul className={`dropdown-menu ${activeDropdown === 'info' ? 'active' : ''}`}>
