@@ -30,7 +30,10 @@ const Navbar = () => {
     };
 
     if (mobileMenuOpen) {
-      document.addEventListener('click', handleClickOutside);
+      // Delay adding listener to avoid immediate trigger
+      setTimeout(() => {
+        document.addEventListener('click', handleClickOutside);
+      }, 100);
     }
 
     return () => document.removeEventListener('click', handleClickOutside);
