@@ -15,7 +15,7 @@ const Home = () => {
           <div className="hero-content">
             <h1>
               CHOOSE THE TRUSTED CARPET<br />
-              CLEANING COMPANY IN LAS CRUCES<br />
+              CLEANING COMPANY IN LAS CRUCES, NM<br />
               AND EL PASO, TX
             </h1>
             <p className="hero-subtitle">Partner with the pros at Aggie Carpet Cleaning</p>
