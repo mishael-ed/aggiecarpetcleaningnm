@@ -72,6 +72,7 @@ const FurnitureRugs = () => {
           </div>
 
           <div className="fr-stains-image">
+            {/* Image updated */}
             <img
               src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800"
               alt="Furniture and upholstery cleaning"
