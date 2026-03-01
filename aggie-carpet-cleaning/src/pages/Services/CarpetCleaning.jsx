@@ -77,7 +77,6 @@ const CarpetCleaning = () => {
             <img
               src="https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?w=800"
               alt="Professional carpet cleaning service"
-              alt="Carpet cleaning in progress"
             />
           </div>
         </div>

@@ -61,7 +61,6 @@ const TileGrout = () => {
             <img
               src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800"
               alt="Tile and grout cleaning service"
-              alt="Professional tile and grout cleaning"
             />
           </div>
         </div>
