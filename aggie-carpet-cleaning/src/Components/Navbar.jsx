@@ -20,6 +20,22 @@ const Navbar = () => {
     setActiveDropdown(activeDropdown === dropdown ? null : dropdown);
   };
 
+  // Close dropdown when clicking outside
+  React.useEffect(() => {
+    const handleClickOutside = (e) => {
+      // Only apply on mobile when dropdown is open
+      if (window.innerWidth > 992 || !activeDropdown) return;
+      
+      // Check if click is outside dropdown menu
+      if (!e.target.closest('.dropdown-menu') && !e.target.closest('.dropdown > span')) {
+        setActiveDropdown(null);
+      }
+    };
+
+    document.addEventListener('click', handleClickOutside);
+    return () => document.removeEventListener('click', handleClickOutside);
+  }, [activeDropdown]);
+
   return (
     <nav className="navbar">
       <div className="navbar-container">
@@ -40,8 +56,12 @@ const Navbar = () => {
 
         <ul className={`nav-menu ${mobileMenuOpen ? 'active' : ''}`}>
           <li><Link to="/" onClick={closeMobileMenu}>Home</Link></li>
-          <li className="dropdown">
-            <span onClick={() => toggleDropdown('services')}>Services</span>
+          <li 
+            className="dropdown"
+            onMouseEnter={() => window.innerWidth > 992 && setActiveDropdown('services')}
+            onMouseLeave={() => window.innerWidth > 992 && setActiveDropdown(null)}
+          >
+            <span onClick={() => window.innerWidth <= 992 && toggleDropdown('services')}>Services</span>
             <ul className={`dropdown-menu ${activeDropdown === 'services' ? 'active' : ''}`}>
               <div>
                 <li><Link to="/services/carpet-cleaning" onClick={closeMobileMenu}>Carpet Cleaning</Link></li>
@@ -50,8 +70,12 @@ const Navbar = () => {
               </div>
             </ul>
           </li>
-          <li className="dropdown">
-            <span onClick={() => toggleDropdown('info')}>Info</span>
+          <li 
+            className="dropdown"
+            onMouseEnter={() => window.innerWidth > 992 && setActiveDropdown('info')}
+            onMouseLeave={() => window.innerWidth > 992 && setActiveDropdown(null)}
+          >
+            <span onClick={() => window.innerWidth <= 992 && toggleDropdown('info')}>Info</span>
             <ul className={`dropdown-menu ${activeDropdown === 'info' ? 'active' : ''}`}>
               <div>
                 <li><Link to="/info/areas-we-serve" onClick={closeMobileMenu}>Areas We Serve</Link></li>
