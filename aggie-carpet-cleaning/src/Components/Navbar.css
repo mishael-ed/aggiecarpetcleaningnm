@@ -273,11 +273,9 @@
     pointer-events: auto;
   }
 
-  /* Completely disable hover on mobile */
-  .dropdown:hover .dropdown-menu {
-    opacity: 0 !important;
-    visibility: hidden !important;
-    transform: translateY(-10px) !important;
+  /* Prevent hover from triggering on mobile */
+  .dropdown:hover .dropdown-menu:not(.active) {
+    max-height: 0 !important;
     pointer-events: none !important;
   }
 
@@ -295,17 +293,15 @@
     transition: max-height 0.4s ease;
     overflow: hidden;
     list-style: none;
-    pointer-events: auto;
   }
 
   .dropdown-menu > div {
     padding: 0;
   }
 
+  /* When active, override everything */
   .dropdown-menu.active {
     max-height: 500px !important;
-    opacity: 1 !important;
-    visibility: visible !important;
     pointer-events: auto !important;
   }
 
