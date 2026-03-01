@@ -78,7 +78,7 @@
   color: #00bcd4;
 }
 
-/* Dropdown Menu */
+/* Dropdown Menu - Desktop */
 .dropdown-menu {
   position: absolute;
   top: 100%;
@@ -93,31 +93,13 @@
   transform: translateY(-10px);
   transition: all 0.3s;
   z-index: 100;
-  pointer-events: none;
+  list-style: none;
 }
 
-/* Desktop hover - only on devices that support hover */
-@media (min-width: 993px) and (hover: hover) {
-  .dropdown-menu {
-    pointer-events: auto;
-  }
-  
-  .dropdown:hover .dropdown-menu,
-  .dropdown-menu.active {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-  }
-}
-
-/* Mobile and touch devices - click only */
-@media (max-width: 992px), (hover: none) {
-  .dropdown-menu.active {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-    pointer-events: auto;
-  }
+.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }
 
 .dropdown-menu li {
@@ -134,36 +116,6 @@
 .dropdown-menu a:hover {
   background: #f5f5f5;
   color: #00bcd4;
-}
-
-/* CTA Buttons inside nav */
-.nav-cta-buttons {
-  display: flex;
-  gap: 1rem;
-  margin-left: auto;
-  z-index: 10;
-  position: relative;
-}
-
-.cta-btn {
-  background: #00bcd4;
-  color: white !important;
-  padding: 0.7rem 1.5rem;
-  border-radius: 50px;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 0.875rem;
-  transition: all 0.3s;
-  white-space: nowrap;
-  box-shadow: 0 2px 8px rgba(0,188,212,0.2);
-  display: inline-block;
-  text-align: center;
-}
-
-.cta-btn:hover {
-  background: #0097a7;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0,188,212,0.35);
 }
 
 /* Hamburger */
@@ -204,21 +156,13 @@
 @media (max-width: 992px) {
   .navbar-container {
     padding: 0 1.5rem;
-    justify-content: flex-start;
-  }
-
-  .logo {
-    position: static;
-    left: auto;
   }
 
   .hamburger {
     display: flex;
   }
 
-  /* Hide menu by default on mobile */
   .nav-menu {
-    display: flex !important;
     position: fixed;
     right: -100%;
     top: 0;
@@ -236,7 +180,6 @@
     overflow-y: auto;
   }
 
-  /* Show menu when active */
   .nav-menu.active {
     right: 0;
   }
@@ -244,13 +187,6 @@
   .nav-menu > li {
     width: 100%;
     padding: 0;
-    position: relative;
-    z-index: 1;
-  }
-  
-  /* When a dropdown is active, lower z-index of all following siblings */
-  .dropdown.has-active-dropdown ~ li {
-    z-index: 0;
   }
 
   .nav-menu > li > a,
@@ -262,7 +198,6 @@
     color: #1a1a1a;
   }
 
-  /* Remove dropdown arrow on mobile */
   .dropdown > span::after {
     content: '';
     width: 0;
@@ -275,25 +210,17 @@
     opacity: 0.6;
   }
 
-  .dropdown {
-    width: 100%;
-    position: relative;
-    z-index: 1;
-  }
-  
-  /* When dropdown is open, make it highest z-index */
-  .dropdown.has-active-dropdown {
-    z-index: 10005 !important;
-  }
-  
-  /* When dropdown is open, add space below so next items don't overlap */
-  .dropdown:has(.dropdown-menu.active) {
-    margin-bottom: 0;
+  /* Disable desktop hover on mobile */
+  .dropdown:hover .dropdown-menu {
+    opacity: 0;
+    visibility: hidden;
   }
 
+  /* Mobile dropdown - controlled by click */
   .dropdown-menu {
-    position: relative;
-    display: none;
+    position: static;
+    max-height: 0;
+    overflow: hidden;
     opacity: 1;
     visibility: visible;
     transform: none;
@@ -302,45 +229,28 @@
     width: 100%;
     border-radius: 0;
     padding: 0;
-    list-style: none;
-    z-index: 10000;
-    margin-bottom: 0;
+    transition: max-height 0.3s ease;
   }
 
-  .dropdown-menu > div {
-    padding: 0;
-  }
-
-  /* When active, show it */
-  .dropdown-menu.active {
-    display: block !important;
+  .dropdown-open .dropdown-menu {
+    max-height: 500px;
   }
 
   .dropdown-menu li {
     padding: 0;
-    list-style: none;
-    position: relative;
-    z-index: 10001;
     width: 100%;
-    display: block;
   }
 
   .dropdown-menu a {
+    display: block;
     padding: 0.75rem 2rem 0.75rem 3rem;
     font-size: 0.95rem;
-    color: #555 !important;
-    display: block !important;
-    position: relative;
-    z-index: 10002;
-    pointer-events: auto !important;
-    cursor: pointer;
-    background: #f8f8f8;
-    width: 100%;
+    color: #555;
     text-decoration: none;
   }
-  
-  .dropdown-menu a:active {
-    background: #00bcd4 !important;
-    color: white !important;
+
+  .dropdown-menu a:hover {
+    background: #e0e0e0;
+    color: #00bcd4;
   }
 }
