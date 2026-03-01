@@ -272,6 +272,11 @@
     width: 100%;
     position: relative;
   }
+  
+  /* When dropdown is open, add space below so next items don't overlap */
+  .dropdown:has(.dropdown-menu.active) {
+    margin-bottom: 0;
+  }
 
   .dropdown-menu {
     position: relative;
@@ -286,6 +291,7 @@
     padding: 0;
     list-style: none;
     z-index: 10000;
+    margin-bottom: 0;
   }
 
   .dropdown-menu > div {
@@ -302,21 +308,26 @@
     list-style: none;
     position: relative;
     z-index: 10001;
+    width: 100%;
+    display: block;
   }
 
   .dropdown-menu a {
     padding: 0.75rem 2rem 0.75rem 3rem;
     font-size: 0.95rem;
-    color: #555;
-    display: block;
+    color: #555 !important;
+    display: block !important;
     position: relative;
     z-index: 10002;
-    pointer-events: auto;
+    pointer-events: auto !important;
     cursor: pointer;
     background: #f8f8f8;
+    width: 100%;
+    text-decoration: none;
   }
   
   .dropdown-menu a:active {
-    background: #e0e0e0;
+    background: #00bcd4 !important;
+    color: white !important;
   }
 }
