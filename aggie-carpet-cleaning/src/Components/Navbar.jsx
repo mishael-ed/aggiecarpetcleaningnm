@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import './Navbar.css';
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
   const [infoOpen, setInfoOpen] = useState(false);
+  const location = useLocation();
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
@@ -66,28 +67,28 @@ const Navbar = () => {
         </button>
 
         <ul className={`nav-menu ${mobileMenuOpen ? 'active' : ''}`}>
-          <li><Link to="/" onClick={closeMobileMenu}>Home</Link></li>
+          <li><Link to="/" onClick={closeMobileMenu} className={location.pathname === '/' ? 'active-link' : ''}>Home</Link></li>
           
           <li className={`dropdown ${servicesOpen ? 'dropdown-open' : ''}`}>
-            <span onClick={() => setServicesOpen(!servicesOpen)}>Services</span>
+            <span onClick={() => setServicesOpen(!servicesOpen)} className={location.pathname.startsWith('/services') ? 'active-link' : ''}>Services</span>
             <ul className="dropdown-menu">
-              <li><Link to="/services/carpet-cleaning" onClick={closeMobileMenu}>Carpet Cleaning</Link></li>
-              <li><Link to="/services/furniture-rugs" onClick={closeMobileMenu}>Furniture and Rugs</Link></li>
-              <li><Link to="/services/tile-grout" onClick={closeMobileMenu}>Tile and Grout</Link></li>
+              <li><Link to="/services/carpet-cleaning" onClick={closeMobileMenu} className={location.pathname === '/services/carpet-cleaning' ? 'active-link' : ''}>Carpet Cleaning</Link></li>
+              <li><Link to="/services/furniture-rugs" onClick={closeMobileMenu} className={location.pathname === '/services/furniture-rugs' ? 'active-link' : ''}>Furniture and Rugs</Link></li>
+              <li><Link to="/services/tile-grout" onClick={closeMobileMenu} className={location.pathname === '/services/tile-grout' ? 'active-link' : ''}>Tile and Grout</Link></li>
             </ul>
           </li>
           
           <li className={`dropdown ${infoOpen ? 'dropdown-open' : ''}`}>
-            <span onClick={() => setInfoOpen(!infoOpen)}>Info</span>
+            <span onClick={() => setInfoOpen(!infoOpen)} className={location.pathname.startsWith('/info') || location.pathname.startsWith('/blog') ? 'active-link' : ''}>Info</span>
             <ul className="dropdown-menu">
-              <li><Link to="/info/areas-we-serve" onClick={closeMobileMenu}>Areas We Serve</Link></li>
-              <li><Link to="/info/reviews" onClick={closeMobileMenu}>Reviews</Link></li>
-              <li><Link to="/info/faq" onClick={closeMobileMenu}>FAQ</Link></li>
-              <li><Link to="/info/blog" onClick={closeMobileMenu}>Blog</Link></li>
+              <li><Link to="/info/areas-we-serve" onClick={closeMobileMenu} className={location.pathname === '/info/areas-we-serve' ? 'active-link' : ''}>Areas We Serve</Link></li>
+              <li><Link to="/info/reviews" onClick={closeMobileMenu} className={location.pathname === '/info/reviews' ? 'active-link' : ''}>Reviews</Link></li>
+              <li><Link to="/info/faq" onClick={closeMobileMenu} className={location.pathname === '/info/faq' ? 'active-link' : ''}>FAQ</Link></li>
+              <li><Link to="/info/blog" onClick={closeMobileMenu} className={location.pathname === '/info/blog' || location.pathname.startsWith('/blog') ? 'active-link' : ''}>Blog</Link></li>
             </ul>
           </li>
           
-          <li><Link to="/contact" onClick={closeMobileMenu}>Contact</Link></li>
+          <li><Link to="/contact" onClick={closeMobileMenu} className={location.pathname === '/contact' ? 'active-link' : ''}>Contact</Link></li>
         </ul>
       </div>
     </nav>

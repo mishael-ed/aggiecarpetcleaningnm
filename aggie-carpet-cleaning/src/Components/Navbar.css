@@ -78,6 +78,12 @@
   color: #00bcd4;
 }
 
+.nav-menu a.active-link,
+.nav-menu span.active-link {
+  font-weight: 700;
+  color: #00bcd4;
+}
+
 /* Dropdown Menu - Desktop */
 .dropdown-menu {
   position: absolute;
