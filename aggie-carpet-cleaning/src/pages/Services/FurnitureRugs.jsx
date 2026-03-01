@@ -73,7 +73,8 @@ const FurnitureRugs = () => {
 
           <div className="fr-stains-image">
             <img
-              src="https://images.unsplash.com/photo-1527515637462-cff94aca55f2?w=800"
+              src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800"
+              alt="Furniture and upholstery cleaning"
               alt="Upholstery cleaning equipment"
             />
           </div>

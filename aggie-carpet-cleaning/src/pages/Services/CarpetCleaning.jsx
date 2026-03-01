@@ -75,7 +75,8 @@ const CarpetCleaning = () => {
 
           <div className="cp-expect-image">
             <img
-              src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800"
+              src="https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?w=800"
+              alt="Professional carpet cleaning service"
               alt="Carpet cleaning in progress"
             />
           </div>

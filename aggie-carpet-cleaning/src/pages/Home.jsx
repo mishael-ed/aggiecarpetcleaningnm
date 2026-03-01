@@ -60,7 +60,7 @@ const Home = () => {
       <section className="cleaning-section">
         <div className="cleaning-container">
           <div className="cleaning-image">
-            <img src="https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?w=800" alt="Carpet cleaning" />
+            <img src="https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?w=800" alt="Clean carpet results" />
           </div>
           <div className="cleaning-text">
             <h2>TAKE CLEANING TO ANOTHER LEVEL</h2>
@@ -130,7 +130,7 @@ const Home = () => {
           </div>
 
           <div className="professionals-image">
-            <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800" alt="Professional cleaning" />
+            <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800" alt="Professional carpet cleaning equipment" />
           </div>
         </div>
       </section>
@@ -179,18 +179,6 @@ const Home = () => {
       {/* Service Area Section */}
       <section className="service-area-section">
         <div className="service-area-container">
-          <div className="map-container">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d432107.8187431396!2d-107.3488!3d32.3199!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86e05c3d6e000001%3A0x1c8e4e7f1c1b3e8!2sLas%20Cruces%2C%20NM!5e0!3m2!1sen!2sus!4v1234567890"
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              allowFullScreen=""
-              loading="lazy"
-              title="Service Area Map"
-            ></iframe>
-          </div>
-
           <div className="service-area-content">
             <h2>OUR SERVICE AREA</h2>
             

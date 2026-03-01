@@ -1,6 +1,6 @@
 .aws-page {
   min-height: 100vh;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Volte', sans-serif;
 }
 
 /* ── Hero ── */
@@ -125,6 +125,8 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .aws-city-card {
@@ -148,29 +150,11 @@
   transform: translateY(-3px);
 }
 
-/* Map */
-.aws-map {
-  height: 500px;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-}
-
-.aws-map iframe {
-  width: 100%;
-  height: 100%;
-  border: 0;
-}
-
 /* ── Responsive ── */
 @media (max-width: 1024px) {
   .aws-grid-section-inner {
     grid-template-columns: 1fr;
     gap: 3rem;
-  }
-
-  .aws-map {
-    height: 400px;
   }
 }
 

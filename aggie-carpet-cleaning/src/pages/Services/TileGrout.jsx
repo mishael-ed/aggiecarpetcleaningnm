@@ -59,7 +59,8 @@ const TileGrout = () => {
 
           <div className="tg-further-image">
             <img
-              src="https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=800"
+              src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800"
+              alt="Tile and grout cleaning service"
               alt="Professional tile and grout cleaning"
             />
           </div>
