@@ -19,6 +19,23 @@ const Navbar = () => {
     setInfoOpen(false);
   };
 
+  // Close menu when clicking outside
+  React.useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (window.innerWidth > 992) return;
+      
+      if (mobileMenuOpen && !e.target.closest('.nav-menu') && !e.target.closest('.hamburger')) {
+        closeMobileMenu();
+      }
+    };
+
+    if (mobileMenuOpen) {
+      document.addEventListener('click', handleClickOutside);
+    }
+
+    return () => document.removeEventListener('click', handleClickOutside);
+  }, [mobileMenuOpen]);
+
   return (
     <nav className="navbar">
       <div className="navbar-container">
