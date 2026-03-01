@@ -270,18 +270,11 @@
 
   .dropdown {
     width: 100%;
-    pointer-events: auto;
-  }
-
-  /* Prevent hover from triggering on mobile */
-  .dropdown:hover .dropdown-menu:not(.active) {
-    max-height: 0 !important;
-    pointer-events: none !important;
   }
 
   .dropdown-menu {
     position: static;
-    max-height: 0;
+    display: none;
     opacity: 1;
     visibility: visible;
     transform: none;
@@ -290,8 +283,6 @@
     width: 100%;
     border-radius: 0;
     padding: 0;
-    transition: max-height 0.4s ease;
-    overflow: hidden;
     list-style: none;
   }
 
@@ -299,10 +290,9 @@
     padding: 0;
   }
 
-  /* When active, override everything */
+  /* When active, show it */
   .dropdown-menu.active {
-    max-height: 500px !important;
-    pointer-events: auto !important;
+    display: block !important;
   }
 
   .dropdown-menu li {

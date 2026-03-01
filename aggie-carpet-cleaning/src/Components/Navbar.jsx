@@ -17,6 +17,7 @@ const Navbar = () => {
   };
 
   const toggleDropdown = (dropdown) => {
+    console.log('Toggle dropdown:', dropdown, 'Current active:', activeDropdown);
     setActiveDropdown(activeDropdown === dropdown ? null : dropdown);
   };
 
