@@ -72,11 +72,28 @@ const FurnitureRugs = () => {
           </div>
 
           <div className="fr-stains-image">
-            {/* Image updated */}
             <img
               src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800"
               alt="Furniture and upholstery cleaning"
             />
+          </div>
+        </div>
+      </section>
+
+      {/* Video Section */}
+      <section className="fr-video-section">
+        <div className="fr-video-container">
+          <h2>SEE OUR UPHOLSTERY CLEANING IN ACTION</h2>
+          <div className="fr-video-wrapper">
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/r3MBG3ob_Z4"
+              title="Upholstery Cleaning Demo"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
           </div>
         </div>
       </section>

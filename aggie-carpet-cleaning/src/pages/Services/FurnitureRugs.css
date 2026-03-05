@@ -1,6 +1,6 @@
 .fr-page {
   min-height: 100vh;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Volte', sans-serif;
 }
 
 /* ── Hero ── */
@@ -223,4 +223,54 @@
   .fr-checklist { grid-template-columns: 1fr; }
 
   .fr-stains-image img { height: 300px; }
+}
+
+/* Video Section */
+.fr-video-section {
+  background: #f8f8f8;
+  padding: 5rem 2rem;
+}
+
+.fr-video-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.fr-video-container h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #1a3a4a;
+  margin-bottom: 3rem;
+  letter-spacing: 0.02em;
+}
+
+.fr-video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  background: #000;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+.fr-video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+}
+
+@media (max-width: 900px) {
+  .fr-video-section {
+    padding: 3rem 1.5rem;
+  }
+
+  .fr-video-container h2 {
+    font-size: 1.8rem;
+  }
 }
