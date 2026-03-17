@@ -25,9 +25,9 @@ const Contact = () => {
     setStatus('');
 
     // EmailJS configuration
-    const serviceID = 'YOUR_SERVICE_ID'; // Replace with your EmailJS service ID
-    const templateID = 'YOUR_TEMPLATE_ID'; // Replace with your EmailJS template ID
-    const publicKey = 'YOUR_PUBLIC_KEY'; // Replace with your EmailJS public key
+    const serviceID = 'service_xracmjm'; // Replace with your EmailJS service ID
+    const templateID = 'template_2fqzuxh'; // Replace with your EmailJS template ID
+    const publicKey = 'nEYXwMZTclNB9EV5z'; // Replace with your EmailJS public key
 
     const templateParams = {
       from_name: `${formData.firstName} ${formData.lastName}`,
