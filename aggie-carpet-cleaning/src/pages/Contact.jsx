@@ -25,9 +25,9 @@ const Contact = () => {
     setStatus('');
 
     // EmailJS configuration
-    const serviceID = 'service_xracmjm'; // Replace with your EmailJS service ID
-    const templateID = 'template_2fqzuxh'; // Replace with your EmailJS template ID
-    const publicKey = 'nEYXwMZTclNB9EV5z'; // Replace with your EmailJS public key
+    const serviceID = 'YOUR_SERVICE_ID'; // Replace with your EmailJS service ID
+    const templateID = 'YOUR_TEMPLATE_ID'; // Replace with your EmailJS template ID
+    const publicKey = 'YOUR_PUBLIC_KEY'; // Replace with your EmailJS public key
 
     const templateParams = {
       from_name: `${formData.firstName} ${formData.lastName}`,
@@ -186,19 +186,6 @@ const Contact = () => {
             <p>Las Cruces, NM</p>
             <h4>Call Us:</h4>
             <p>(575) 649-3197</p>
-            <h4>Hours:</h4>
-            <div className="ct-hours-row">
-              <span>Mon – Sun</span>
-              <span>Open 24 Hours</span>
-            </div>
-          </div>
-
-          <div className="ct-location-card">
-            <h2>AGGIE CARPET CLEANING</h2>
-            <h4>Our Location:</h4>
-            <p>El Paso, TX</p>
-            <h4>Call Us:</h4>
-            <p>(915) 867-5309</p>
             <h4>Hours:</h4>
             <div className="ct-hours-row">
               <span>Mon – Sun</span>
