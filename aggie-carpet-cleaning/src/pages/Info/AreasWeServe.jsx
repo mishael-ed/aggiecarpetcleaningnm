@@ -8,7 +8,6 @@ const AreasWeServe = () => {
   const cities = [
     'SILVER CITY, NM',
     'LAS CRUCES, NM',
-    'DEMING, NM',
     'MESILLA, NM',
     'LORDSBURG, NM',
     'COLUMBUS, NM',

@@ -60,7 +60,7 @@ const Home = () => {
       <section className="cleaning-section">
         <div className="cleaning-container">
           <div className="cleaning-image">
-            <img src="https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?w=800" alt="Clean carpet results" />
+            <img src={require('./floor-equipment.jpg')} alt="Professional carpet cleaning equipment" />
           </div>
           <div className="cleaning-text">
             <h2>TAKE CLEANING TO ANOTHER LEVEL</h2>
@@ -130,7 +130,7 @@ const Home = () => {
           </div>
 
           <div className="professionals-image">
-            <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800" alt="Professional carpet cleaning equipment" />
+            <img src={require('./floor-equipment.jpg')} alt="Professional carpet cleaning equipment" />
           </div>
         </div>
       </section>
@@ -187,7 +187,6 @@ const Home = () => {
                 <p>Silver City, NM</p>
                 <p>Mesilla, NM</p>
                 <p>Dona Ana, NM</p>
-                <p>El Paso, TX</p>
               </div>
               <div className="city-column">
                 <p>Las Cruces, NM</p>
