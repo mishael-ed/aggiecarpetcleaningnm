@@ -56,10 +56,6 @@ const CarpetCleaning = () => {
               </div>
               <div className="cp-check-item">
                 <span className="cp-checkmark">✓</span>
-                <span>Seam-sealed with TPO membrane for lasting protection</span>
-              </div>
-              <div className="cp-check-item">
-                <span className="cp-checkmark">✓</span>
                 <span>Quick drying process completed in a few hours</span>
               </div>
               <div className="cp-check-item">
@@ -69,13 +65,13 @@ const CarpetCleaning = () => {
             </div>
 
             <p className="cp-italic">
-              Call today to schedule your carpet cleaning service or ask about our carpet repair and installation!
+              Ask us about carpet repair and stain removal!
             </p>
           </div>
 
           <div className="cp-expect-image">
             <img
-              src="https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?w=800"
+              src={require('../carpet-equipment-bedroom.jpg')}
               alt="Professional carpet cleaning service"
             />
           </div>

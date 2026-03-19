@@ -15,7 +15,7 @@ const CarpetCleanersSunlandPark = () => {
           <h1>When to Call Carpet Cleaners in Sunland Park</h1>
           <div className="blog-hero-image">
             <img 
-              src="https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?w=1200" 
+              src={require('../carpet-equipment-bedroom.jpg')}
               alt="Carpet cleaning in Sunland Park"
             />
           </div>

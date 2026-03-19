@@ -1,6 +1,6 @@
 .carpet-page {
   min-height: 100vh;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Volte', sans-serif;
 }
 
 /* Hero Section */
@@ -206,6 +206,7 @@
   width: 100%;
   height: 500px;
   object-fit: cover;
+  object-position: center 120%;
   border-radius: 8px;
 }
 

@@ -177,7 +177,7 @@ body {
   min-height: 600px;
   background: linear-gradient(rgba(20, 40, 50, 0.75), rgba(20, 40, 50, 0.75)),
               url('./carpet-cleaning-hero.jpg') center center/cover no-repeat;
-  background-position: center 30%;
+  background-position: right 40%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -444,6 +444,7 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center 40%;
   border-radius: 8px;
 }
 
@@ -473,7 +474,8 @@ body {
 /* Restore Section */
 .restore-section {
   background: linear-gradient(rgba(20, 40, 50, 0.85), rgba(20, 40, 50, 0.85)),
-              url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=1600') center/cover;
+              url('./owner-van.jpg') center/cover;
+  background-position: center 30%;
   padding: 6rem 2rem;
   text-align: center;
 }
