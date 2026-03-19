@@ -75,6 +75,7 @@ const Navbar = () => {
               <li><Link to="/services/carpet-cleaning" onClick={closeMobileMenu} className={location.pathname === '/services/carpet-cleaning' ? 'active-link' : ''}>Carpet Cleaning</Link></li>
               <li><Link to="/services/furniture-rugs" onClick={closeMobileMenu} className={location.pathname === '/services/furniture-rugs' ? 'active-link' : ''}>Furniture and Rugs</Link></li>
               <li><Link to="/services/tile-grout" onClick={closeMobileMenu} className={location.pathname === '/services/tile-grout' ? 'active-link' : ''}>Tile and Grout</Link></li>
+              <li><Link to="/services/pet-urine-removal" onClick={closeMobileMenu} className={location.pathname === '/services/pet-urine-removal' ? 'active-link' : ''}>Pet Urine Removal</Link></li>
             </ul>
           </li>
           

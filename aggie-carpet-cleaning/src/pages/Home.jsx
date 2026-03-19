@@ -119,7 +119,7 @@ const Home = () => {
               </div>
               <div className="service-item">
                 <span className="checkmark">✓</span>
-                <span>Water damage restoration services</span>
+                <span>Pet urine removal services</span>
               </div>
             </div>
 

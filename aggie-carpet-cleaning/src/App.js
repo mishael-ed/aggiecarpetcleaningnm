@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import CarpetCleaning from './pages/Services/CarpetCleaning';
 import FurnitureRugs from './pages/Services/FurnitureRugs';
 import TileGrout from './pages/Services/TileGrout';
+import PetUrineRemoval from './pages/Services/PetUrineRemoval';
 import AreasWeServe from './pages/Info/AreasWeServe';
 import Reviews from './pages/Info/Reviews';
 import FAQ from './pages/Info/FAQ';
@@ -25,6 +26,7 @@ function App() {
         <Route path="/services/carpet-cleaning" element={<CarpetCleaning />} />
         <Route path="/services/furniture-rugs" element={<FurnitureRugs />} />
         <Route path="/services/tile-grout" element={<TileGrout />} />
+        <Route path="/services/pet-urine-removal" element={<PetUrineRemoval />} />
         <Route path="/info/areas-we-serve" element={<AreasWeServe />} />
         <Route path="/info/reviews" element={<Reviews />} />
         <Route path="/info/faq" element={<FAQ />} />

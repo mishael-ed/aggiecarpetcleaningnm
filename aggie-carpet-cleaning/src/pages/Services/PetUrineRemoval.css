@@ -1,0 +1,178 @@
+.pur-page {
+  min-height: 100vh;
+  font-family: 'Volte', sans-serif;
+}
+
+/* ── Hero Section ── */
+.pur-hero {
+  background: linear-gradient(135deg, #e0f4fb 0%, #f0fbff 60%, #e8f8ff 100%);
+  padding: 5rem 3rem 6rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.pur-hero::before {
+  content: '';
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  border: 60px solid rgba(0,188,212,0.07);
+  top: -150px;
+  right: -100px;
+  pointer-events: none;
+}
+
+.pur-hero-inner {
+  max-width: 900px;
+  position: relative;
+  z-index: 1;
+}
+
+.pur-hero-inner h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #1a3a4a;
+  line-height: 1.2;
+  margin-bottom: 1.25rem;
+  letter-spacing: -0.02em;
+}
+
+.pur-hero-inner h2 {
+  font-size: 1.75rem;
+  font-weight: 500;
+  color: #1a3a4a;
+  margin-bottom: 2rem;
+}
+
+.pur-hero-inner p {
+  font-size: 1.1rem;
+  color: #4a5568;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.pur-cta-line {
+  font-weight: 600;
+  color: #1a3a4a;
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.pur-connect-btn {
+  display: inline-block;
+  background: #00bcd4;
+  color: white;
+  padding: 1rem 2.5rem;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0,188,212,0.3);
+}
+
+.pur-connect-btn:hover {
+  background: #00a5bb;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0,188,212,0.4);
+}
+
+/* ── Why We're Different Section ── */
+.pur-different {
+  background: white;
+  padding: 5rem 3rem;
+}
+
+.pur-different-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.pur-different-text h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #1a3a4a;
+  margin-bottom: 2rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.pur-different-text p {
+  font-size: 1.1rem;
+  color: #4a5568;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.pur-checklist {
+  display: grid;
+  gap: 1rem;
+  margin: 2.5rem 0;
+}
+
+.pur-check-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.pur-checkmark {
+  width: 32px;
+  height: 32px;
+  background: #00bcd4;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.pur-check-item span:last-child {
+  font-size: 1.05rem;
+  color: #1a3a4a;
+  font-weight: 500;
+}
+
+.pur-italic {
+  font-style: italic;
+  color: #4a5568;
+  margin-top: 2rem;
+  font-size: 1.05rem;
+}
+
+.pur-different-image img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  object-position: center 50%;
+  border-radius: 8px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .pur-hero { padding: 3rem 1.5rem 4rem; }
+  .pur-hero-inner h1 { font-size: 2rem; }
+  .pur-hero-inner h2 { font-size: 1.4rem; }
+
+  .pur-different-inner {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .pur-different-text h2 { font-size: 2rem; }
+
+  .pur-different-image img {
+    height: 300px;
+  }
+}
