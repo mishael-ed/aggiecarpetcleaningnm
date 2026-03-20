@@ -42,6 +42,16 @@ const About = () => {
         </div>
       </section>
 
+      {/* Meet the Van Section */}
+      <section className="van-section">
+        <div className="van-content-center">
+          <h2>MEET THE VAN</h2>
+          <p>
+            "Vroom Vroom 🚐 2018 Chevrolet Express with a Prochem Legend SE inside. A true workhorse"
+          </p>
+        </div>
+      </section>
+
       <Footer />
     </div>
   );

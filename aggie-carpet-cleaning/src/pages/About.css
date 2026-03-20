@@ -104,6 +104,34 @@
   box-shadow: 0 6px 20px rgba(0,188,212,0.4);
 }
 
+/* ── Van Section ── */
+.van-section {
+  background: #f8f9fa;
+  padding: 4rem 3rem;
+  text-align: center;
+}
+
+.van-content-center {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.van-content-center h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #1a3a4a;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.van-content-center p {
+  font-size: 1.2rem;
+  color: #4a5568;
+  line-height: 1.8;
+  font-style: italic;
+}
+
 /* Responsive */
 @media (max-width: 900px) {
   .about-hero { 
@@ -129,5 +157,9 @@
 
   .owner-content h2 { 
     font-size: 2rem; 
+  }
+
+  .van-content-center h2 {
+    font-size: 2rem;
   }
 }

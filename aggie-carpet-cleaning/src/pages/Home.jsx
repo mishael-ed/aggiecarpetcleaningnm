@@ -14,12 +14,12 @@ const Home = () => {
         <div className="hero-overlay">
           <div className="hero-content">
             <h1>
-              CHOOSE THE TRUSTED CARPET<br />
-              CLEANING COMPANY IN LAS CRUCES, NM<br />
-              AND EL PASO, TX
+              PREMIUM CARPET CLEANING IN<br />
+              LAS CRUCES & EL PASO — FAST DRY TIMES,<br />
+              PRO GRADE EQUIPMENT
             </h1>
-            <p className="hero-subtitle">Partner with the pros at Aggie Carpet Cleaning</p>
-            <Link to="/contact" className="hero-btn">Get In Touch</Link>
+            <p className="hero-subtitle">Trusted by 500+ homeowners. Pet stains, odors, and deep dirt removed the right way.</p>
+            <Link to="/contact" className="hero-btn">BOOK CLEANING</Link>
           </div>
         </div>
 
