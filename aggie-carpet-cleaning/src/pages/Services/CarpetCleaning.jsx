@@ -48,11 +48,11 @@ const CarpetCleaning = () => {
             <div className="cp-checklist">
               <div className="cp-check-item">
                 <span className="cp-checkmark">✓</span>
-                <span>Pre-treatment of stains with specialized solutions</span>
+                <span>Pre-treatment with alkaline solution to cut oil and dirt</span>
               </div>
               <div className="cp-check-item">
                 <span className="cp-checkmark">✓</span>
-                <span>Deep cleaning using hot water extraction</span>
+                <span>Truckmounted extraction with super heated acid rinse</span>
               </div>
               <div className="cp-check-item">
                 <span className="cp-checkmark">✓</span>
