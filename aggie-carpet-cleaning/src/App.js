@@ -15,6 +15,7 @@ import CarpetCleanersLasCruces from './pages/Blog/CarpetCleanersLasCruces';
 import TileGroutElPaso from './pages/Blog/TileGroutElPaso';
 import UpholsteryCleaningMesilla from './pages/Blog/UpholsteryCleaningMesilla';
 import CarpetCleanersSunlandPark from './pages/Blog/CarpetCleanersSunlandPark';
+import About from './pages/About';
 import './App.css';
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
         <Route path="/services/carpet-cleaning" element={<CarpetCleaning />} />
         <Route path="/services/furniture-rugs" element={<FurnitureRugs />} />
         <Route path="/services/tile-grout" element={<TileGrout />} />

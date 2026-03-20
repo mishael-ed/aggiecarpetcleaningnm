@@ -159,6 +159,14 @@
   box-shadow: 0 10px 40px rgba(0,0,0,0.1);
 }
 
+.image-caption {
+  text-align: center;
+  font-size: 0.95rem;
+  color: #4a5568;
+  margin-top: 0.75rem;
+  font-style: italic;
+}
+
 /* Responsive */
 @media (max-width: 900px) {
   .pur-hero { padding: 3rem 1.5rem 4rem; }

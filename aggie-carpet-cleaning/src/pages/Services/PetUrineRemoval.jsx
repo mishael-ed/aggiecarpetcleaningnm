@@ -76,8 +76,9 @@ const PetUrineRemoval = () => {
           <div className="pur-different-image">
             <img
               src={require('../pet-urine-equipment.jpg')}
-              alt="Pet urine removal equipment"
+              alt="Water Claw technology"
             />
+            <p className="image-caption">Water Claw technology</p>
           </div>
         </div>
       </section>

@@ -80,8 +80,9 @@ const Navbar = () => {
           </li>
           
           <li className={`dropdown ${infoOpen ? 'dropdown-open' : ''}`}>
-            <span onClick={() => setInfoOpen(!infoOpen)} className={location.pathname.startsWith('/info') || location.pathname.startsWith('/blog') ? 'active-link' : ''}>Info</span>
+            <span onClick={() => setInfoOpen(!infoOpen)} className={location.pathname.startsWith('/info') || location.pathname.startsWith('/blog') || location.pathname === '/about' ? 'active-link' : ''}>Info</span>
             <ul className="dropdown-menu">
+              <li><Link to="/about" onClick={closeMobileMenu} className={location.pathname === '/about' ? 'active-link' : ''}>About</Link></li>
               <li><Link to="/info/areas-we-serve" onClick={closeMobileMenu} className={location.pathname === '/info/areas-we-serve' ? 'active-link' : ''}>Areas We Serve</Link></li>
               <li><Link to="/info/reviews" onClick={closeMobileMenu} className={location.pathname === '/info/reviews' ? 'active-link' : ''}>Reviews</Link></li>
               <li><Link to="/info/faq" onClick={closeMobileMenu} className={location.pathname === '/info/faq' ? 'active-link' : ''}>FAQ</Link></li>
