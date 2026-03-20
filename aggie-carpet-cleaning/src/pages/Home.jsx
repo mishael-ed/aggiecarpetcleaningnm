@@ -18,7 +18,26 @@ const Home = () => {
               LAS CRUCES & EL PASO — FAST DRY TIMES,<br />
               PRO GRADE EQUIPMENT
             </h1>
+            
+            {/* Offer Banner */}
+            <div className="offer-banner">
+              🎉 First-Time Customers: Get 1 Room FREE with Any Service
+            </div>
+            
             <p className="hero-subtitle">Trusted by 500+ homeowners. Pet stains, odors, and deep dirt removed the right way.</p>
+            
+            {/* Trust Badges */}
+            <div className="trust-badges">
+              <div className="badge">
+                <span className="stars">⭐⭐⭐⭐⭐</span>
+                <span className="badge-text">5-Star Rated on Google</span>
+              </div>
+              <div className="badge">
+                <span className="badge-icon">🏆</span>
+                <span className="badge-text">Nextdoor Neighborhood Fav</span>
+              </div>
+            </div>
+            
             <Link to="/contact" className="hero-btn">BOOK CLEANING</Link>
           </div>
         </div>
