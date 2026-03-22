@@ -35,14 +35,12 @@ const Home = () => {
             
             {/* Trust Badges */}
             <div className="trust-badges">
-              <div className="badge">
-                <span className="stars">⭐⭐⭐⭐⭐</span>
-                <span className="badge-text">5-Star Rated on Google</span>
-              </div>
-              <div className="badge">
-                <span className="badge-icon">🏆</span>
-                <span className="badge-text">Nextdoor Neighborhood Fav</span>
-              </div>
+              <a href="https://maps.app.goo.gl/yJjq6bcrfQ3AzNNq7?g_st=ic" target="_blank" rel="noreferrer" className="badge-link">
+                <img src={require('./google-badge.png')} alt="5-Star Rated on Google" className="trust-badge-img" />
+              </a>
+              <a href="https://nextdoor.com/page/aggie-carpet-cleaning-las-cruces-nm?share_platform=10&utm_campaign=1774012194377&share_action_id=ef7854a2-649e-498e-946d-8bdae8a0f938" target="_blank" rel="noreferrer" className="badge-link">
+                <img src={require('./nextdoor-badge.png')} alt="Nextdoor Neighborhood Fav" className="trust-badge-img" />
+              </a>
             </div>
             
             <Link to="/contact" className="hero-btn">BOOK CLEANING</Link>

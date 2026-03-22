@@ -277,33 +277,38 @@ body {
   display: flex;
   gap: 2rem;
   justify-content: center;
+  align-items: center;
   margin: 2rem 0 3rem;
   flex-wrap: wrap;
 }
 
-.badge {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  background: rgba(255, 255, 255, 0.15);
-  padding: 0.75rem 1.25rem;
-  border-radius: 50px;
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+.badge-link {
+  display: block;
+  transition: transform 0.3s ease;
 }
 
-.stars {
-  font-size: 1rem;
+.badge-link:hover {
+  transform: scale(1.05);
 }
 
-.badge-icon {
-  font-size: 1.3rem;
+.trust-badge-img {
+  height: 80px;
+  width: auto;
+  display: block;
 }
 
-.badge-text {
-  font-size: 0.95rem;
-  font-weight: 500;
-  color: white;
+/* Make Nextdoor badge bigger */
+.badge-link:nth-child(2) .trust-badge-img {
+  height: 95px;
+}
+
+.trust-badge-img:nth-child(1) {
+  /* Google badge - default size */
+}
+
+.badge-link:nth-child(2) .trust-badge-img {
+  /* Nextdoor badge - slightly bigger */
+  height: 95px;
 }
 
 .hero-btn {
@@ -632,9 +637,11 @@ body {
   }
 
   .trust-badges {
-    flex-direction: column;
-    gap: 1rem;
-    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .trust-badge-img {
+    height: 60px;
   }
 
   .badge {
