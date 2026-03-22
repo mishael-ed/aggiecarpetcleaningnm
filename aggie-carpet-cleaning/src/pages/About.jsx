@@ -12,7 +12,7 @@ const About = () => {
       {/* Hero Section */}
       <section className="about-hero">
         <div className="about-hero-inner">
-          <h1>ABOUT AGGIE CARPET CLEANING</h1>
+          <h1>MEET THE TEAM</h1>
           <h2>Your trusted carpet cleaning partner in Las Cruces and El Paso</h2>
         </div>
       </section>
@@ -42,13 +42,29 @@ const About = () => {
         </div>
       </section>
 
-      {/* Meet the Van Section */}
-      <section className="van-section">
-        <div className="van-content-center">
-          <h2>MEET THE VAN</h2>
-          <p>
-            "Vroom Vroom 🚐 2018 Chevrolet Express with a Prochem Legend SE inside. A true workhorse"
-          </p>
+      {/* Meet the Strategist Section */}
+      <section className="strategist-section">
+        <div className="strategist-container">
+          <div className="strategist-content">
+            <h2>MEET OUR LEAD MARKETING STRATEGIST</h2>
+            <p>
+              Behind every successful cleaning is a commitment to client satisfaction that goes beyond the job itself. 
+              Our Lead Marketing Strategist serves as the heartbeat of client relations—ensuring every homeowner not 
+              only discovers our services but becomes part of the Aggie family. Acting as a human CRM, this role bridges 
+              the gap between first contact and lifelong loyalty, orchestrating seamless client acquisition while 
+              guaranteeing that each customer receives the exceptional service that keeps them coming back. From crafting 
+              personalized outreach to following up on every detail, our strategist ensures that your experience with 
+              Aggie Carpet Cleaning is nothing short of outstanding—because great service isn't just what we do, 
+              it's who we are.
+            </p>
+          </div>
+          
+          <div className="strategist-image">
+            <img
+              src={require('./strategist-photo.jpg')}
+              alt="Lead Marketing Strategist - Aggie Carpet Cleaning"
+            />
+          </div>
         </div>
       </section>
 

@@ -104,32 +104,43 @@
   box-shadow: 0 6px 20px rgba(0,188,212,0.4);
 }
 
-/* ── Van Section ── */
-.van-section {
+/* ── Strategist Section ── */
+.strategist-section {
   background: #f8f9fa;
-  padding: 4rem 3rem;
-  text-align: center;
+  padding: 5rem 3rem;
 }
 
-.van-content-center {
-  max-width: 800px;
+.strategist-container {
+  max-width: 1200px;
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
 }
 
-.van-content-center h2 {
+.strategist-content h2 {
   font-size: 2.5rem;
   font-weight: 800;
   color: #1a3a4a;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
   line-height: 1.2;
   letter-spacing: -0.02em;
 }
 
-.van-content-center p {
-  font-size: 1.2rem;
+.strategist-content p {
+  font-size: 1.1rem;
   color: #4a5568;
   line-height: 1.8;
-  font-style: italic;
+}
+
+.strategist-image img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.1);
 }
 
 /* Responsive */
@@ -159,7 +170,16 @@
     font-size: 2rem; 
   }
 
-  .van-content-center h2 {
-    font-size: 2rem;
+  .strategist-container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .strategist-image img {
+    height: 400px;
+  }
+
+  .strategist-content h2 { 
+    font-size: 2rem; 
   }
 }
