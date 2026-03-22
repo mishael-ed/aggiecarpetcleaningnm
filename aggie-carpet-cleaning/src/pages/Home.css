@@ -291,11 +291,17 @@ body {
   transform: scale(1.05);
 }
 
-.trust-badge-img {
+.google-badge-img {
   height: 80px;
   width: auto;
   display: block;
-  max-width: 100%;
+  object-fit: contain;
+}
+
+.nextdoor-badge-img {
+  height: 90px;
+  width: auto;
+  display: block;
   object-fit: contain;
 }
 
@@ -642,9 +648,12 @@ body {
     gap: 1.5rem;
   }
 
-  .trust-badge-img {
+  .google-badge-img {
     height: 60px;
-    max-width: 150px;
+  }
+
+  .nextdoor-badge-img {
+    height: 70px;
   }
 
   .badge {
