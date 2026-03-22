@@ -295,6 +295,8 @@ body {
   height: 80px;
   width: auto;
   display: block;
+  max-width: 100%;
+  object-fit: contain;
 }
 
 /* Make Nextdoor badge bigger */
@@ -642,6 +644,7 @@ body {
 
   .trust-badge-img {
     height: 60px;
+    max-width: 150px;
   }
 
   .badge {
