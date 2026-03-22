@@ -84,8 +84,7 @@ const FurnitureRugs = () => {
             </div>
 
             <p className="fr-disclaimer">
-              Schedule furniture or rug cleaning services with us today to get your upholstery back to
-              normal. Please note that we do not clean leather furniture or oriental rugs.
+              Schedule furniture or rug cleaning services with us today to get your upholstery back to normal.
             </p>
           </div>
 
