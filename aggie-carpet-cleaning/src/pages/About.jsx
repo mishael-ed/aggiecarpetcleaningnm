@@ -46,16 +46,20 @@ const About = () => {
       <section className="strategist-section">
         <div className="strategist-container">
           <div className="strategist-content">
-            <h2>MEET OUR LEAD MARKETING STRATEGIST</h2>
+            <h2>MEET THE LEAD MARKETING STRATEGIST</h2>
             <p>
-              Behind every successful cleaning is a commitment to client satisfaction that goes beyond the job itself. 
-              Our Lead Marketing Strategist serves as the heartbeat of client relations—ensuring every homeowner not 
-              only discovers our services but becomes part of the Aggie family. Acting as a human CRM, this role bridges 
-              the gap between first contact and lifelong loyalty, orchestrating seamless client acquisition while 
-              guaranteeing that each customer receives the exceptional service that keeps them coming back. From crafting 
-              personalized outreach to following up on every detail, our strategist ensures that your experience with 
-              Aggie Carpet Cleaning is nothing short of outstanding—because great service isn't just what we do, 
-              it's who we are.
+              "Hi, I’m Ed, the lead marketing strategist for Aggie Carpet Cleaning. 
+              I came on board with a focus on helping the business grow, connect with more people, 
+              and make it easier for customers to get the cleaning services they need. 
+              From improving how we communicate with clients to setting up systems that 
+              make booking and follow-ups seamless, my goal is to make sure every interaction 
+              with our brand feels smooth and professional.
+              I’m passionate about building systems that don’t just bring in customers, but 
+              actually create a better experience for them from start to finish. Seeing the business grow 
+              and helping more homes get cleaner, healthier spaces is something I take pride in.
+              When I’m not working on strategy, I’m usually exploring new ideas, working on 
+              tech projects, or finding better ways to improve how businesses operate.
+              It’s a pleasure to be part of the team, and we truly appreciate the opportunity to serve you"
             </p>
           </div>
           
