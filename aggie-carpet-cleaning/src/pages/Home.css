@@ -299,7 +299,7 @@ body {
 }
 
 .nextdoor-badge-img {
-  height: 90px;
+  height: 80px;
   width: auto;
   display: block;
   object-fit: contain;
@@ -365,6 +365,42 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.85);
+  z-index: 1;
+  transition: all 0.3s;
+}
+
+.card:hover::before {
+  background: rgba(255, 255, 255, 0.75);
+}
+
+.card * {
+  position: relative;
+  z-index: 2;
+}
+
+.card:nth-child(1) {
+  background-image: url('./carpet-card-bg.jpg');
+}
+
+.card:nth-child(2) {
+  background-image: url('./furniture-card-bg.jpg');
+}
+
+.card:nth-child(3) {
+  background-image: url('./tile-card-bg.jpg');
 }
 
 .card:hover {
@@ -653,7 +689,7 @@ body {
   }
 
   .nextdoor-badge-img {
-    height: 70px;
+    height: 60px;
   }
 
   .badge {
