@@ -215,7 +215,7 @@ body {
 }
 
 /* Hero Section */
-  .hero {
+.hero {
   position: relative;
   min-height: 600px;
   background: linear-gradient(rgba(20, 40, 50, 0.75), rgba(20, 40, 50, 0.75)),
@@ -310,15 +310,6 @@ body {
   height: 95px;
 }
 
-.trust-badge-img:nth-child(1) {
-  /* Google badge - default size */
-}
-
-.badge-link:nth-child(2) .trust-badge-img {
-  /* Nextdoor badge - slightly bigger */
-  height: 95px;
-}
-
 .hero-btn {
   background: #00bcd4;
   color: white;
@@ -377,13 +368,13 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(255, 255, 255, 0.85);
+  background: rgba(0, 0, 0, 0.65);
   z-index: 1;
   transition: all 0.3s;
 }
 
 .card:hover::before {
-  background: rgba(255, 255, 255, 0.75);
+  background: rgba(0, 0, 0, 0.55);
 }
 
 .card * {
@@ -410,7 +401,7 @@ body {
 
 .card h3 {
   font-size: 1.3rem;
-  color: #2c3e50;
+  color: #ffffff;
   font-weight: 600;
   margin-bottom: 1rem;
   line-height: 1.3;
@@ -426,7 +417,7 @@ body {
 .arrow-circle {
   width: 50px;
   height: 50px;
-  background: #1a3a4a;
+  background: #00bcd4;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -438,7 +429,7 @@ body {
 }
 
 .arrow-circle:hover {
-  background: #2c5468;
+  background: #00a5bb;
   transform: translateX(4px);
 }
 
