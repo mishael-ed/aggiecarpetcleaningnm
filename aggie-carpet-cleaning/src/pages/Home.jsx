@@ -57,10 +57,6 @@ const Home = () => {
               </a>
             </div>
             
-            <div className="hero-actions">
-              <Link to="/contact" className="hero-btn">BOOK CLEANING</Link>
-              <a href={companyPhoneLink} className="hero-btn hero-btn-secondary">CALL NOW</a>
-            </div>
           </div>
         </div>
 
