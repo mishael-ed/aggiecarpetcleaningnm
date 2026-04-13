@@ -5,12 +5,15 @@ import Footer from '../Components/Footer';
 import './Home.css';
 
 const Home = () => {
+  const companyPhoneDisplay = '(575) 649-3197';
+  const companyPhoneLink = 'tel:+15756493197';
+
   return (
     <div className="home">
       <Navbar />
 
       {/* Sticky Phone Button */}
-      <a href="tel:5756493197" className="sticky-phone-btn" aria-label="Call Us">
+      <a href={companyPhoneLink} className="sticky-phone-btn" aria-label={`Call Us at ${companyPhoneDisplay}`}>
         <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32">
           <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
         </svg>
@@ -32,6 +35,17 @@ const Home = () => {
             </div>
             
             <p className="hero-subtitle">Trusted by 500+ homeowners. Pet stains, odors, and deep dirt removed the right way.</p>
+
+            <div className="hero-phone-highlight">
+              <span className="hero-phone-label">Call for same-day availability:</span>
+              <a
+                href={companyPhoneLink}
+                className="hero-phone-link"
+                aria-label={`Call Aggie Carpet Cleaning at ${companyPhoneDisplay}`}
+              >
+                {companyPhoneDisplay}
+              </a>
+            </div>
             
             {/* Trust Badges */}
             <div className="trust-badges">
@@ -43,7 +57,10 @@ const Home = () => {
               </a>
             </div>
             
-            <Link to="/contact" className="hero-btn">BOOK CLEANING</Link>
+            <div className="hero-actions">
+              <Link to="/contact" className="hero-btn">BOOK CLEANING</Link>
+              <a href={companyPhoneLink} className="hero-btn hero-btn-secondary">CALL NOW</a>
+            </div>
           </div>
         </div>
 
