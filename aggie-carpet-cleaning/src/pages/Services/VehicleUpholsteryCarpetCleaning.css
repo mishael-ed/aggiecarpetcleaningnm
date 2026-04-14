@@ -1,0 +1,117 @@
+.vucc-page {
+  min-height: 100vh;
+  font-family: 'Volte', sans-serif;
+}
+
+.vucc-hero {
+  background: linear-gradient(135deg, #e0f4fb 0%, #f0fbff 60%, #e8f8ff 100%);
+  padding: 5rem 3rem 6rem;
+}
+
+.vucc-hero-inner {
+  max-width: 900px;
+}
+
+.vucc-hero-inner h1 {
+  font-size: 2.6rem;
+  font-weight: 800;
+  color: #1a3a4a;
+  margin-bottom: 1rem;
+}
+
+.vucc-hero-inner h2 {
+  font-size: 1.6rem;
+  color: #1a3a4a;
+  margin-bottom: 1.25rem;
+}
+
+.vucc-hero-inner p {
+  color: #444;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.vucc-connect-btn {
+  display: inline-block;
+  background: #00bcd4;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.9rem 2.1rem;
+  border-radius: 50px;
+  font-weight: 600;
+}
+
+.vucc-details {
+  background: #fff;
+  padding: 5rem 3rem 6rem;
+}
+
+.vucc-details-inner {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.vucc-details-text h2 {
+  font-size: 2.1rem;
+  color: #1a3a4a;
+  margin-bottom: 1.3rem;
+}
+
+.vucc-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.vucc-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.vucc-check {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #00bcd4;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.vucc-image img {
+  width: 100%;
+  height: 420px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+@media (max-width: 900px) {
+  .vucc-hero {
+    padding: 3rem 1.5rem 4rem;
+  }
+
+  .vucc-hero-inner h1 {
+    font-size: 2rem;
+  }
+
+  .vucc-details {
+    padding: 3rem 1.5rem 4rem;
+  }
+
+  .vucc-details-inner {
+    grid-template-columns: 1fr;
+  }
+}
+

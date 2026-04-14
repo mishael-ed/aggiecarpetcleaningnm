@@ -26,7 +26,7 @@ const Home = () => {
           <div className="hero-content">
             <h1>
               PREMIUM CARPET CLEANING IN<br />
-              LAS CRUCES & EL PASO - FAST DRY TIMES,<br />
+              LAS CRUCES and EL PASO - FAST DRY TIMES,<br />
               PRO GRADE EQUIPMENT
             </h1>
             
@@ -85,14 +85,14 @@ const Home = () => {
           </div>
 
           <div className="card card-carpet-install-repair">
-            <h3>Carpet Installation & Repair</h3>
+            <h3>Carpet Installation and Repair</h3>
             <Link to="/services/carpet-installation-repair" className="card-arrow">
               <div className="arrow-circle">&#8594;</div>
             </Link>
           </div>
 
           <div className="card card-tile-install-repair">
-            <h3>Tile Installation & Repair</h3>
+            <h3>Tile Installation and Repair</h3>
             <Link to="/services/tile-installation-repair" className="card-arrow">
               <div className="arrow-circle">&#8594;</div>
             </Link>
@@ -101,6 +101,13 @@ const Home = () => {
           <div className="card card-laminate-install">
             <h3>Laminate Flooring Installation</h3>
             <Link to="/services/laminate-flooring-installation" className="card-arrow">
+              <div className="arrow-circle">&#8594;</div>
+            </Link>
+          </div>
+
+          <div className="card card-vehicle-upholstery">
+            <h3>Vehicle Upholstery and Carpet Cleaning</h3>
+            <Link to="/services/vehicle-upholstery-carpet-cleaning" className="card-arrow">
               <div className="arrow-circle">&#8594;</div>
             </Link>
           </div>
@@ -190,13 +197,17 @@ const Home = () => {
               </div>
               <div className="service-item">
                 <span className="checkmark">&#10003;</span>
+                <span>Vehicle upholstery and carpet cleaning services</span>
+              </div>
+              <div className="service-item">
+                <span className="checkmark">&#10003;</span>
                 <span>Pet urine removal services</span>
               </div>
             </div>
 
             <p className="outro-text">
               Leave it to us to refresh your living spaces. Reach out now for professional steam cleaning 
-              services in Las Cruces & El Paso, TX.
+              services in Las Cruces and El Paso, TX.
             </p>
           </div>
 

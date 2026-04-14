@@ -78,6 +78,7 @@ const Navbar = () => {
               <li><Link to="/services/carpet-installation-repair" onClick={closeMobileMenu} className={location.pathname === '/services/carpet-installation-repair' ? 'active-link' : ''}>Carpet Installation & Carpet Repair</Link></li>
               <li><Link to="/services/tile-installation-repair" onClick={closeMobileMenu} className={location.pathname === '/services/tile-installation-repair' ? 'active-link' : ''}>Tile Installation & Tile Repair</Link></li>
               <li><Link to="/services/laminate-flooring-installation" onClick={closeMobileMenu} className={location.pathname === '/services/laminate-flooring-installation' ? 'active-link' : ''}>Laminate Flooring Installation</Link></li>
+              <li><Link to="/services/vehicle-upholstery-carpet-cleaning" onClick={closeMobileMenu} className={location.pathname === '/services/vehicle-upholstery-carpet-cleaning' ? 'active-link' : ''}>Vehicle Upholstery and Carpet Cleaning</Link></li>
               <li><Link to="/services/pet-urine-removal" onClick={closeMobileMenu} className={location.pathname === '/services/pet-urine-removal' ? 'active-link' : ''}>Pet Urine Removal</Link></li>
             </ul>
           </li>
@@ -87,6 +88,7 @@ const Navbar = () => {
             <ul className="dropdown-menu">
               <li><Link to="/about" onClick={closeMobileMenu} className={location.pathname === '/about' ? 'active-link' : ''}>About</Link></li>
               <li><Link to="/info/areas-we-serve" onClick={closeMobileMenu} className={location.pathname === '/info/areas-we-serve' ? 'active-link' : ''}>Areas We Serve</Link></li>
+              <li><Link to="/info/our-favorite-places" onClick={closeMobileMenu} className={location.pathname === '/info/our-favorite-places' ? 'active-link' : ''}>Our Favorite Places</Link></li>
               <li><Link to="/info/reviews" onClick={closeMobileMenu} className={location.pathname === '/info/reviews' ? 'active-link' : ''}>Reviews</Link></li>
               <li><Link to="/info/faq" onClick={closeMobileMenu} className={location.pathname === '/info/faq' ? 'active-link' : ''}>FAQ</Link></li>
               <li><Link to="/info/blog" onClick={closeMobileMenu} className={location.pathname === '/info/blog' || location.pathname.startsWith('/blog') ? 'active-link' : ''}>Blog</Link></li>

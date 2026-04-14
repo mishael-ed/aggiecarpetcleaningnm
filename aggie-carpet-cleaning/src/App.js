@@ -9,10 +9,12 @@ import PetUrineRemoval from './pages/Services/PetUrineRemoval';
 import CarpetInstallRepair from './pages/Services/CarpetInstallRepair';
 import TileInstallRepair from './pages/Services/TileInstallRepair';
 import LaminateFlooringInstallation from './pages/Services/LaminateFlooringInstallation';
+import VehicleUpholsteryCarpetCleaning from './pages/Services/VehicleUpholsteryCarpetCleaning';
 import AreasWeServe from './pages/Info/AreasWeServe';
 import Reviews from './pages/Info/Reviews';
 import FAQ from './pages/Info/FAQ';
 import Blog from './pages/Info/Blog';
+import OurFavoritePlaces from './pages/Info/OurFavoritePlaces';
 import Contact from './pages/Contact';
 import CarpetCleanersLasCruces from './pages/Blog/CarpetCleanersLasCruces';
 import TileGroutElPaso from './pages/Blog/TileGroutElPaso';
@@ -35,7 +37,9 @@ function App() {
         <Route path="/services/carpet-installation-repair" element={<CarpetInstallRepair />} />
         <Route path="/services/tile-installation-repair" element={<TileInstallRepair />} />
         <Route path="/services/laminate-flooring-installation" element={<LaminateFlooringInstallation />} />
+        <Route path="/services/vehicle-upholstery-carpet-cleaning" element={<VehicleUpholsteryCarpetCleaning />} />
         <Route path="/info/areas-we-serve" element={<AreasWeServe />} />
+        <Route path="/info/our-favorite-places" element={<OurFavoritePlaces />} />
         <Route path="/info/reviews" element={<Reviews />} />
         <Route path="/info/faq" element={<FAQ />} />
         <Route path="/info/blog" element={<Blog />} />
