@@ -63,11 +63,25 @@
   background: transparent;
 }
 
+.ct-form-header {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  margin-bottom: 1.25rem;
+}
+
+.ct-form-logo {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
 .ct-form-wrap h3 {
   font-size: 1.5rem;
   font-weight: 600;
   color: #1a3a4a;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0;
 }
 
 .ct-form {
@@ -285,5 +299,10 @@
 
   .ct-row {
     grid-template-columns: 1fr;
+  }
+
+  .ct-form-logo {
+    width: 54px;
+    height: 54px;
   }
 }

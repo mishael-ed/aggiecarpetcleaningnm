@@ -152,7 +152,10 @@ const Contact = () => {
 
           {/* Right: Contact Form */}
           <div className="ct-form-wrap">
-            <h3>Contact Us!</h3>
+            <div className="ct-form-header">
+              <img src="/logo.png?v=aggie" alt="Aggie Carpet Cleaning Logo" className="ct-form-logo" />
+              <h3>Contact Us!</h3>
+            </div>
             <form className="ct-form" onSubmit={handleSubmit}>
               <div className="ct-row">
                 <div className="ct-field">

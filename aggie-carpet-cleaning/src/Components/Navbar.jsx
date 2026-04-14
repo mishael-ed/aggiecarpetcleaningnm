@@ -44,7 +44,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-container">
         <Link to="/" className="logo" onClick={closeMobileMenu}>
-          <img src="/logo.png" alt="Aggie Carpet Cleaning" />
+          <img src="/logo.png?v=aggie" alt="Aggie Carpet Cleaning" />
         </Link>
 
         <button 
