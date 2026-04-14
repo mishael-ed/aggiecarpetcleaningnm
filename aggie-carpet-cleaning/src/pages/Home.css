@@ -224,7 +224,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 4rem 2rem 10rem;
+  padding: 4rem 2rem 14rem;
 }
 
 .hero-overlay {
@@ -382,14 +382,14 @@ body {
 /* Service Cards */
 .service-cards {
   position: absolute;
-  bottom: -80px;
+  bottom: -170px;
   left: 50%;
   transform: translateX(-50%);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-  width: 80%;
-  max-width: 1200px;
+  width: 90%;
+  max-width: 1300px;
   padding: 0 2rem;
   z-index: 100;
 }
@@ -431,16 +431,28 @@ body {
   z-index: 2;
 }
 
-.card:nth-child(1) {
+.card-carpet {
   background-image: url('./carpet-card-bg.jpg');
 }
 
-.card:nth-child(2) {
+.card-furniture {
   background-image: url('./furniture-card-bg.jpg');
 }
 
-.card:nth-child(3) {
+.card-tile {
   background-image: url('./tile-card-bg.jpg');
+}
+
+.card-carpet-install-repair {
+  background-image: url('./carpet-cleaning-hero.jpg');
+}
+
+.card-tile-install-repair {
+  background-image: url('./tile-floor-bathroom.jpg');
+}
+
+.card-laminate-install {
+  background-image: url('./gray-sectional.jpg');
 }
 
 .card:hover {
@@ -591,7 +603,7 @@ body {
   background: #00bcd4;
   padding: 3rem 2rem;
   text-align: center;
-  margin-top: 100px;
+  margin-top: 240px;
 }
 
 .spanish-content {

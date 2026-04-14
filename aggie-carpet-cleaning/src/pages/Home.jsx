@@ -7,6 +7,7 @@ import './Home.css';
 const Home = () => {
   const companyPhoneDisplay = '(575) 649-3197';
   const companyPhoneLink = 'tel:+15756493197';
+  const professionalsSectionImage = '/images/professionals-service.jpg';
 
   return (
     <div className="home">
@@ -25,13 +26,13 @@ const Home = () => {
           <div className="hero-content">
             <h1>
               PREMIUM CARPET CLEANING IN<br />
-              LAS CRUCES & EL PASO — FAST DRY TIMES,<br />
+              LAS CRUCES & EL PASO - FAST DRY TIMES,<br />
               PRO GRADE EQUIPMENT
             </h1>
             
             {/* Offer Banner */}
             <div className="offer-banner">
-              🎉 First-Time Customers: Get 1 Room FREE with Any Service
+              First-Time Customers: Get 1 Room FREE with Any Service
             </div>
             
             <p className="hero-subtitle">Trusted by 500+ homeowners. Pet stains, odors, and deep dirt removed the right way.</p>
@@ -62,24 +63,45 @@ const Home = () => {
 
         {/* Service Cards */}
         <div className="service-cards">
-          <div className="card">
+          <div className="card card-carpet">
             <h3>Carpet</h3>
             <Link to="/services/carpet-cleaning" className="card-arrow">
-              <div className="arrow-circle">→</div>
+              <div className="arrow-circle">&#8594;</div>
             </Link>
           </div>
 
-          <div className="card">
+          <div className="card card-furniture">
             <h3>Furniture and Rugs</h3>
             <Link to="/services/furniture-rugs" className="card-arrow">
-              <div className="arrow-circle">→</div>
+              <div className="arrow-circle">&#8594;</div>
             </Link>
           </div>
 
-          <div className="card">
+          <div className="card card-tile">
             <h3>Tile and Grout</h3>
             <Link to="/services/tile-grout" className="card-arrow">
-              <div className="arrow-circle">→</div>
+              <div className="arrow-circle">&#8594;</div>
+            </Link>
+          </div>
+
+          <div className="card card-carpet-install-repair">
+            <h3>Carpet Installation & Repair</h3>
+            <Link to="/services/carpet-installation-repair" className="card-arrow">
+              <div className="arrow-circle">&#8594;</div>
+            </Link>
+          </div>
+
+          <div className="card card-tile-install-repair">
+            <h3>Tile Installation & Repair</h3>
+            <Link to="/services/tile-installation-repair" className="card-arrow">
+              <div className="arrow-circle">&#8594;</div>
+            </Link>
+          </div>
+
+          <div className="card card-laminate-install">
+            <h3>Laminate Flooring Installation</h3>
+            <Link to="/services/laminate-flooring-installation" className="card-arrow">
+              <div className="arrow-circle">&#8594;</div>
             </Link>
           </div>
         </div>
@@ -88,7 +110,7 @@ const Home = () => {
       {/* Spanish Section */}
       <section className="spanish-section">
         <div className="spanish-content">
-          <h2>¡SE HABLA ESPAÑOL!</h2>
+          <h2>!SE HABLA ESPANOL!</h2>
           <Link to="/contact" className="talk-btn">Talk With Us Now</Link>
         </div>
       </section>
@@ -129,33 +151,45 @@ const Home = () => {
             <h2>PROFESSIONALS AT YOUR SERVICE</h2>
             <p className="intro-text">
               You don't want to use harsh chemicals or store-bought treatments on your floor or furniture 
-              stains – it might only make the problem worse. Instead, hire the pros at Aggie Carpet Cleaning 
+              stains - it might only make the problem worse. Instead, hire the pros at Aggie Carpet Cleaning 
               for a job well done. Our full-service carpet cleaning company offers...
             </p>
             
             <div className="services-grid-list">
               <div className="service-item">
-                <span className="checkmark">✓</span>
+                <span className="checkmark">&#10003;</span>
                 <span>Carpet cleaning services</span>
               </div>
               <div className="service-item">
-                <span className="checkmark">✓</span>
+                <span className="checkmark">&#10003;</span>
                 <span>Tile floor cleaning services</span>
               </div>
               <div className="service-item">
-                <span className="checkmark">✓</span>
+                <span className="checkmark">&#10003;</span>
                 <span>Upholstery cleaning services</span>
               </div>
               <div className="service-item">
-                <span className="checkmark">✓</span>
+                <span className="checkmark">&#10003;</span>
                 <span>Grout cleaning services</span>
               </div>
               <div className="service-item">
-                <span className="checkmark">✓</span>
+                <span className="checkmark">&#10003;</span>
                 <span>Rug cleaning services</span>
               </div>
               <div className="service-item">
-                <span className="checkmark">✓</span>
+                <span className="checkmark">&#10003;</span>
+                <span>Carpet installation and carpet repair services</span>
+              </div>
+              <div className="service-item">
+                <span className="checkmark">&#10003;</span>
+                <span>Tile installation and tile repair services</span>
+              </div>
+              <div className="service-item">
+                <span className="checkmark">&#10003;</span>
+                <span>Laminate flooring installation services</span>
+              </div>
+              <div className="service-item">
+                <span className="checkmark">&#10003;</span>
                 <span>Pet urine removal services</span>
               </div>
             </div>
@@ -167,7 +201,14 @@ const Home = () => {
           </div>
 
           <div className="professionals-image">
-            <img src={require('./floor-equipment.jpg')} alt="Professional carpet cleaning equipment" />
+            <img
+              src={professionalsSectionImage}
+              alt="Professional carpet cleaning equipment"
+              onError={(e) => {
+                e.currentTarget.onerror = null;
+                e.currentTarget.src = require('./floor-equipment.jpg');
+              }}
+            />
           </div>
         </div>
       </section>
@@ -204,7 +245,7 @@ const Home = () => {
         </div>
 
         <p className="cta-text">
-          See what our carpet cleaning company is all about – schedule a consultation with us today.
+          See what our carpet cleaning company is all about - schedule a consultation with us today.
         </p>
 
         <a href="https://www.google.com/maps/place/Aggie+Carpet+Cleaning/@32.4182087,-106.820094,9z/data=!3m1!4b1!4m6!3m5!1s0x627876fdc26ad2c3:0xbcdcadaac9968bde!8m2!3d32.4182087!4d-106.820094!16s%2Fg%2F11kqw890q9?entry=tts&g_ep=EgoyMDI1MTIwOS4wIPu8ASoASAFQAw%3D%3D&skid=03fede66-fd27-4eac-8ced-52512dbee6c8" target="_blank" rel="noreferrer" className="google-badge">
