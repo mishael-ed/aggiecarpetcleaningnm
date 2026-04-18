@@ -30,11 +30,6 @@ const Home = () => {
               PRO GRADE EQUIPMENT
             </h1>
             
-            {/* Offer Banner */}
-            <div className="offer-banner">
-              First-Time Customers: Get 1 Room FREE with Any Service
-            </div>
-            
             <p className="hero-subtitle">Trusted by 500+ homeowners. Pet stains, odors, and deep dirt removed the right way.</p>
 
             <div className="hero-phone-highlight">
