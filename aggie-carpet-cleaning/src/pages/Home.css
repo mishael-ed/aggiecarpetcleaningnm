@@ -224,7 +224,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 4rem 2rem 14rem;
+  padding: 4rem 2rem 28rem;
 }
 
 .hero-overlay {
@@ -444,19 +444,19 @@ body {
 }
 
 .card-carpet-install-repair {
-  background-image: url('./carpet-cleaning-hero.jpg');
+  background-image: url('./carpetinstallation.jpeg');
 }
 
 .card-tile-install-repair {
-  background-image: url('./tile-floor-bathroom.jpg');
+  background-image: url('./tileinstallation.jpeg');
 }
 
 .card-laminate-install {
-  background-image: url('./gray-sectional.jpg');
+  background-image: url('./laminateflooring.jpeg');
 }
 
 .card-vehicle-upholstery {
-  background-image: url('./carpet-equipment-bedroom.jpg');
+  background-image: url('./cardetailing.jpeg');
 }
 
 .card:hover {
