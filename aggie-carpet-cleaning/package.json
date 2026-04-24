@@ -10,15 +10,12 @@
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
     "react-router-dom": "^7.13.0",
-    "react-snap": "^1.23.0",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "build:seo": "react-scripts build && react-snap",
-    "postbuild": "node scripts/postbuild.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -39,27 +36,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "reactSnap": {
-    "include": [
-      "/",
-      "/services/carpet-cleaning",
-      "/services/furniture-rugs",
-      "/services/tile-grout",
-      "/services/pet-urine-removal",
-      "/services/carpet-installation-repair",
-      "/services/tile-installation-repair",
-      "/services/laminate-flooring-installation",
-      "/services/vehicle-upholstery-carpet-cleaning",
-      "/info/areas-we-serve",
-      "/info/faq",
-      "/info/blog",
-      "/contact",
-      "/blog/how-to-choose-carpet-cleaners-las-cruces",
-      "/blog/el-paso-guide-tile-grout-cleaning",
-      "/blog/finding-quality-upholstery-cleaning-mesilla",
-      "/blog/carpet-cleaners-sunland-park"
-    ],
-    "skipThirdPartyRequests": true
   }
 }
