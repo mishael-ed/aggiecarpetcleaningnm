@@ -206,6 +206,62 @@
   border-radius: 8px;
 }
 
+.tg-details {
+  background: #f7fbfd;
+  padding: 0 3rem 6rem;
+}
+
+.tg-details-inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(280px, 1fr);
+  gap: 2rem;
+}
+
+.tg-details-copy,
+.tg-service-area-card {
+  background: white;
+  border: 1px solid #d9ebf2;
+  border-radius: 16px;
+  padding: 2rem;
+}
+
+.tg-details-copy h2 {
+  font-size: 1.8rem;
+  color: #1a3a4a;
+  margin: 0 0 1rem;
+}
+
+.tg-details-copy h2 + p,
+.tg-details-copy p + h2 {
+  margin-top: 1.25rem;
+}
+
+.tg-details-copy p,
+.tg-service-area-card p {
+  font-size: 1rem;
+  color: #4b5563;
+  line-height: 1.8;
+}
+
+.tg-details-copy a,
+.tg-service-area-card a {
+  color: #007d8a;
+  font-weight: 600;
+}
+
+.tg-service-area-card {
+  align-self: start;
+  box-shadow: 0 18px 50px rgba(26, 58, 74, 0.08);
+}
+
+.tg-service-area-card h3 {
+  font-size: 1.35rem;
+  color: #1a3a4a;
+  margin: 0 0 1rem;
+}
+
 /* ── Responsive ── */
 @media (max-width: 900px) {
   .tg-hero { padding: 3rem 1.5rem 4rem; }
@@ -215,6 +271,14 @@
   .tg-further-inner {
     grid-template-columns: 1fr;
     gap: 3rem;
+  }
+
+  .tg-details {
+    padding: 0 1.5rem 4rem;
+  }
+
+  .tg-details-inner {
+    grid-template-columns: 1fr;
   }
 
   .tg-further-text h2 { font-size: 1.9rem; }
