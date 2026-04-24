@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer';
+import PageSeo from '../Components/PageSeo';
 import './Home.css';
 
 const Home = () => {
@@ -11,6 +12,12 @@ const Home = () => {
 
   return (
     <div className="home">
+      <PageSeo
+        title="Carpet Cleaning in Las Cruces, NM and El Paso, TX | Aggie Carpet Cleaning"
+        description="Aggie Carpet Cleaning provides carpet cleaning, tile and grout cleaning, upholstery cleaning, pet odor treatment, and floor care in Las Cruces, NM and El Paso, TX."
+        canonicalPath="/"
+        keywords="carpet cleaning Las Cruces, carpet cleaning El Paso, tile cleaning Las Cruces, upholstery cleaning El Paso, grout cleaning Las Cruces"
+      />
       <Navbar />
 
       {/* Sticky Phone Button */}

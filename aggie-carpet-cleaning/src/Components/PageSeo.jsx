@@ -1,9 +1,18 @@
 import React from 'react';
+import SeoContext from './SeoContext';
 
 const SITE_URL = 'https://aggiecarpetcleaning.com';
 
 const PageSeo = ({ title, description, canonicalPath, keywords }) => {
   const canonicalUrl = `${SITE_URL}${canonicalPath}`;
+  const seoContext = React.useContext(SeoContext);
+
+  if (seoContext) {
+    seoContext.title = title;
+    seoContext.description = description;
+    seoContext.canonicalUrl = canonicalUrl;
+    seoContext.keywords = keywords;
+  }
 
   React.useEffect(() => {
     document.title = title;
