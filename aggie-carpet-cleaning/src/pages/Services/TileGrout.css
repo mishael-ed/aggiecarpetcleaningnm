@@ -284,3 +284,449 @@
   .tg-further-text h2 { font-size: 1.9rem; }
   .tg-further-image img { height: 300px; }
 }
+
+/* ── Location section (Las Cruces / El Paso) ── */
+.tg-location-section {
+  background: white;
+  padding: 5rem 3rem;
+}
+
+.tg-location-inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+.tg-location-copy {
+  background: #f7fbfd;
+  border: 1px solid #d9ebf2;
+  border-radius: 16px;
+  padding: 2rem;
+}
+
+.tg-location-copy h2 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #1a3a4a;
+  margin: 0 0 1rem;
+  line-height: 1.25;
+}
+
+.tg-location-copy p {
+  font-size: 0.95rem;
+  color: #4b5563;
+  line-height: 1.8;
+  margin-bottom: 0.75rem;
+}
+
+/* ── UL styles ── */
+.tg-ul {
+  list-style: none;
+  padding: 0;
+  margin: 0.75rem 0 1rem;
+}
+
+.tg-ul li {
+  padding: 0.3rem 0 0.3rem 1.4rem;
+  position: relative;
+  font-size: 0.95rem;
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+.tg-ul li::before {
+  content: '–';
+  position: absolute;
+  left: 0;
+  color: #00bcd4;
+  font-weight: 700;
+}
+
+/* ── Process section ── */
+.tg-process-section {
+  background: #f7fbfd;
+  padding: 5rem 3rem;
+}
+
+.tg-process-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.tg-process-inner > h2 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #1a3a4a;
+  margin: 0 0 1rem;
+  letter-spacing: -0.02em;
+}
+
+.tg-process-inner > p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 2.5rem;
+}
+
+.tg-process-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.tg-process-step {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  background: white;
+  border: 1px solid #d9ebf2;
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.tg-step-num {
+  min-width: 42px;
+  height: 42px;
+  background: #00bcd4;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.tg-step-content h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #1a3a4a;
+  margin: 0 0 0.4rem;
+}
+
+.tg-step-content p {
+  font-size: 0.95rem;
+  color: #4b5563;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* ── 3-column details override ── */
+.tg-details-3col {
+  grid-template-columns: 1fr 1fr 1fr !important;
+}
+
+/* ── Two-column section ── */
+.tg-two-col-section {
+  background: white;
+  padding: 5rem 3rem;
+}
+
+.tg-two-col-inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+.tg-two-col-card {
+  background: #f7fbfd;
+  border: 1px solid #d9ebf2;
+  border-radius: 16px;
+  padding: 2rem;
+}
+
+.tg-two-col-card h2 {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #1a3a4a;
+  margin: 0 0 1rem;
+  line-height: 1.25;
+}
+
+.tg-two-col-card p {
+  font-size: 0.95rem;
+  color: #4b5563;
+  line-height: 1.8;
+  margin-bottom: 0.75rem;
+}
+
+/* ── Trust section ── */
+.tg-trust-section {
+  background: linear-gradient(135deg, #e0f4fb 0%, #f0fbff 100%);
+  padding: 5rem 3rem;
+}
+
+.tg-trust-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.tg-trust-inner h2 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #1a3a4a;
+  margin: 0 0 1.25rem;
+  letter-spacing: -0.02em;
+}
+
+.tg-trust-inner p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+/* ── FAQ section ── */
+.tg-faq-section {
+  background: #f7fbfd;
+  padding: 5rem 3rem;
+}
+
+.tg-faq-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.tg-faq-inner > h2 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #1a3a4a;
+  margin: 0 0 2rem;
+  letter-spacing: -0.02em;
+}
+
+.tg-faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.tg-faq-item {
+  background: white;
+  border: 1px solid #d9ebf2;
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.tg-faq-item h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1a3a4a;
+  margin: 0 0 0.5rem;
+}
+
+.tg-faq-item p {
+  font-size: 0.95rem;
+  color: #4b5563;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* ── Schedule CTA section ── */
+.tg-schedule-section {
+  background: #1a3a4a;
+  padding: 5rem 3rem;
+  text-align: center;
+}
+
+.tg-schedule-inner {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.tg-schedule-inner h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: white;
+  margin: 0 0 1.25rem;
+}
+
+.tg-schedule-inner p {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.tg-schedule-inner .tg-connect-btn {
+  margin-top: 1rem;
+}
+
+/* ── Sealing section ── */
+.tg-sealing-section {
+  background: white;
+  padding: 5rem 3rem;
+}
+
+.tg-sealing-inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(280px, 1fr);
+  gap: 3rem;
+  align-items: start;
+}
+
+.tg-sealing-copy h2 {
+  font-size: 1.9rem;
+  font-weight: 800;
+  color: #1a3a4a;
+  margin: 0 0 1rem;
+}
+
+.tg-sealing-copy p {
+  font-size: 0.95rem;
+  color: #4b5563;
+  line-height: 1.8;
+  margin-bottom: 0.75rem;
+}
+
+.tg-sealing-aside {
+  background: #f7fbfd;
+  border: 1px solid #d9ebf2;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 18px 50px rgba(26, 58, 74, 0.08);
+}
+
+.tg-sealing-aside h3 {
+  font-size: 1.25rem;
+  color: #1a3a4a;
+  font-weight: 700;
+  margin: 0 0 0.75rem;
+}
+
+.tg-sealing-aside p {
+  font-size: 0.95rem;
+  color: #4b5563;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.tg-aside-links {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.25rem;
+}
+
+.tg-aside-links li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #e5eef2;
+}
+
+.tg-aside-links li:last-child {
+  border-bottom: none;
+}
+
+.tg-aside-links a,
+.tg-sealing-aside a {
+  color: #007d8a;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.tg-aside-links a:hover,
+.tg-sealing-aside a:hover {
+  text-decoration: underline;
+}
+
+/* ── Region section ── */
+.tg-region-section {
+  background: #f7fbfd;
+  padding: 5rem 3rem;
+}
+
+.tg-region-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.tg-region-inner h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #1a3a4a;
+  margin: 0 0 1.25rem;
+  letter-spacing: -0.02em;
+}
+
+.tg-region-inner p {
+  font-size: 0.95rem;
+  color: #4b5563;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+/* ── Commercial section ── */
+.tg-commercial-section {
+  background: white;
+  padding: 5rem 3rem;
+}
+
+.tg-commercial-inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+.tg-commercial-copy h2 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #1a3a4a;
+  margin: 0 0 1rem;
+  line-height: 1.25;
+}
+
+.tg-commercial-copy p {
+  font-size: 0.95rem;
+  color: #4b5563;
+  line-height: 1.8;
+  margin-bottom: 0.75rem;
+}
+
+/* ── Responsive additions ── */
+@media (max-width: 900px) {
+  .tg-location-section,
+  .tg-two-col-section,
+  .tg-process-section,
+  .tg-trust-section,
+  .tg-faq-section,
+  .tg-schedule-section,
+  .tg-sealing-section,
+  .tg-region-section,
+  .tg-commercial-section {
+    padding: 3rem 1.5rem;
+  }
+
+  .tg-location-inner,
+  .tg-two-col-inner,
+  .tg-commercial-inner,
+  .tg-sealing-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .tg-details-3col {
+    grid-template-columns: 1fr !important;
+  }
+
+  .tg-location-copy h2,
+  .tg-two-col-card h2,
+  .tg-sealing-copy h2,
+  .tg-commercial-copy h2 {
+    font-size: 1.5rem;
+  }
+
+  .tg-process-inner > h2,
+  .tg-trust-inner h2,
+  .tg-faq-inner > h2,
+  .tg-schedule-inner h2,
+  .tg-region-inner h2 {
+    font-size: 1.7rem;
+  }
+}
