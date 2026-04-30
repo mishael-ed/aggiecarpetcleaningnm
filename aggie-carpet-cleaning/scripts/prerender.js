@@ -125,6 +125,11 @@ const injectSeoTags = (html, seo) => {
     '<meta property="og:type" content="website">'
   );
 
+  if (seo.schema) {
+    const schemaTag = `<script type="application/ld+json">${JSON.stringify(seo.schema)}</script>`;
+    nextHtml = nextHtml.replace('</head>', `${schemaTag}</head>`);
+  }
+
   return nextHtml;
 };
 

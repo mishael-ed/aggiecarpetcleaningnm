@@ -5,6 +5,57 @@ import Footer from '../../Components/Footer';
 import PageSeo from '../../Components/PageSeo';
 import './TileGrout.css';
 
+const tileGroutSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'LocalBusiness',
+  name: 'Aggie Carpet Cleaning',
+  url: 'https://aggiecarpetcleaning.com',
+  telephone: '(505) 538-5469',
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: 'Las Cruces',
+    addressRegion: 'NM',
+    addressCountry: 'US',
+  },
+  areaServed: [
+    { '@type': 'City', name: 'Las Cruces', sameAs: 'https://en.wikipedia.org/wiki/Las_Cruces,_New_Mexico' },
+    { '@type': 'City', name: 'El Paso', sameAs: 'https://en.wikipedia.org/wiki/El_Paso,_Texas' },
+  ],
+  hasOfferCatalog: {
+    '@type': 'OfferCatalog',
+    name: 'Tile and Grout Cleaning Services',
+    itemListElement: [
+      {
+        '@type': 'Offer',
+        itemOffered: {
+          '@type': 'Service',
+          name: 'Tile Cleaning Las Cruces',
+          description:
+            'Professional tile cleaning in Las Cruces, NM. We remove embedded dirt, restore grout color, and improve the appearance of ceramic, porcelain, and other tile floors.',
+        },
+      },
+      {
+        '@type': 'Offer',
+        itemOffered: {
+          '@type': 'Service',
+          name: 'Grout Cleaning Las Cruces',
+          description:
+            'Deep grout cleaning in Las Cruces, NM. Our process lifts embedded soil from grout lines and restores a cleaner, brighter appearance.',
+        },
+      },
+      {
+        '@type': 'Offer',
+        itemOffered: {
+          '@type': 'Service',
+          name: 'Tile and Grout Cleaning El Paso',
+          description:
+            'Professional tile and grout cleaning in El Paso, TX. We target desert dust, hard water residue, and embedded grime to restore hard floors.',
+        },
+      },
+    ],
+  },
+};
+
 const TileGrout = () => {
   return (
     <div className="tg-page">
@@ -13,6 +64,7 @@ const TileGrout = () => {
         description="Professional tile and grout cleaning in Las Cruces, NM and El Paso, TX. Aggie Carpet Cleaning removes embedded soil, restores grout color, and helps hard floors stay cleaner longer."
         canonicalPath="/services/tile-grout"
         keywords="tile cleaning Las Cruces, grout cleaning Las Cruces, tile and grout cleaning El Paso, tile floor cleaning El Paso, hard floor cleaning"
+        schema={tileGroutSchema}
       />
       <Navbar />
 

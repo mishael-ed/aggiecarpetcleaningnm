@@ -3,7 +3,7 @@ import SeoContext from './SeoContext';
 
 const SITE_URL = 'https://aggiecarpetcleaning.com';
 
-const PageSeo = ({ title, description, canonicalPath, keywords }) => {
+const PageSeo = ({ title, description, canonicalPath, keywords, schema }) => {
   const canonicalUrl = `${SITE_URL}${canonicalPath}`;
   const seoContext = React.useContext(SeoContext);
 
@@ -12,6 +12,9 @@ const PageSeo = ({ title, description, canonicalPath, keywords }) => {
     seoContext.description = description;
     seoContext.canonicalUrl = canonicalUrl;
     seoContext.keywords = keywords;
+    if (schema) {
+      seoContext.schema = schema;
+    }
   }
 
   React.useEffect(() => {
@@ -52,7 +55,19 @@ const PageSeo = ({ title, description, canonicalPath, keywords }) => {
     updateMeta('property', 'og:description', description);
     updateMeta('property', 'og:url', canonicalUrl);
     updateLink('canonical', canonicalUrl);
-  }, [canonicalUrl, description, keywords, title]);
+
+    if (schema) {
+      const scriptId = 'page-schema-ld';
+      let scriptEl = document.getElementById(scriptId);
+      if (!scriptEl) {
+        scriptEl = document.createElement('script');
+        scriptEl.type = 'application/ld+json';
+        scriptEl.id = scriptId;
+        document.head.appendChild(scriptEl);
+      }
+      scriptEl.text = JSON.stringify(schema);
+    }
+  }, [canonicalUrl, description, keywords, schema, title]);
 
   return null;
 };
