@@ -60,10 +60,10 @@ const TileGrout = () => {
   return (
     <div className="tg-page">
       <PageSeo
-        title="Tile Cleaning Las Cruces, NM | Professional Tile and Grout Cleaning | Aggie Carpet Cleaning"
-        description="Professional tile cleaning in Las Cruces, NM and El Paso, TX. Aggie Carpet Cleaning removes embedded dirt, dark grout lines, and buildup from kitchens, bathrooms, and high-traffic areas."
+        title="Tile & Grout Cleaning Las Cruces, NM | Professional Tile Cleaning | Aggie Carpet Cleaning"
+        description="Professional tile and grout cleaning in Las Cruces, NM and El Paso, TX. Aggie Carpet Cleaning removes embedded dirt, dark grout lines, and buildup using truck-mounted hot water extraction."
         canonicalPath="/services/tile-grout"
-        keywords="tile cleaning Las Cruces, grout cleaning Las Cruces, tile and grout cleaning Las Cruces NM, tile floor cleaning Las Cruces, tile and grout cleaning El Paso, hard floor cleaning"
+        keywords="tile cleaning Las Cruces, grout cleaning Las Cruces, tile and grout cleaning Las Cruces NM, tile floor cleaning Las Cruces, tile and grout cleaning El Paso, grout sealing Las Cruces"
         schema={tileGroutSchema}
       />
       <Navbar />
@@ -71,143 +71,76 @@ const TileGrout = () => {
       {/* Hero */}
       <section className="tg-hero">
         <div className="tg-hero-inner">
-          <h1>Professional Tile and Grout Cleaning in Las Cruces, NM and El Paso, TX</h1>
-          <h2>Deep tile floor cleaning that removes embedded dirt, dark grout lines, dull buildup, and everyday grime from high-traffic areas throughout Las Cruces and El Paso.</h2>
-          <p>
-            Tile and grout are durable, but they are also naturally porous. Over time, dirt, oils, soap
-            residue, desert dust, and foot traffic settle deep into grout lines and textured tile surfaces.
-            Even homes that are cleaned regularly can start to develop dark grout, cloudy tile, or floors
-            that never seem fully clean no matter how much they are mopped.
-          </p>
-          <p>
-            Aggie Carpet Cleaning provides professional tile and grout cleaning services for homeowners in
-            Las Cruces, El Paso, and surrounding communities including Sonoma Ranch, Metro Verde, Picacho
-            Hills, Las Alturas, Talavera, and nearby neighborhoods.
-          </p>
-          <p>
-            We use professional-grade tile cleaning equipment and proven deep-cleaning methods to loosen
-            embedded grime, lift residue from grout lines, and restore a noticeably cleaner and brighter
-            appearance to your floors. Whether you need kitchen tile cleaning, bathroom grout cleaning,
-            shower tile restoration, or whole-home tile cleaning, our goal is to leave your hard floors
-            looking fresher, cleaner, and easier to maintain.
-          </p>
-          <p className="tg-cta-line">
-            If your tile floors still look dirty immediately after mopping, professional tile and grout
-            cleaning is usually the missing step.
-          </p>
-          <Link to="/contact" className="tg-connect-btn">Let's Connect</Link>
-        </div>
-      </section>
-
-      {/* Why choose professional tile cleaning */}
-      <section className="tg-further">
-        <div className="tg-further-inner">
-          <div className="tg-further-text">
-            <h2>Why Homeowners in Las Cruces and El Paso Choose Professional Tile Cleaning</h2>
+          <div className="tg-hero-content">
+            <h1>Tile &amp; Grout Cleaning in Las Cruces, NM &amp; El Paso, TX</h1>
+            <h2>Professional Tile, Grout Cleaning &amp; Sealing Services That Restore Your Floors</h2>
             <p>
-              Many homeowners are surprised by how much dirt can become trapped inside grout lines over
-              time. Traditional mopping often pushes dirty water into porous grout instead of fully
-              removing it. As residue builds up, grout lines can turn dark, uneven, or permanently stained
-              in appearance.
+              If your tile floors look dull, stained, or permanently dirty no matter how much you mop,
+              you're not alone. Over time, grout absorbs dirt, oils, spills, and bacteria that regular
+              cleaning simply cannot remove. At Aggie Carpet Cleaning, we provide professional tile and
+              grout cleaning in Las Cruces, NM, El Paso, TX, and surrounding areas using high-powered
+              truck-mounted hot water extraction and specialized rotary cleaning tools designed to restore
+              your floors back to like-new condition.
             </p>
             <p>
-              Professional tile and grout cleaning goes beyond surface-level cleaning by targeting the
-              embedded buildup that household products cannot fully remove.
+              We don't just clean the surface — we deep clean the pores of your grout lines and restore
+              the original color and brightness of your tile floors.
             </p>
-            <p>Our tile cleaning service can help:</p>
-            <div className="tg-checklist">
-              <div className="tg-check-item">
-                <span className="tg-checkmark">✓</span>
-                <span>Remove embedded dirt, grease, soap residue, and tracked-in soil</span>
-              </div>
-              <div className="tg-check-item">
-                <span className="tg-checkmark">✓</span>
-                <span>Brighten grout lines and improve the appearance of tile floors</span>
-              </div>
-              <div className="tg-check-item">
-                <span className="tg-checkmark">✓</span>
-                <span>Eliminate dull haze and residue left behind by regular mopping</span>
-              </div>
-              <div className="tg-check-item">
-                <span className="tg-checkmark">✓</span>
-                <span>Improve the appearance of kitchens, bathrooms, laundry rooms, and entryways</span>
-              </div>
-              <div className="tg-check-item">
-                <span className="tg-checkmark">✓</span>
-                <span>Help floors look cleaner and feel fresher throughout the home</span>
-              </div>
-              <div className="tg-check-item">
-                <span className="tg-checkmark">✓</span>
-                <span>Restore tile surfaces affected by heavy foot traffic and everyday wear</span>
-              </div>
-            </div>
-            <p className="tg-outro">
-              Regular deep tile cleaning can also help extend the life of your hard floors by removing
-              abrasive soil and buildup that slowly wears down the surface over time.
-            </p>
+            <p className="tg-cta-line">Contact us today to schedule your tile and grout cleaning appointment!</p>
+            <Link to="/contact" className="tg-connect-btn">Let's Connect</Link>
           </div>
-          <div className="tg-further-image">
+          <div className="tg-hero-img">
             <img
-              src={require('../tile-floor-bathroom.jpg')}
-              alt="Professional tile and grout cleaning in Las Cruces"
+              src="/images/tileandgroutcleaning/tile-grout-cleaning-las-cruces-nm.jpeg"
+              alt="Professional tile and grout cleaning in Las Cruces NM – Aggie Carpet Cleaning restoring tile floors"
             />
           </div>
         </div>
       </section>
 
-      {/* Las Cruces + El Paso two-up */}
-      <section className="tg-location-section">
-        <div className="tg-location-inner">
-          <div className="tg-location-copy">
-            <h2>Tile and Grout Cleaning for Las Cruces Homes</h2>
+      {/* Why Gets Dirty */}
+      <section className="tg-further">
+        <div className="tg-further-inner">
+          <div className="tg-further-text">
+            <h2>Why Tile &amp; Grout Gets So Dirty (Even If You Mop Regularly)</h2>
             <p>
-              Homes throughout Las Cruces deal with a unique combination of desert dust, outdoor debris,
-              fine soil, and dry climate conditions. Even in newer homes, those particles settle deep into
-              grout joints and textured tile surfaces where ordinary mopping cannot fully reach.
+              Most homeowners assume mopping is enough to keep tile floors clean. Unfortunately,
+              traditional mopping often makes grout worse over time by pushing dirty water deeper into
+              the porous grout lines.
             </p>
-            <p>
-              This is especially common in neighborhoods like Sonoma Ranch, Metro Verde, Picacho Hills,
-              Las Alturas, and Talavera where tile flooring is extremely common due to the Southwestern
-              climate and style of local homes.
-            </p>
-            <p>Over time, homeowners often notice:</p>
-            <ul className="tg-ul">
-              <li>Dark grout lines</li>
-              <li>Dingy-looking tile</li>
-              <li>Cloudy or uneven floors</li>
-              <li>Sticky residue after mopping</li>
-              <li>Soil buildup near entryways</li>
-              <li>Dirty-looking kitchen grout</li>
-              <li>Bathroom tile discoloration</li>
-              <li>High-traffic wear patterns</li>
-            </ul>
-            <p>
-              Professional tile and grout cleaning helps remove the buildup hidden below the surface so
-              your floors can look brighter and cleaner again.
+            <p>Here's what actually causes dirty grout:</p>
+            <div className="tg-checklist">
+              <div className="tg-check-item">
+                <span className="tg-checkmark">–</span>
+                <span>Porous cement-based grout absorbs liquids like a sponge</span>
+              </div>
+              <div className="tg-check-item">
+                <span className="tg-checkmark">–</span>
+                <span>Grease and cooking oils build up in kitchen tile areas</span>
+              </div>
+              <div className="tg-check-item">
+                <span className="tg-checkmark">–</span>
+                <span>Soap residue from cleaning products leaves behind sticky film</span>
+              </div>
+              <div className="tg-check-item">
+                <span className="tg-checkmark">–</span>
+                <span>Dirt and sand get ground into grout lines from foot traffic</span>
+              </div>
+              <div className="tg-check-item">
+                <span className="tg-checkmark">–</span>
+                <span>Moisture buildup encourages mildew and discoloration</span>
+              </div>
+            </div>
+            <p className="tg-outro">
+              Once grout is stained, no household mop or cleaner can fully remove the buildup. That's
+              where professional tile and grout cleaning becomes necessary.
             </p>
           </div>
-          <div className="tg-location-copy">
-            <h2>Tile Cleaning Services for El Paso Homes</h2>
-            <p>
-              Tile flooring is one of the most popular flooring choices throughout El Paso because it
-              handles heat, pets, foot traffic, and daily life well. However, even durable tile floors
-              eventually develop buildup that routine cleaning cannot fully remove.
-            </p>
-            <p>Our tile and grout cleaning services in El Paso help homeowners tackle:</p>
-            <ul className="tg-ul">
-              <li>Heavy foot traffic buildup</li>
-              <li>Kitchen grease residue</li>
-              <li>Bathroom grout discoloration</li>
-              <li>Pet-related dirt and staining</li>
-              <li>Dust accumulation</li>
-              <li>Hard water residue</li>
-              <li>Soap scum buildup in showers and bathrooms</li>
-            </ul>
-            <p>
-              Whether you need a single room cleaned or tile cleaning throughout the entire house, we
-              focus on deep extraction and thorough cleaning methods designed to improve the appearance
-              of both the tile surface and grout lines.
-            </p>
+          <div className="tg-further-image">
+            <img
+              src="/images/tileandgroutcleaning/grout-cleaning-el-paso-tx.jpeg"
+              alt="Grout cleaning service in El Paso TX – deep grout line restoration and tile cleaning by Aggie Carpet Cleaning"
+            />
           </div>
         </div>
       </section>
@@ -215,267 +148,92 @@ const TileGrout = () => {
       {/* Process */}
       <section className="tg-process-section">
         <div className="tg-process-inner">
-          <h2>Our Professional Tile and Grout Cleaning Process</h2>
-          <p>
-            Every tile floor is different, which is why we tailor our cleaning process to the condition
-            of the floor, the type of tile, and the level of buildup present.
-          </p>
+          <div className="tg-process-content">
+            <h2>Our Professional Tile &amp; Grout Cleaning Process</h2>
+            <p>
+              We use a multi-step deep cleaning system designed to safely restore tile without damage.
+            </p>
           <div className="tg-process-steps">
             <div className="tg-process-step">
               <div className="tg-step-num">1</div>
               <div className="tg-step-content">
-                <h3>Inspection and Floor Evaluation</h3>
-                <p>We inspect the tile and grout to identify heavily soiled areas, buildup patterns, problem spots, and any areas needing extra attention.</p>
+                <h3>Pre-Inspection</h3>
+                <p>We evaluate your tile type, grout condition, and staining severity to choose the correct cleaning method.</p>
               </div>
             </div>
             <div className="tg-process-step">
               <div className="tg-step-num">2</div>
               <div className="tg-step-content">
                 <h3>Pre-Treatment Application</h3>
-                <p>We apply professional cleaning solutions designed to loosen embedded grime, oils, soap residue, and soil trapped inside grout lines and textured tile.</p>
+                <p>A specialized cleaning solution is applied to break down grease, soil, and organic buildup embedded in the grout lines.</p>
               </div>
             </div>
             <div className="tg-process-step">
               <div className="tg-step-num">3</div>
               <div className="tg-step-content">
-                <h3>Deep Tile and Grout Cleaning</h3>
-                <p>Using professional-grade equipment, we clean deep into the grout and tile surface to lift away dirt and buildup that standard mopping leaves behind.</p>
+                <h3>High-Pressure Hot Water Extraction</h3>
+                <p>Using truck-mounted equipment, we inject high-temperature filtered water deep into the grout lines and immediately extract the dirty water.</p>
               </div>
             </div>
             <div className="tg-process-step">
               <div className="tg-step-num">4</div>
               <div className="tg-step-content">
-                <h3>Extraction and Rinse</h3>
-                <p>We remove loosened residue and extract dirty water from the floor to help prevent sticky residue from being left behind.</p>
+                <h3>Rotovac 360i Deep Rotary Cleaning</h3>
+                <p>For heavily soiled floors, we use a rotary tile cleaning system that scrubs grout lines evenly and restores uniform color.</p>
               </div>
             </div>
             <div className="tg-process-step">
               <div className="tg-step-num">5</div>
               <div className="tg-step-content">
-                <h3>Final Walkthrough</h3>
-                <p>After cleaning is complete, we review the results and make sure the floor looks noticeably cleaner and brighter.</p>
+                <h3>Detail Edging &amp; Corner Cleaning</h3>
+                <p>We manually clean edges, corners, and baseboard areas where machines cannot reach.</p>
+              </div>
+            </div>
+            <div className="tg-process-step">
+              <div className="tg-step-num">6</div>
+              <div className="tg-step-content">
+                <h3>Optional Grout Sealing Application</h3>
+                <p>After cleaning, we recommend sealing your grout to prevent future staining and make maintenance much easier.</p>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Surfaces + Kitchen + Bathroom */}
-      <section className="tg-details">
-        <div className="tg-details-inner tg-details-3col">
-          <div className="tg-details-copy">
-            <h2>Common Tile Surfaces We Clean</h2>
-            <p>We clean many common residential tile surfaces throughout Las Cruces and El Paso, including:</p>
-            <ul className="tg-ul">
-              <li>Ceramic tile</li>
-              <li>Porcelain tile</li>
-              <li>Textured tile</li>
-              <li>Bathroom tile</li>
-              <li>Kitchen tile</li>
-              <li>Laundry room tile</li>
-              <li>Entryway tile</li>
-              <li>Hallway tile</li>
-              <li>Shower tile</li>
-              <li>Large-format tile floors</li>
-            </ul>
-            <p>
-              If you are unsure whether your flooring is a fit for professional tile cleaning,{' '}
-              <Link to="/contact">contact us</Link> and we can help evaluate your floor type.
-            </p>
           </div>
-          <div className="tg-details-copy">
-            <h2>Kitchen Tile and Grout Cleaning</h2>
-            <p>
-              Kitchen floors experience constant traffic, spills, grease, and food residue. Over time,
-              grout lines near cooking areas and walkways often become dark and uneven-looking.
-            </p>
-            <p>Professional kitchen tile cleaning helps remove:</p>
-            <ul className="tg-ul">
-              <li>Grease buildup</li>
-              <li>Cooking residue</li>
-              <li>Tracked-in dirt</li>
-              <li>Sticky floor residue</li>
-              <li>Grout discoloration</li>
-            </ul>
-            <p>
-              Deep cleaning can dramatically improve the appearance of kitchen floors and help the entire
-              room feel cleaner.
-            </p>
-          </div>
-          <div className="tg-details-copy">
-            <h2>Bathroom and Shower Tile Cleaning</h2>
-            <p>
-              Bathrooms are one of the most common areas where tile begins looking dingy or difficult to
-              maintain. Soap residue, moisture, hard water deposits, and everyday use can leave tile
-              looking dull and grout looking permanently dark.
-            </p>
-            <p>Our bathroom tile cleaning service helps address:</p>
-            <ul className="tg-ul">
-              <li>Soap scum buildup</li>
-              <li>Shower tile discoloration</li>
-              <li>Dirty grout lines</li>
-              <li>Hard water residue</li>
-              <li>Bathroom floor buildup</li>
-            </ul>
-            <p>
-              Professional cleaning can help restore a cleaner and brighter appearance to bathroom tile
-              surfaces throughout the home.
-            </p>
+          <div className="tg-process-img">
+            <img
+              src="/images/tileandgroutcleaning/tile-and-grout-cleaning-las-cruces.jpeg"
+              alt="Tile and grout cleaning process in Las Cruces NM – hot water extraction and rotary scrubbing restoring tile floors"
+            />
           </div>
         </div>
       </section>
 
-      {/* Why mopping + high traffic */}
-      <section className="tg-two-col-section">
-        <div className="tg-two-col-inner">
-          <div className="tg-two-col-card">
-            <h2>Why Mopping Alone Usually Is Not Enough</h2>
-            <p>
-              One of the most common frustrations homeowners mention is that their tile floors still look
-              dirty even after they mop regularly.
-            </p>
-            <p>This usually happens because:</p>
-            <ul className="tg-ul">
-              <li>Grout absorbs dirty water</li>
-              <li>Mops spread residue around</li>
-              <li>Soil settles into textured surfaces</li>
-              <li>Household cleaners leave buildup behind</li>
-              <li>Embedded grime sits below the surface</li>
-            </ul>
-            <p>
-              Professional tile and grout cleaning uses equipment designed to remove deeply embedded soil
-              instead of simply moving it around. That is often why homeowners notice such a major
-              difference after a deep tile cleaning service.
-            </p>
-          </div>
-          <div className="tg-two-col-card">
-            <h2>Tile Cleaning for High-Traffic Areas</h2>
-            <p>
-              Some parts of the home naturally collect more buildup than others. Entryways, kitchens,
-              hallways, and living areas often show traffic patterns where dirt gradually settles into
-              grout lines.
-            </p>
-            <p>We commonly clean:</p>
-            <ul className="tg-ul">
-              <li>Entryway tile</li>
-              <li>Mudroom floors</li>
-              <li>Hallway tile</li>
-              <li>Living room tile</li>
-              <li>Open-concept flooring</li>
-              <li>Commercial-style residential tile</li>
-            </ul>
-            <p>
-              High-traffic areas usually benefit the most from periodic deep cleaning because routine
-              maintenance alone often cannot fully remove embedded soil.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Local trust */}
-      <section className="tg-trust-section">
-        <div className="tg-trust-inner">
-          <h2>Local Tile and Grout Cleaning You Can Trust</h2>
-          <p>
-            As a local company serving Las Cruces and El Paso, we understand the flooring challenges
-            homeowners in the Southwest deal with every day.
-          </p>
-          <p>
-            Dust, dry conditions, outdoor debris, and heavy foot traffic all contribute to grout
-            discoloration and dull-looking tile over time. Our goal is to help homeowners restore
-            cleaner-looking floors using professional equipment and detailed cleaning methods designed
-            specifically for hard-surface flooring.
-          </p>
-          <p>
-            Whether you live in Sonoma Ranch, Metro Verde, Picacho Hills, Las Alturas, Talavera, or
-            surrounding areas, we are proud to provide professional tile and grout cleaning services
-            that help homes look cleaner and better maintained.
-          </p>
-        </div>
-      </section>
-
-      {/* FAQ */}
-      <section className="tg-faq-section">
-        <div className="tg-faq-inner">
-          <h2>Frequently Asked Questions About Tile and Grout Cleaning</h2>
-          <div className="tg-faq-list">
-            <div className="tg-faq-item">
-              <h3>How often should tile and grout be professionally cleaned?</h3>
-              <p>Most homes benefit from professional tile and grout cleaning every 12–18 months depending on foot traffic, pets, children, and overall floor usage.</p>
-            </div>
-            <div className="tg-faq-item">
-              <h3>Why does grout get so dark?</h3>
-              <p>Grout is porous and absorbs dirt, oils, soap residue, and moisture over time. Regular mopping often cannot fully remove buildup trapped below the surface.</p>
-            </div>
-            <div className="tg-faq-item">
-              <h3>Can professional tile cleaning make grout look brighter?</h3>
-              <p>Yes. Deep extraction cleaning helps remove embedded grime and buildup that causes grout to appear dark or uneven.</p>
-            </div>
-            <div className="tg-faq-item">
-              <h3>Is professional tile cleaning safe for my floors?</h3>
-              <p>Professional tile and grout cleaning is designed for common hard-surface flooring types like ceramic and porcelain tile.</p>
-            </div>
-            <div className="tg-faq-item">
-              <h3>Why do my floors still look dirty after mopping?</h3>
-              <p>Mopping alone often leaves behind residue or pushes dirty water deeper into grout lines instead of fully extracting it.</p>
-            </div>
-            <div className="tg-faq-item">
-              <h3>Do you clean bathroom and shower tile?</h3>
-              <p>Yes. We clean bathroom floors, shower tile, and other tiled areas affected by soap residue, buildup, and discoloration.</p>
-            </div>
-            <div className="tg-faq-item">
-              <h3>Do you offer tile cleaning in both Las Cruces and El Paso?</h3>
-              <p>Yes. We provide tile and grout cleaning services throughout Las Cruces, El Paso, and nearby surrounding communities.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Schedule CTA */}
-      <section className="tg-schedule-section">
-        <div className="tg-schedule-inner">
-          <h2>Schedule Tile and Grout Cleaning in Las Cruces or El Paso</h2>
-          <p>
-            If your grout lines are dark, your tile looks dull, or your floors never seem fully clean,
-            professional tile and grout cleaning can help restore a fresher appearance to your home.
-          </p>
-          <p>
-            Aggie Carpet Cleaning proudly provides professional tile and grout cleaning services
-            throughout Las Cruces, El Paso, Sonoma Ranch, Metro Verde, Picacho Hills, Las Alturas,
-            and Talavera.
-          </p>
-          <p>Contact us today to schedule professional tile floor cleaning and bring new life back to your hard floors.</p>
-          <Link to="/contact" className="tg-connect-btn">Contact Us Today</Link>
-        </div>
-      </section>
-
-      {/* Grout sealing */}
+      {/* Sealing */}
       <section className="tg-sealing-section">
         <div className="tg-sealing-inner">
           <div className="tg-sealing-copy">
-            <h2>Grout Sealing for Longer-Lasting Results</h2>
+            <h2>Tile &amp; Grout Sealing (Highly Recommended)</h2>
             <p>
-              After deep tile and grout cleaning, many homeowners choose grout sealing to help protect
-              grout lines from future staining and buildup. Because grout is naturally porous, it can
-              quickly absorb dirt, spills, oils, soap residue, and moisture if left unsealed.
+              After a deep cleaning, grout is restored to its original porous state. Without sealing,
+              it can quickly absorb new dirt and stains.
             </p>
-            <p>Professional grout sealing creates a protective barrier that helps:</p>
+            <p>What grout sealing does:</p>
             <ul className="tg-ul">
-              <li>Reduce future staining</li>
-              <li>Slow down dirt buildup</li>
-              <li>Make routine cleaning easier</li>
-              <li>Improve the long-term appearance of grout lines</li>
-              <li>Protect high-traffic areas from premature discoloration</li>
+              <li>Creates a protective barrier over grout lines</li>
+              <li>Helps repel water, oil, and stains</li>
+              <li>Makes future cleaning easier and faster</li>
+              <li>Extends the life and appearance of your floors</li>
             </ul>
             <p>
-              Grout sealing is especially helpful in kitchens, bathrooms, entryways, and busy households
-              throughout Las Cruces and El Paso where dust, foot traffic, and daily use can wear down
-              grout quickly.
+              We offer professional grout sealing in Las Cruces and El Paso using high-quality
+              penetrating sealers that bond deep into the grout instead of sitting on top of it.
             </p>
-            <p>
-              Many homeowners in Sonoma Ranch, Metro Verde, and Picacho Hills choose grout sealing after
-              tile cleaning to help keep floors looking cleaner between professional visits.
-            </p>
+            <p>Sealing is especially recommended for:</p>
+            <ul className="tg-ul">
+              <li>Kitchen tile floors</li>
+              <li>Bathroom showers and walls</li>
+              <li>High-traffic entryways</li>
+              <li>Commercial tile flooring</li>
+            </ul>
           </div>
           <aside className="tg-sealing-aside">
             <h3>Related Services</h3>
@@ -489,86 +247,255 @@ const TileGrout = () => {
             <p>Visit our <Link to="/info/areas-we-serve">areas we serve page</Link> to confirm coverage in your neighborhood.</p>
           </aside>
         </div>
-      </section>
-
-      {/* Southern NM */}
-      <section className="tg-region-section">
-        <div className="tg-region-inner">
-          <h2>Why Tile Floors in Southern New Mexico Get Dirty So Quickly</h2>
-          <p>
-            Homes throughout Southern New Mexico and West Texas deal with unique environmental conditions
-            that affect tile floors year-round. Wind, desert dust, dry soil, and outdoor debris are
-            constantly tracked inside and gradually settle into grout lines and textured tile surfaces.
-          </p>
-          <p>
-            Even newer homes in areas like Las Alturas and Talavera can experience rapid grout
-            discoloration because fine dust particles work deep into porous surfaces where standard
-            mopping cannot fully remove them.
-          </p>
-          <p>
-            Tile floors near patios, backyards, pools, garages, and entryways usually experience the
-            heaviest buildup. Over time, this creates dark grout lines, dull tile surfaces, uneven
-            coloring, buildup around edges and corners, and floors that never seem completely clean.
-          </p>
-          <p>
-            Professional tile and grout cleaning helps remove this deeply embedded debris and restore
-            a cleaner appearance throughout the home.
-          </p>
+        <div className="tg-sealing-banner-img">
+          <img
+            src="/images/tileandgroutcleaning/grout-sealing-las-cruces-nm.jpeg"
+            alt="Professional grout sealing service in Las Cruces NM – protecting tile floors after deep cleaning"
+          />
         </div>
       </section>
 
-      {/* Commercial + The Difference */}
-      <section className="tg-commercial-section">
-        <div className="tg-commercial-inner">
-          <div className="tg-commercial-copy">
-            <h2>Commercial Tile and Grout Cleaning</h2>
-            <p>
-              In addition to residential tile cleaning, we also help businesses maintain cleaner hard
-              floors in high-traffic commercial environments.
-            </p>
-            <p>
-              Commercial tile floors experience constant foot traffic that pushes dirt deep into grout
-              lines and textured surfaces. Restaurants, offices, retail spaces, waiting rooms, and other
-              busy properties often develop dark grout and dull-looking tile much faster than residential
-              spaces.
-            </p>
-            <p>Our commercial tile and grout cleaning services help:</p>
+      {/* Comparison Table */}
+      <section className="tg-comparison">
+        <div className="tg-comparison-inner">
+          <h2>Tile &amp; Grout Cleaning vs DIY Cleaning</h2>
+          <div className="tg-table-wrap">
+            <table className="tg-table">
+              <thead>
+                <tr>
+                  <th>Feature</th>
+                  <th>DIY Mopping</th>
+                  <th>Professional Tile Cleaning</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Removes deep grout stains</td>
+                  <td className="tg-no">❌ No</td>
+                  <td className="tg-yes">✅ Yes</td>
+                </tr>
+                <tr>
+                  <td>Sanitizes grout lines</td>
+                  <td className="tg-no">❌ Limited</td>
+                  <td className="tg-yes">✅ Yes (hot water extraction)</td>
+                </tr>
+                <tr>
+                  <td>Restores original color</td>
+                  <td className="tg-no">❌ No</td>
+                  <td className="tg-yes">✅ Yes</td>
+                </tr>
+                <tr>
+                  <td>Prevents re-soiling</td>
+                  <td className="tg-no">❌ No</td>
+                  <td className="tg-warn">⚠️ Only with sealing</td>
+                </tr>
+                <tr>
+                  <td>Equipment power</td>
+                  <td>Low</td>
+                  <td className="tg-yes">Industrial truck-mounted</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p className="tg-comparison-note">
+            Most DIY cleaning only addresses surface dirt. Professional cleaning targets embedded
+            contamination that causes discoloration.
+          </p>
+          <div className="tg-comparison-banner-img">
+            <img
+              src="/images/tileandgroutcleaning/professional-tile-cleaning-el-paso-texas.jpeg"
+              alt="Professional tile cleaning results in El Paso Texas – grout restoration and tile floor deep cleaning by Aggie Carpet Cleaning"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Surfaces + Residential & Commercial */}
+      <section className="tg-two-col-section">
+        <div className="tg-two-col-banner-wrap">
+          <img
+            src="/images/tileandgroutcleaning/grout-line-cleaning-las-cruces-nm.jpeg"
+            alt="Grout line cleaning in Las Cruces NM – deep restoration of dirty and discolored grout between tile"
+          />
+        </div>
+        <div className="tg-two-col-inner">
+          <div className="tg-two-col-card">
+            <h2>Tile Surfaces We Clean</h2>
+            <p>We clean a wide variety of tile types including:</p>
             <ul className="tg-ul">
-              <li>Improve the appearance of business floors</li>
-              <li>Remove heavy traffic buildup</li>
-              <li>Restore cleaner grout lines</li>
-              <li>Maintain a more professional appearance</li>
-              <li>Extend the life of tile flooring</li>
+              <li>Ceramic tile</li>
+              <li>Porcelain tile</li>
+              <li>Natural stone (with appropriate care)</li>
+              <li>Travertine</li>
+              <li>Slate</li>
+              <li>Marble (special handling available)</li>
             </ul>
             <p>
-              We provide commercial tile cleaning services throughout Las Cruces and El Paso for
-              businesses looking to maintain cleaner and more presentable hard-surface flooring.
+              Each surface requires different pressure levels and cleaning chemistry, which is why
+              professional treatment matters.
             </p>
           </div>
-          <div className="tg-commercial-copy">
-            <h2>The Difference Professional Tile Cleaning Can Make</h2>
+          <div className="tg-two-col-card">
+            <h2>Residential &amp; Commercial Tile Cleaning</h2>
+            <p>We provide tile and grout cleaning for both homes and businesses throughout the region.</p>
+            <p><strong>Residential services:</strong></p>
+            <ul className="tg-ul">
+              <li>Kitchens</li>
+              <li>Bathrooms</li>
+              <li>Laundry rooms</li>
+              <li>Entryways</li>
+              <li>Entire home tile flooring</li>
+            </ul>
+            <p><strong>Commercial services:</strong></p>
+            <ul className="tg-ul">
+              <li>Restaurants</li>
+              <li>Office buildings</li>
+              <li>Retail stores</li>
+              <li>Medical facilities</li>
+              <li>Hotels and lobbies</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* Service Areas + Why Choose */}
+      <section className="tg-areas-why">
+        <div className="tg-areas-why-banner-wrap">
+          <img
+            src="/images/tileandgroutcleaning/tile-floor-cleaning-el-paso-tx.jpeg"
+            alt="Tile floor cleaning in El Paso TX – professional residential and commercial tile cleaning service"
+          />
+        </div>
+        <div className="tg-areas-why-inner">
+          <div className="tg-areas-block">
+            <h2>Service Areas</h2>
+            <p>We proudly serve:</p>
+            <ul className="tg-ul">
+              <li>Las Cruces, NM</li>
+              <li>El Paso, TX</li>
+              <li>Mesilla</li>
+              <li>Sonoma Ranch</li>
+              <li>Picacho Hills</li>
+              <li>Anthony, NM</li>
+              <li>Surrounding Southern New Mexico and West Texas areas</li>
+            </ul>
+          </div>
+          <div className="tg-why-block">
+            <h2>Why Choose Aggie Carpet Cleaning?</h2>
             <p>
-              Many homeowners assume their grout has permanently changed color when in reality it is
-              heavily impacted by embedded soil and residue buildup.
+              Homeowners and businesses choose us because we focus on deep restoration — not
+              surface-level cleaning.
             </p>
-            <p>
-              One of the biggest differences customers notice after professional tile and grout cleaning
-              is how much brighter the grout lines appear once years of dirt are removed from below the
-              surface.
-            </p>
-            <p>
-              Floors that once looked dark, cloudy, dull, sticky, or uneven often look dramatically
-              cleaner after a professional deep-cleaning service.
-            </p>
-            <p>
-              This is especially noticeable in kitchens, bathrooms, hallways, entryways, and
-              open-concept living spaces where traffic and buildup are typically the heaviest.
-            </p>
-            <p>
-              Professional tile cleaning can help restore a fresher appearance to the entire room
-              without the cost of replacing the flooring itself.
+            <div className="tg-checklist">
+              <div className="tg-check-item"><span className="tg-checkmark">✓</span><span>Truck-mounted hot water extraction systems</span></div>
+              <div className="tg-check-item"><span className="tg-checkmark">✓</span><span>Rotovac 360i rotary cleaning technology</span></div>
+              <div className="tg-check-item"><span className="tg-checkmark">✓</span><span>Fast drying times</span></div>
+              <div className="tg-check-item"><span className="tg-checkmark">✓</span><span>Honest pricing with no hidden fees</span></div>
+              <div className="tg-check-item"><span className="tg-checkmark">✓</span><span>Local, family-owned service</span></div>
+              <div className="tg-check-item"><span className="tg-checkmark">✓</span><span>Experience with high-end flooring and delicate surfaces</span></div>
+            </div>
+            <p className="tg-outro">
+              We treat every floor like it's our own and focus on delivering visible, measurable results.
             </p>
           </div>
+        </div>
+      </section>
+
+      {/* Maintenance Tips */}
+      <section className="tg-maintenance">
+        <div className="tg-maintenance-inner">
+          <div className="tg-maintenance-text">
+            <h2>Maintenance Tips After Cleaning</h2>
+            <p>To keep your tile and grout looking clean longer:</p>
+            <ul className="tg-ul">
+              <li>Sweep or vacuum regularly to remove abrasive dirt</li>
+              <li>Clean spills quickly to avoid staining</li>
+              <li>Avoid harsh bleach-based cleaners that degrade grout</li>
+              <li>Re-seal grout every 12–24 months depending on traffic</li>
+              <li>Use pH-neutral tile cleaners for routine maintenance</li>
+            </ul>
+          </div>
+          <div className="tg-maintenance-img">
+            <img
+              src="/images/tileandgroutcleaning/tile-cleaning-service-las-cruces.jpeg"
+              alt="Tile cleaning service Las Cruces NM – clean and restored tile floors by Aggie Carpet Cleaning"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="tg-faq-section">
+        <div className="tg-faq-inner">
+          <div className="tg-faq-content">
+            <h2>Frequently Asked Questions</h2>
+            <div className="tg-faq-list">
+            <div className="tg-faq-item">
+              <h3>How often should tile and grout be professionally cleaned?</h3>
+              <p>Most homes benefit from professional cleaning every 12–24 months depending on foot traffic, pets, and kitchen usage.</p>
+            </div>
+            <div className="tg-faq-item">
+              <h3>Can you remove black or dark grout stains?</h3>
+              <p>Yes, in most cases we can significantly lighten or fully restore grout color using high-pressure hot water extraction and rotary scrubbing systems.</p>
+            </div>
+            <div className="tg-faq-item">
+              <h3>How long does tile and grout cleaning take?</h3>
+              <p>Most residential jobs take 1–3 hours depending on square footage and soil level.</p>
+            </div>
+            <div className="tg-faq-item">
+              <h3>Is grout sealing necessary after cleaning?</h3>
+              <p>It is highly recommended. Sealing helps prevent future staining and makes routine maintenance much easier.</p>
+            </div>
+            <div className="tg-faq-item">
+              <h3>Will cleaning damage my tile?</h3>
+              <p>No. We adjust pressure and cleaning chemistry based on your tile type to ensure safe and effective cleaning.</p>
+            </div>
+            <div className="tg-faq-item">
+              <h3>How long does it take for floors to dry?</h3>
+              <p>Typically 2–6 hours depending on ventilation and humidity.</p>
+            </div>
+          </div>
+          </div>
+          <div className="tg-faq-img">
+            <img
+              src="/images/tileandgroutcleaning/ceramic-tile-cleaning-el-paso-texas.jpeg"
+              alt="Ceramic tile cleaning in El Paso Texas – professional tile and grout restoration service by Aggie Carpet Cleaning"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Photo Strip */}
+      <section className="tg-photo-strip">
+        <div className="tg-photo-strip-inner">
+          <img
+            src="/images/tileandgroutcleaning/tile-grout-restoration-las-cruces.jpeg"
+            alt="Tile and grout restoration in Las Cruces NM – before and after professional deep cleaning results"
+          />
+          <img
+            src="/images/tileandgroutcleaning/bathroom-tile-cleaning-el-paso-tx.jpeg"
+            alt="Bathroom tile cleaning in El Paso TX – professional shower and bathroom floor tile and grout cleaning"
+          />
+          <img
+            src="/images/tileandgroutcleaning/kitchen-tile-grout-cleaning-las-cruces.jpeg"
+            alt="Kitchen tile and grout cleaning in Las Cruces NM – removing grease and buildup from kitchen floor tile"
+          />
+        </div>
+      </section>
+
+      {/* Schedule CTA */}
+      <section className="tg-schedule-section">
+        <div className="tg-schedule-inner">
+          <h2>Schedule Your Tile &amp; Grout Cleaning Today</h2>
+          <p>
+            If your tile floors are looking dull, stained, or worn out, professional cleaning can
+            completely restore their appearance. We proudly serve Las Cruces, El Paso, and surrounding
+            areas with high-quality tile and grout cleaning and sealing services.
+          </p>
+          <p>
+            Contact Aggie Carpet Cleaning today to schedule your appointment and bring your floors back to life.
+          </p>
+          <Link to="/contact" className="tg-connect-btn">Contact Us Today</Link>
         </div>
       </section>
 

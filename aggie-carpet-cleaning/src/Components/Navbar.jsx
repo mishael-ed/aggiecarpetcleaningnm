@@ -73,20 +73,21 @@ const Navbar = () => {
             <span onClick={() => setServicesOpen(!servicesOpen)} className={location.pathname.startsWith('/services') ? 'active-link' : ''}>Services</span>
             <ul className="dropdown-menu">
               <li><Link to="/services/carpet-cleaning" onClick={closeMobileMenu} className={location.pathname === '/services/carpet-cleaning' ? 'active-link' : ''}>Carpet Cleaning</Link></li>
-              <li><Link to="/services/furniture-rugs" onClick={closeMobileMenu} className={location.pathname === '/services/furniture-rugs' ? 'active-link' : ''}>Furniture and Rugs</Link></li>
+              <li><Link to="/services/furniture-cleaning" onClick={closeMobileMenu} className={location.pathname === '/services/furniture-cleaning' ? 'active-link' : ''}>Furniture Cleaning</Link></li>
+              <li><Link to="/services/rug-cleaning" onClick={closeMobileMenu} className={location.pathname === '/services/rug-cleaning' ? 'active-link' : ''}>Rug Cleaning</Link></li>
               <li><Link to="/services/tile-grout" onClick={closeMobileMenu} className={location.pathname === '/services/tile-grout' ? 'active-link' : ''}>Tile and Grout</Link></li>
               <li><Link to="/services/carpet-installation-repair" onClick={closeMobileMenu} className={location.pathname === '/services/carpet-installation-repair' ? 'active-link' : ''}>Carpet Installation & Carpet Repair</Link></li>
               <li><Link to="/services/tile-installation-repair" onClick={closeMobileMenu} className={location.pathname === '/services/tile-installation-repair' ? 'active-link' : ''}>Tile Installation & Tile Repair</Link></li>
               <li><Link to="/services/laminate-flooring-installation" onClick={closeMobileMenu} className={location.pathname === '/services/laminate-flooring-installation' ? 'active-link' : ''}>Laminate Flooring Installation</Link></li>
               <li><Link to="/services/vehicle-upholstery-carpet-cleaning" onClick={closeMobileMenu} className={location.pathname === '/services/vehicle-upholstery-carpet-cleaning' ? 'active-link' : ''}>Vehicle Upholstery and Carpet Cleaning</Link></li>
               <li><Link to="/services/pet-urine-removal" onClick={closeMobileMenu} className={location.pathname === '/services/pet-urine-removal' ? 'active-link' : ''}>Pet Urine Removal</Link></li>
+              <li><Link to="/services/water-damage-mold" onClick={closeMobileMenu} className={location.pathname === '/services/water-damage-mold' ? 'active-link' : ''}>Water Damage &amp; Mold Removal</Link></li>
             </ul>
           </li>
           
           <li className={`dropdown ${infoOpen ? 'dropdown-open' : ''}`}>
-            <span onClick={() => setInfoOpen(!infoOpen)} className={location.pathname.startsWith('/info') || location.pathname.startsWith('/blog') || location.pathname === '/about' ? 'active-link' : ''}>Info</span>
+            <span onClick={() => setInfoOpen(!infoOpen)} className={location.pathname.startsWith('/info') || location.pathname.startsWith('/blog') ? 'active-link' : ''}>Info</span>
             <ul className="dropdown-menu">
-              <li><Link to="/about" onClick={closeMobileMenu} className={location.pathname === '/about' ? 'active-link' : ''}>About</Link></li>
               <li><Link to="/info/areas-we-serve" onClick={closeMobileMenu} className={location.pathname === '/info/areas-we-serve' ? 'active-link' : ''}>Areas We Serve</Link></li>
               <li><Link to="/info/our-favorite-places" onClick={closeMobileMenu} className={location.pathname === '/info/our-favorite-places' ? 'active-link' : ''}>Our Favorite Places</Link></li>
               <li><Link to="/info/reviews" onClick={closeMobileMenu} className={location.pathname === '/info/reviews' ? 'active-link' : ''}>Reviews</Link></li>

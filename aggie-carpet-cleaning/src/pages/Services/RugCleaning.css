@@ -1,0 +1,757 @@
+.rc-page {
+  min-height: 100vh;
+  font-family: 'Volte', sans-serif;
+}
+
+/* ── Hero ── */
+.rc-hero {
+  background: linear-gradient(135deg, #e0f4fb 0%, #f0fbff 60%, #e8f8ff 100%);
+  padding: 5rem 3rem 6rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.rc-hero::before {
+  content: '';
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  border: 60px solid rgba(0, 188, 212, 0.07);
+  top: -150px;
+  right: -100px;
+  pointer-events: none;
+}
+
+.rc-hero::after {
+  content: '';
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 40px solid rgba(0, 188, 212, 0.07);
+  bottom: -80px;
+  left: 5%;
+  pointer-events: none;
+}
+
+.rc-hero-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.5rem;
+  align-items: center;
+}
+
+.rc-hero-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.rc-hero-inner h1 {
+  font-size: 2.75rem;
+  font-weight: 800;
+  color: #1a3a4a;
+  line-height: 1.2;
+  margin-bottom: 1.25rem;
+  letter-spacing: -0.02em;
+}
+
+.rc-hero-inner h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #1a3a4a;
+  margin-bottom: 0.75rem;
+  line-height: 1.35;
+}
+
+.rc-hero-tagline {
+  font-size: 0.95rem;
+  color: #00897b;
+  font-weight: 600;
+  margin-bottom: 1.5rem !important;
+}
+
+.rc-hero-inner p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.8;
+  margin-bottom: 1.25rem;
+}
+
+.rc-cta-line {
+  font-weight: 500;
+  color: #333 !important;
+  margin-bottom: 2rem !important;
+}
+
+.rc-connect-btn {
+  display: inline-block;
+  background: #00bcd4;
+  color: white;
+  padding: 0.9rem 2.25rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s;
+  box-shadow: 0 4px 14px rgba(0, 188, 212, 0.3);
+}
+
+.rc-connect-btn:hover {
+  background: #0097a7;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 188, 212, 0.4);
+}
+
+/* ── Shared checklist ── */
+.rc-checklist {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin: 0.85rem 0 1rem;
+}
+
+.rc-check-item {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  background: #f9fafb;
+  border: 1px solid #ebebeb;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  transition: border-color 0.2s;
+}
+
+.rc-check-item:hover {
+  border-color: #00bcd4;
+}
+
+.rc-checkmark {
+  width: 26px;
+  height: 26px;
+  min-width: 26px;
+  background: #00bcd4;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.rc-check-item span:last-child {
+  font-size: 0.92rem;
+  color: #2c3e50;
+}
+
+.rc-outro {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.8;
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
+/* ── Vacuuming vs Professional ── */
+.rc-vs {
+  background: white;
+  padding: 5rem 3rem 6rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.rc-vs::before {
+  content: '';
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  border: 55px solid rgba(0, 188, 212, 0.06);
+  top: -110px;
+  left: -90px;
+  pointer-events: none;
+}
+
+.rc-vs-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+  position: relative;
+  z-index: 1;
+}
+
+.rc-vs-text h2 {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: #1a3a4a;
+  line-height: 1.2;
+  margin-bottom: 1.25rem;
+  letter-spacing: -0.02em;
+}
+
+.rc-vs-text p {
+  font-size: 0.97rem;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 0.85rem;
+}
+
+.rc-vs-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* ── Types of Rugs ── */
+.rc-types {
+  background: #f7fbfd;
+  padding: 5rem 3rem;
+}
+
+.rc-types-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.rc-types-inner h2 {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: #1a3a4a;
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+}
+
+.rc-types-inner > p {
+  font-size: 0.97rem;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 1.75rem;
+}
+
+.rc-types-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.rc-type-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: white;
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  transition: border-color 0.2s;
+}
+
+.rc-type-item:hover {
+  border-color: #00bcd4;
+}
+
+.rc-type-dot {
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  background: #00bcd4;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.rc-type-item span:last-child {
+  font-size: 0.9rem;
+  color: #2c3e50;
+}
+
+.rc-types-note {
+  font-size: 0.95rem;
+  color: #555;
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+
+.rc-types-banner-img {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.rc-types-banner-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ── Process ── */
+.rc-process {
+  background: white;
+  padding: 5rem 3rem;
+}
+
+.rc-process-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.rc-process-content h2 {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: #1a3a4a;
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+}
+
+.rc-process-content > p {
+  font-size: 0.97rem;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 2.5rem;
+}
+
+.rc-process-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 2rem;
+}
+
+.rc-process-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.rc-process-step {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  background: #f9fafb;
+  border: 1px solid #d9ebf2;
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.rc-step-num {
+  min-width: 42px;
+  height: 42px;
+  background: #00bcd4;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.rc-step-content h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #1a3a4a;
+  margin: 0 0 0.4rem;
+}
+
+.rc-step-content p {
+  font-size: 0.95rem;
+  color: #4b5563;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* ── Comparison Table ── */
+.rc-comparison {
+  background: #f7fbfd;
+  padding: 5rem 3rem;
+}
+
+.rc-comparison-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.rc-comparison-inner h2 {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: #1a3a4a;
+  margin-bottom: 2rem;
+  letter-spacing: -0.02em;
+}
+
+.rc-table-wrap {
+  overflow-x: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.rc-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  font-size: 0.92rem;
+}
+
+.rc-table thead tr {
+  background: #1a3a4a;
+  color: white;
+}
+
+.rc-table th {
+  padding: 0.9rem 1.25rem;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.88rem;
+}
+
+.rc-table td {
+  padding: 0.85rem 1.25rem;
+  border-bottom: 1px solid #f0f0f0;
+  color: #444;
+  line-height: 1.55;
+  vertical-align: top;
+}
+
+.rc-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.rc-table tbody tr:hover {
+  background: #fafafa;
+}
+
+.rc-highlight {
+  color: #00897b;
+  font-weight: 500;
+}
+
+/* ── Specialty Rug Types (3 cards) ── */
+.rc-specialty {
+  background: white;
+  padding: 5rem 3rem;
+}
+
+.rc-specialty-banner-wrap {
+  max-width: 1100px;
+  margin: 0 auto 2.5rem;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.rc-specialty-banner-wrap img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.rc-specialty-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.rc-specialty-card {
+  background: #f7fbfd;
+  border: 1px solid #d9ebf2;
+  border-top: 4px solid #00bcd4;
+  border-radius: 12px;
+  padding: 1.75rem;
+}
+
+.rc-specialty-card h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #1a3a4a;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+.rc-specialty-card p {
+  font-size: 0.92rem;
+  color: #4b5563;
+  line-height: 1.75;
+  margin-bottom: 0.75rem;
+}
+
+/* ── Common Problems + Local Info + Pickup ── */
+.rc-details {
+  background: #f7fbfd;
+  padding: 5rem 3rem;
+}
+
+.rc-details-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.rc-details-card {
+  background: white;
+  border: 1px solid #e8e8e8;
+  border-radius: 12px;
+  padding: 1.75rem;
+}
+
+.rc-details-card h2 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #1a3a4a;
+  margin-bottom: 0.85rem;
+  line-height: 1.3;
+}
+
+.rc-details-card p {
+  font-size: 0.92rem;
+  color: #4b5563;
+  line-height: 1.75;
+  margin-bottom: 0.75rem;
+}
+
+/* ── Bottom Info (3 cards) ── */
+.rc-bottom-info {
+  background: white;
+  padding: 5rem 3rem;
+}
+
+.rc-bottom-info-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.rc-bottom-card {
+  background: #f7fbfd;
+  border: 1px solid #d9ebf2;
+  border-radius: 12px;
+  padding: 1.75rem;
+}
+
+.rc-bottom-card h2 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #1a3a4a;
+  margin-bottom: 0.85rem;
+  line-height: 1.3;
+}
+
+.rc-bottom-card p {
+  font-size: 0.92rem;
+  color: #4b5563;
+  line-height: 1.75;
+  margin-bottom: 0.75rem;
+}
+
+/* ── Photo Strip ── */
+.rc-photo-strip {
+  background: white;
+  padding: 0 3rem 5rem;
+}
+
+.rc-photo-strip-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.rc-photo-strip-inner img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  display: block;
+}
+
+/* ── FAQ ── */
+.rc-faq {
+  background: #f7fbfd;
+  padding: 5rem 3rem;
+}
+
+.rc-faq-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.5rem;
+  align-items: start;
+}
+
+.rc-faq-content h2 {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: #1a3a4a;
+  margin-bottom: 2rem;
+  letter-spacing: -0.02em;
+}
+
+.rc-faq-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 2rem;
+}
+
+.rc-faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.rc-faq-item {
+  background: white;
+  border: 1px solid #e8e8e8;
+  border-left: 4px solid #00bcd4;
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.rc-faq-item h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1a3a4a;
+  margin-bottom: 0.5rem;
+}
+
+.rc-faq-item p {
+  font-size: 0.92rem;
+  color: #555;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* ── CTA ── */
+.rc-cta {
+  background: linear-gradient(135deg, #1a3a4a 0%, #0d2535 100%);
+  padding: 5rem 3rem;
+  text-align: center;
+}
+
+.rc-cta-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.rc-cta-inner h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 1.25rem;
+  letter-spacing: -0.02em;
+}
+
+.rc-cta-inner p {
+  font-size: 0.97rem;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.rc-cta .rc-connect-btn {
+  margin-top: 1rem;
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .rc-hero { padding: 3rem 1.5rem 4rem; }
+
+  .rc-hero-inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .rc-hero-img { order: -1; }
+
+  .rc-hero-content h1 { font-size: 2rem; }
+  .rc-hero-content h2 { font-size: 1.25rem; }
+
+  .rc-vs-inner {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .rc-process-inner {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .rc-process-img img { position: static; }
+
+  .rc-faq-inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .rc-faq-img img { position: static; }
+
+  .rc-photo-strip { padding: 0 1.5rem 3rem; }
+
+  .rc-specialty-inner,
+  .rc-details-inner,
+  .rc-bottom-info-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .rc-types-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .rc-vs,
+  .rc-types,
+  .rc-process,
+  .rc-comparison,
+  .rc-specialty,
+  .rc-details,
+  .rc-bottom-info,
+  .rc-faq,
+  .rc-cta {
+    padding: 3rem 1.5rem;
+  }
+
+  .rc-vs-text h2,
+  .rc-types-inner h2,
+  .rc-process-content h2,
+  .rc-comparison-inner h2,
+  .rc-faq-content h2,
+  .rc-cta-inner h2 {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .rc-types-grid {
+    grid-template-columns: 1fr;
+  }
+}

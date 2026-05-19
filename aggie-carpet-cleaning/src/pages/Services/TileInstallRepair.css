@@ -9,7 +9,8 @@
 }
 
 .tir-hero-inner {
-  max-width: 900px;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 .tir-hero-inner h1 {
@@ -39,6 +40,11 @@
   padding: 0.9rem 2.1rem;
   border-radius: 50px;
   font-weight: 600;
+  transition: background 0.2s;
+}
+
+.tir-connect-btn:hover {
+  background: #0097a7;
 }
 
 .tir-details {
@@ -47,7 +53,7 @@
 }
 
 .tir-details-inner {
-  max-width: 1300px;
+  max-width: 1100px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;

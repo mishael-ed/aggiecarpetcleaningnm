@@ -37,9 +37,22 @@
 }
 
 .cp-hero-inner {
-  max-width: 900px;
+  max-width: 1100px;
+  margin: 0 auto;
   position: relative;
   z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.5rem;
+  align-items: center;
+}
+
+.cp-hero-img img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
 }
 
 .cp-hero-inner h1 {
@@ -63,7 +76,6 @@
   color: #444;
   line-height: 1.8;
   margin-bottom: 1.25rem;
-  max-width: 800px;
 }
 
 .cp-cta-line {
@@ -126,11 +138,11 @@
 }
 
 .cp-expect-inner {
-  max-width: 1400px;
+  max-width: 1100px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 5rem;
+  gap: 4rem;
   align-items: start;
   position: relative;
   z-index: 1;
@@ -210,11 +222,423 @@
   border-radius: 8px;
 }
 
+/* Why Professional Carpet Cleaning Matters */
+.cp-why {
+  background: #f7fbfd;
+  padding: 5rem 3rem;
+}
+
+.cp-why-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.5rem;
+  align-items: center;
+}
+
+.cp-why-text h2 {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: #1a3a4a;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.02em;
+}
+
+.cp-why-text p {
+  font-size: 0.97rem;
+  color: #444;
+  line-height: 1.8;
+  margin-bottom: 1.25rem;
+}
+
+.cp-why-img img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Common Problems */
+.cp-problems {
+  background: white;
+  padding: 5rem 3rem;
+}
+
+.cp-problems-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.cp-problems-inner h2 {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: #1a3a4a;
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+}
+
+.cp-problems-inner > p {
+  font-size: 0.97rem;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 2.5rem;
+}
+
+.cp-problems-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.25rem;
+}
+
+.cp-problem-item {
+  background: #f9fafb;
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+  padding: 1.5rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.cp-problem-item:hover {
+  border-color: #00bcd4;
+  box-shadow: 0 4px 12px rgba(0, 188, 212, 0.1);
+}
+
+.cp-problem-item h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1a3a4a;
+  margin-bottom: 0.5rem;
+}
+
+.cp-problem-item p {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Process check items with div children */
+.cp-check-item > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.cp-check-item > div strong {
+  font-size: 0.97rem;
+  color: #1a3a4a;
+}
+
+.cp-check-item > div p {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.cp-expect .cp-check-item {
+  align-items: flex-start;
+}
+
+/* What Makes Us Different */
+.cp-different {
+  background: #f7fbfd;
+  padding: 5rem 3rem;
+}
+
+.cp-different-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.cp-different-inner > h2 {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: #1a3a4a;
+  margin-bottom: 1.25rem;
+  letter-spacing: -0.02em;
+}
+
+.cp-different-inner > p {
+  font-size: 0.97rem;
+  color: #444;
+  line-height: 1.8;
+  margin-bottom: 1.25rem;
+}
+
+.cp-different-banner-img {
+  margin-top: 2.5rem;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.cp-different-banner-img img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  display: block;
+}
+
+.cp-differentiators {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2.5rem;
+}
+
+.cp-differentiator {
+  background: white;
+  border: 1px solid #e8e8e8;
+  border-left: 4px solid #00bcd4;
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+.cp-differentiator h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1a3a4a;
+  margin-bottom: 1rem;
+}
+
+.cp-differentiator p {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.8;
+  margin-bottom: 0.85rem;
+}
+
+.cp-differentiator p:last-child {
+  margin-bottom: 0;
+}
+
+.cp-deep-clean-summary {
+  margin-top: 3rem;
+  background: white;
+  border-radius: 10px;
+  padding: 2rem;
+  border: 1px solid #e8e8e8;
+}
+
+.cp-deep-clean-summary h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #1a3a4a;
+  margin-bottom: 1rem;
+}
+
+.cp-deep-clean-summary p {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.cp-deep-clean-summary ul {
+  margin: 0.5rem 0 1.25rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.cp-deep-clean-summary ul li {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.7;
+}
+
+/* Why Choose Us */
+.cp-why-choose {
+  background: white;
+  padding: 5rem 3rem;
+}
+
+.cp-why-choose-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.cp-why-choose-inner h2 {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: #1a3a4a;
+  margin-bottom: 1.25rem;
+  letter-spacing: -0.02em;
+}
+
+.cp-why-choose-inner > p {
+  font-size: 0.97rem;
+  color: #444;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+/* Local Areas */
+.cp-areas {
+  background: #f7fbfd;
+  padding: 5rem 3rem;
+}
+
+.cp-areas-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.cp-areas-inner > h2 {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: #1a3a4a;
+  margin-bottom: 2.5rem;
+  letter-spacing: -0.02em;
+}
+
+.cp-areas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.cp-area-item {
+  background: white;
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+  padding: 1.75rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.cp-area-item:hover {
+  border-color: #00bcd4;
+  box-shadow: 0 4px 12px rgba(0, 188, 212, 0.1);
+}
+
+.cp-area-item h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1a3a4a;
+  margin-bottom: 0.75rem;
+}
+
+.cp-area-item p {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.75;
+  margin-bottom: 0.75rem;
+}
+
+.cp-area-item p:last-child {
+  margin-bottom: 0;
+}
+
+/* Pet Urine Section */
+.cp-pet-urine {
+  background: white;
+  padding: 5rem 3rem;
+}
+
+.cp-pet-urine-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.5rem;
+  align-items: center;
+}
+
+.cp-pet-urine-text h2 {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: #1a3a4a;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.02em;
+}
+
+.cp-pet-urine-text p {
+  font-size: 0.97rem;
+  color: #444;
+  line-height: 1.8;
+  margin-bottom: 1.25rem;
+}
+
+.cp-pet-urine-img img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* FAQ */
+.cp-faq {
+  background: #f7fbfd;
+  padding: 5rem 3rem;
+}
+
+.cp-faq-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.cp-faq-inner h2 {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: #1a3a4a;
+  margin-bottom: 2rem;
+  letter-spacing: -0.02em;
+}
+
+.cp-faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.cp-faq-item {
+  background: white;
+  border: 1px solid #e8e8e8;
+  border-left: 4px solid #00bcd4;
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.cp-faq-item h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1a3a4a;
+  margin-bottom: 0.5rem;
+}
+
+.cp-faq-item p {
+  font-size: 0.92rem;
+  color: #555;
+  line-height: 1.7;
+  margin: 0;
+}
+
 /* Responsive */
 @media (max-width: 900px) {
   .cp-hero { padding: 3rem 1.5rem 4rem; }
-  .cp-hero-inner h1 { font-size: 2rem; }
-  .cp-hero-inner h2 { font-size: 1.4rem; }
+
+  .cp-hero-inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .cp-hero-img { order: -1; }
+
+  .cp-hero-img img { height: 260px; }
+
+  .cp-hero-content h1 { font-size: 2rem; }
+  .cp-hero-content h2 { font-size: 1.4rem; }
+
+  .cp-why-inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .cp-why-img img { height: 260px; }
 
   .cp-expect-inner {
     grid-template-columns: 1fr;
@@ -223,7 +647,39 @@
 
   .cp-expect-text h2 { font-size: 1.9rem; }
 
-  .cp-expect-image img {
-    height: 300px;
+  .cp-expect-image img { height: 260px; }
+
+  .cp-different-banner-img img { height: 220px; }
+
+  .cp-pet-urine-inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .cp-pet-urine-img img { height: 260px; }
+
+  .cp-why,
+  .cp-problems,
+  .cp-different,
+  .cp-why-choose,
+  .cp-areas,
+  .cp-pet-urine,
+  .cp-faq {
+    padding: 3rem 1.5rem;
+  }
+
+  .cp-why-text h2,
+  .cp-problems-inner h2,
+  .cp-different-inner > h2,
+  .cp-why-choose-inner h2,
+  .cp-areas-inner > h2,
+  .cp-pet-urine-text h2,
+  .cp-faq-inner h2 {
+    font-size: 1.75rem;
+  }
+
+  .cp-problems-grid,
+  .cp-areas-grid {
+    grid-template-columns: 1fr;
   }
 }

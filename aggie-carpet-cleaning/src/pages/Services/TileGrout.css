@@ -1,6 +1,6 @@
 .tg-page {
   min-height: 100vh;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Volte', sans-serif;
 }
 
 /* ── Hero ── */
@@ -17,7 +17,7 @@
   width: 500px;
   height: 500px;
   border-radius: 50%;
-  border: 60px solid rgba(0,188,212,0.07);
+  border: 60px solid rgba(0, 188, 212, 0.07);
   top: -150px;
   right: -100px;
   pointer-events: none;
@@ -29,16 +29,30 @@
   width: 300px;
   height: 300px;
   border-radius: 50%;
-  border: 40px solid rgba(0,188,212,0.07);
+  border: 40px solid rgba(0, 188, 212, 0.07);
   bottom: -80px;
   left: 5%;
   pointer-events: none;
 }
 
 .tg-hero-inner {
-  max-width: 900px;
+  max-width: 1100px;
+  margin: 0 auto;
   position: relative;
   z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.5rem;
+  align-items: center;
+}
+
+.tg-hero-img img {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
 }
 
 .tg-hero-inner h1 {
@@ -51,7 +65,7 @@
 }
 
 .tg-hero-inner h2 {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   font-weight: 500;
   color: #1a3a4a;
   margin-bottom: 1.5rem;
@@ -63,7 +77,6 @@
   color: #444;
   line-height: 1.8;
   margin-bottom: 1.25rem;
-  max-width: 800px;
 }
 
 .tg-cta-line {
@@ -82,16 +95,16 @@
   font-weight: 600;
   text-decoration: none;
   transition: all 0.3s;
-  box-shadow: 0 4px 14px rgba(0,188,212,0.3);
+  box-shadow: 0 4px 14px rgba(0, 188, 212, 0.3);
 }
 
 .tg-connect-btn:hover {
   background: #0097a7;
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(0,188,212,0.4);
+  box-shadow: 0 6px 20px rgba(0, 188, 212, 0.4);
 }
 
-/* ── Take Cleaning Further Section ── */
+/* ── Why Gets Dirty (two-column with image) ── */
 .tg-further {
   background: white;
   padding: 5rem 3rem 6rem;
@@ -105,7 +118,7 @@
   width: 420px;
   height: 420px;
   border-radius: 50%;
-  border: 55px solid rgba(0,188,212,0.06);
+  border: 55px solid rgba(0, 188, 212, 0.06);
   top: -110px;
   left: -90px;
   pointer-events: none;
@@ -117,25 +130,25 @@
   width: 260px;
   height: 260px;
   border-radius: 50%;
-  border: 38px solid rgba(0,188,212,0.06);
+  border: 38px solid rgba(0, 188, 212, 0.06);
   top: 45%;
   left: 12%;
   pointer-events: none;
 }
 
 .tg-further-inner {
-  max-width: 1400px;
+  max-width: 1100px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 5rem;
+  gap: 4rem;
   align-items: start;
   position: relative;
   z-index: 1;
 }
 
 .tg-further-text h2 {
-  font-size: 2.5rem;
+  font-size: 2.25rem;
   font-weight: 800;
   color: #1a3a4a;
   line-height: 1.2;
@@ -144,13 +157,12 @@
 }
 
 .tg-further-text p {
-  font-size: 0.95rem;
+  font-size: 0.97rem;
   color: #555;
   line-height: 1.8;
   margin-bottom: 1rem;
 }
 
-/* Single-column checklist (only 3 items) */
 .tg-checklist {
   display: flex;
   flex-direction: column;
@@ -193,132 +205,17 @@
 }
 
 .tg-outro {
-  font-size: 0.95rem !important;
+  font-size: 0.97rem !important;
   color: #444 !important;
-  line-height: 1.7 !important;
+  line-height: 1.8 !important;
 }
 
-/* Image */
 .tg-further-image img {
   width: 100%;
-  height: 480px;
+  height: auto;
+  max-height: 480px;
   object-fit: cover;
   border-radius: 8px;
-}
-
-.tg-details {
-  background: #f7fbfd;
-  padding: 0 3rem 6rem;
-}
-
-.tg-details-inner {
-  max-width: 1400px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: minmax(0, 2fr) minmax(280px, 1fr);
-  gap: 2rem;
-}
-
-.tg-details-copy,
-.tg-service-area-card {
-  background: white;
-  border: 1px solid #d9ebf2;
-  border-radius: 16px;
-  padding: 2rem;
-}
-
-.tg-details-copy h2 {
-  font-size: 1.8rem;
-  color: #1a3a4a;
-  margin: 0 0 1rem;
-}
-
-.tg-details-copy h2 + p,
-.tg-details-copy p + h2 {
-  margin-top: 1.25rem;
-}
-
-.tg-details-copy p,
-.tg-service-area-card p {
-  font-size: 1rem;
-  color: #4b5563;
-  line-height: 1.8;
-}
-
-.tg-details-copy a,
-.tg-service-area-card a {
-  color: #007d8a;
-  font-weight: 600;
-}
-
-.tg-service-area-card {
-  align-self: start;
-  box-shadow: 0 18px 50px rgba(26, 58, 74, 0.08);
-}
-
-.tg-service-area-card h3 {
-  font-size: 1.35rem;
-  color: #1a3a4a;
-  margin: 0 0 1rem;
-}
-
-/* ── Responsive ── */
-@media (max-width: 900px) {
-  .tg-hero { padding: 3rem 1.5rem 4rem; }
-  .tg-hero-inner h1 { font-size: 2rem; }
-  .tg-hero-inner h2 { font-size: 1.4rem; }
-
-  .tg-further-inner {
-    grid-template-columns: 1fr;
-    gap: 3rem;
-  }
-
-  .tg-details {
-    padding: 0 1.5rem 4rem;
-  }
-
-  .tg-details-inner {
-    grid-template-columns: 1fr;
-  }
-
-  .tg-further-text h2 { font-size: 1.9rem; }
-  .tg-further-image img { height: 300px; }
-}
-
-/* ── Location section (Las Cruces / El Paso) ── */
-.tg-location-section {
-  background: white;
-  padding: 5rem 3rem;
-}
-
-.tg-location-inner {
-  max-width: 1400px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
-}
-
-.tg-location-copy {
-  background: #f7fbfd;
-  border: 1px solid #d9ebf2;
-  border-radius: 16px;
-  padding: 2rem;
-}
-
-.tg-location-copy h2 {
-  font-size: 1.8rem;
-  font-weight: 800;
-  color: #1a3a4a;
-  margin: 0 0 1rem;
-  line-height: 1.25;
-}
-
-.tg-location-copy p {
-  font-size: 0.95rem;
-  color: #4b5563;
-  line-height: 1.8;
-  margin-bottom: 0.75rem;
 }
 
 /* ── UL styles ── */
@@ -351,23 +248,38 @@
 }
 
 .tg-process-inner {
-  max-width: 900px;
+  max-width: 1100px;
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
 }
 
-.tg-process-inner > h2 {
-  font-size: 2.2rem;
+.tg-process-content h2 {
+  font-size: 2.25rem;
   font-weight: 800;
   color: #1a3a4a;
   margin: 0 0 1rem;
   letter-spacing: -0.02em;
 }
 
-.tg-process-inner > p {
-  font-size: 0.95rem;
+.tg-process-content > p {
+  font-size: 0.97rem;
   color: #555;
   line-height: 1.8;
   margin-bottom: 2.5rem;
+}
+
+.tg-process-img img {
+  width: 100%;
+  height: auto;
+  max-height: 580px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 2rem;
 }
 
 .tg-process-steps {
@@ -414,149 +326,6 @@
   margin: 0;
 }
 
-/* ── 3-column details override ── */
-.tg-details-3col {
-  grid-template-columns: 1fr 1fr 1fr !important;
-}
-
-/* ── Two-column section ── */
-.tg-two-col-section {
-  background: white;
-  padding: 5rem 3rem;
-}
-
-.tg-two-col-inner {
-  max-width: 1400px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
-}
-
-.tg-two-col-card {
-  background: #f7fbfd;
-  border: 1px solid #d9ebf2;
-  border-radius: 16px;
-  padding: 2rem;
-}
-
-.tg-two-col-card h2 {
-  font-size: 1.6rem;
-  font-weight: 800;
-  color: #1a3a4a;
-  margin: 0 0 1rem;
-  line-height: 1.25;
-}
-
-.tg-two-col-card p {
-  font-size: 0.95rem;
-  color: #4b5563;
-  line-height: 1.8;
-  margin-bottom: 0.75rem;
-}
-
-/* ── Trust section ── */
-.tg-trust-section {
-  background: linear-gradient(135deg, #e0f4fb 0%, #f0fbff 100%);
-  padding: 5rem 3rem;
-}
-
-.tg-trust-inner {
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.tg-trust-inner h2 {
-  font-size: 2.2rem;
-  font-weight: 800;
-  color: #1a3a4a;
-  margin: 0 0 1.25rem;
-  letter-spacing: -0.02em;
-}
-
-.tg-trust-inner p {
-  font-size: 1rem;
-  color: #444;
-  line-height: 1.8;
-  margin-bottom: 1rem;
-}
-
-/* ── FAQ section ── */
-.tg-faq-section {
-  background: #f7fbfd;
-  padding: 5rem 3rem;
-}
-
-.tg-faq-inner {
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.tg-faq-inner > h2 {
-  font-size: 2.2rem;
-  font-weight: 800;
-  color: #1a3a4a;
-  margin: 0 0 2rem;
-  letter-spacing: -0.02em;
-}
-
-.tg-faq-list {
-  display: flex;
-  flex-direction: column;
-  gap: 1.25rem;
-}
-
-.tg-faq-item {
-  background: white;
-  border: 1px solid #d9ebf2;
-  border-radius: 12px;
-  padding: 1.5rem;
-}
-
-.tg-faq-item h3 {
-  font-size: 1rem;
-  font-weight: 700;
-  color: #1a3a4a;
-  margin: 0 0 0.5rem;
-}
-
-.tg-faq-item p {
-  font-size: 0.95rem;
-  color: #4b5563;
-  line-height: 1.7;
-  margin: 0;
-}
-
-/* ── Schedule CTA section ── */
-.tg-schedule-section {
-  background: #1a3a4a;
-  padding: 5rem 3rem;
-  text-align: center;
-}
-
-.tg-schedule-inner {
-  max-width: 700px;
-  margin: 0 auto;
-}
-
-.tg-schedule-inner h2 {
-  font-size: 2rem;
-  font-weight: 800;
-  color: white;
-  margin: 0 0 1.25rem;
-}
-
-.tg-schedule-inner p {
-  font-size: 1rem;
-  color: rgba(255, 255, 255, 0.85);
-  line-height: 1.8;
-  margin-bottom: 1rem;
-}
-
-.tg-schedule-inner .tg-connect-btn {
-  margin-top: 1rem;
-}
-
 /* ── Sealing section ── */
 .tg-sealing-section {
   background: white;
@@ -564,26 +333,27 @@
 }
 
 .tg-sealing-inner {
-  max-width: 1400px;
+  max-width: 1100px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: minmax(0, 2fr) minmax(280px, 1fr);
+  grid-template-columns: minmax(0, 2fr) minmax(260px, 1fr);
   gap: 3rem;
   align-items: start;
 }
 
 .tg-sealing-copy h2 {
-  font-size: 1.9rem;
+  font-size: 2.25rem;
   font-weight: 800;
   color: #1a3a4a;
   margin: 0 0 1rem;
+  letter-spacing: -0.02em;
 }
 
 .tg-sealing-copy p {
-  font-size: 0.95rem;
+  font-size: 0.97rem;
   color: #4b5563;
   line-height: 1.8;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.85rem;
 }
 
 .tg-sealing-aside {
@@ -635,98 +405,436 @@
   text-decoration: underline;
 }
 
-/* ── Region section ── */
-.tg-region-section {
+.tg-sealing-banner-img {
+  max-width: 1100px;
+  margin: 3rem auto 0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.tg-sealing-banner-img img {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+  display: block;
+}
+
+/* ── Comparison Table ── */
+.tg-comparison {
   background: #f7fbfd;
   padding: 5rem 3rem;
 }
 
-.tg-region-inner {
-  max-width: 900px;
+.tg-comparison-inner {
+  max-width: 1100px;
   margin: 0 auto;
 }
 
-.tg-region-inner h2 {
-  font-size: 2rem;
+.tg-comparison-inner h2 {
+  font-size: 2.25rem;
   font-weight: 800;
   color: #1a3a4a;
-  margin: 0 0 1.25rem;
+  margin-bottom: 2rem;
   letter-spacing: -0.02em;
 }
 
-.tg-region-inner p {
-  font-size: 0.95rem;
-  color: #4b5563;
-  line-height: 1.8;
-  margin-bottom: 1rem;
+.tg-table-wrap {
+  overflow-x: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
 }
 
-/* ── Commercial section ── */
-.tg-commercial-section {
+.tg-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  font-size: 0.92rem;
+}
+
+.tg-table thead tr {
+  background: #1a3a4a;
+  color: white;
+}
+
+.tg-table th {
+  padding: 0.9rem 1.25rem;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.88rem;
+}
+
+.tg-table td {
+  padding: 0.85rem 1.25rem;
+  border-bottom: 1px solid #f0f0f0;
+  color: #444;
+  line-height: 1.5;
+}
+
+.tg-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.tg-table tbody tr:hover {
+  background: #fafafa;
+}
+
+.tg-yes {
+  color: #00897b;
+  font-weight: 700;
+}
+
+.tg-no {
+  color: #e53935;
+  font-weight: 600;
+}
+
+.tg-warn {
+  color: #f57c00;
+  font-weight: 600;
+}
+
+.tg-comparison-note {
+  margin-top: 1.5rem;
+  font-size: 0.97rem;
+  color: #444;
+  line-height: 1.8;
+  font-style: italic;
+}
+
+.tg-comparison-banner-img {
+  margin-top: 2.5rem;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.tg-comparison-banner-img img {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+  display: block;
+}
+
+/* ── Two-column section (surfaces + residential/commercial) ── */
+.tg-two-col-section {
   background: white;
   padding: 5rem 3rem;
 }
 
-.tg-commercial-inner {
-  max-width: 1400px;
+.tg-two-col-inner {
+  max-width: 1100px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 3rem;
+  gap: 2rem;
 }
 
-.tg-commercial-copy h2 {
-  font-size: 1.8rem;
+.tg-two-col-card {
+  background: #f7fbfd;
+  border: 1px solid #d9ebf2;
+  border-radius: 16px;
+  padding: 2rem;
+}
+
+.tg-two-col-card h2 {
+  font-size: 1.6rem;
   font-weight: 800;
   color: #1a3a4a;
   margin: 0 0 1rem;
   line-height: 1.25;
 }
 
-.tg-commercial-copy p {
+.tg-two-col-card p {
   font-size: 0.95rem;
   color: #4b5563;
   line-height: 1.8;
   margin-bottom: 0.75rem;
 }
 
-/* ── Responsive additions ── */
+.tg-two-col-banner-wrap {
+  max-width: 1100px;
+  margin: 0 auto 2.5rem;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.tg-two-col-banner-wrap img {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+  display: block;
+}
+
+/* ── Areas + Why Choose ── */
+.tg-areas-why {
+  background: #f7fbfd;
+  padding: 5rem 3rem;
+}
+
+.tg-areas-why-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.tg-areas-block h2,
+.tg-why-block h2 {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: #1a3a4a;
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+}
+
+.tg-areas-block p,
+.tg-why-block p {
+  font-size: 0.97rem;
+  color: #444;
+  line-height: 1.8;
+  margin-bottom: 0.85rem;
+}
+
+.tg-areas-why-banner-wrap {
+  max-width: 1100px;
+  margin: 0 auto 2.5rem;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.tg-areas-why-banner-wrap img {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+  display: block;
+}
+
+/* ── Maintenance Tips ── */
+.tg-maintenance {
+  background: white;
+  padding: 5rem 3rem;
+}
+
+.tg-maintenance-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.tg-maintenance-text h2 {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: #1a3a4a;
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+}
+
+.tg-maintenance-text > p {
+  font-size: 0.97rem;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.tg-maintenance-img img {
+  width: 100%;
+  height: auto;
+  max-height: 480px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* ── Photo Strip ── */
+.tg-photo-strip {
+  background: #f7fbfd;
+  padding: 0 3rem 5rem;
+}
+
+.tg-photo-strip-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+.tg-photo-strip-inner img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  display: block;
+}
+
+/* ── FAQ section ── */
+.tg-faq-section {
+  background: #f7fbfd;
+  padding: 5rem 3rem;
+}
+
+.tg-faq-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.5rem;
+  align-items: start;
+}
+
+.tg-faq-content h2 {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: #1a3a4a;
+  margin: 0 0 2rem;
+  letter-spacing: -0.02em;
+}
+
+.tg-faq-img img {
+  width: 100%;
+  height: auto;
+  max-height: 550px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 2rem;
+}
+
+.tg-faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.tg-faq-item {
+  background: white;
+  border: 1px solid #d9ebf2;
+  border-left: 4px solid #00bcd4;
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.tg-faq-item h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1a3a4a;
+  margin: 0 0 0.5rem;
+}
+
+.tg-faq-item p {
+  font-size: 0.95rem;
+  color: #4b5563;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* ── Schedule CTA ── */
+.tg-schedule-section {
+  background: linear-gradient(135deg, #1a3a4a 0%, #0d2535 100%);
+  padding: 5rem 3rem;
+  text-align: center;
+}
+
+.tg-schedule-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.tg-schedule-inner h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: white;
+  margin: 0 0 1.25rem;
+}
+
+.tg-schedule-inner p {
+  font-size: 0.97rem;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tg-schedule-inner .tg-connect-btn {
+  margin-top: 1rem;
+}
+
+/* ── Responsive ── */
 @media (max-width: 900px) {
-  .tg-location-section,
-  .tg-two-col-section,
+  .tg-hero { padding: 3rem 1.5rem 4rem; }
+
+  .tg-hero-inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .tg-hero-img { order: -1; }
+  .tg-hero-content h1 { font-size: 2rem; }
+  .tg-hero-content h2 { font-size: 1.25rem; }
+
+  .tg-further-inner,
+  .tg-two-col-inner,
+  .tg-areas-why-inner,
+  .tg-sealing-inner,
+  .tg-process-inner,
+  .tg-maintenance-inner,
+  .tg-faq-inner {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .tg-process-img img,
+  .tg-faq-img img {
+    position: static;
+  }
+
+  .tg-photo-strip { padding: 0 1.5rem 3rem; }
+  .tg-photo-strip-inner { grid-template-columns: 1fr; }
+
+  .tg-further,
   .tg-process-section,
-  .tg-trust-section,
-  .tg-faq-section,
-  .tg-schedule-section,
   .tg-sealing-section,
-  .tg-region-section,
-  .tg-commercial-section {
+  .tg-comparison,
+  .tg-two-col-section,
+  .tg-areas-why,
+  .tg-maintenance,
+  .tg-faq-section,
+  .tg-schedule-section {
     padding: 3rem 1.5rem;
   }
 
-  .tg-location-inner,
-  .tg-two-col-inner,
-  .tg-commercial-inner,
-  .tg-sealing-inner {
-    grid-template-columns: 1fr;
-  }
-
-  .tg-details-3col {
-    grid-template-columns: 1fr !important;
-  }
-
-  .tg-location-copy h2,
-  .tg-two-col-card h2,
+  .tg-further-text h2,
+  .tg-process-content h2,
   .tg-sealing-copy h2,
-  .tg-commercial-copy h2 {
+  .tg-comparison-inner h2,
+  .tg-maintenance-text h2,
+  .tg-faq-content h2 {
+    font-size: 1.75rem;
+  }
+
+  .tg-areas-block h2,
+  .tg-why-block h2,
+  .tg-two-col-card h2 {
     font-size: 1.5rem;
   }
 
-  .tg-process-inner > h2,
-  .tg-trust-inner h2,
-  .tg-faq-inner > h2,
-  .tg-schedule-inner h2,
-  .tg-region-inner h2 {
-    font-size: 1.7rem;
+  .tg-schedule-inner h2 {
+    font-size: 1.75rem;
   }
 }

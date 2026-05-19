@@ -3,7 +3,9 @@ import { Routes, Route } from 'react-router-dom';
 import ScrollToTop from './Scrolltotop';
 import Home from './pages/Home';
 import CarpetCleaning from './pages/Services/CarpetCleaning';
-import FurnitureRugs from './pages/Services/FurnitureRugs';
+import FurnitureCleaning from './pages/Services/FurnitureCleaning';
+import RugCleaning from './pages/Services/RugCleaning';
+import WaterDamageMold from './pages/Services/WaterDamageMold';
 import TileGrout from './pages/Services/TileGrout';
 import PetUrineRemoval from './pages/Services/PetUrineRemoval';
 import CarpetInstallRepair from './pages/Services/CarpetInstallRepair';
@@ -20,13 +22,13 @@ import CarpetCleanersLasCruces from './pages/Blog/CarpetCleanersLasCruces';
 import TileGroutElPaso from './pages/Blog/TileGroutElPaso';
 import UpholsteryCleaningMesilla from './pages/Blog/UpholsteryCleaningMesilla';
 import CarpetCleanersSunlandPark from './pages/Blog/CarpetCleanersSunlandPark';
-import About from './pages/About';
 
 export const prerenderRoutes = [
   '/',
-  '/about',
   '/services/carpet-cleaning',
-  '/services/furniture-rugs',
+  '/services/furniture-cleaning',
+  '/services/rug-cleaning',
+  '/services/water-damage-mold',
   '/services/tile-grout',
   '/services/pet-urine-removal',
   '/services/carpet-installation-repair',
@@ -51,9 +53,10 @@ const AppRoutes = () => {
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
         <Route path="/services/carpet-cleaning" element={<CarpetCleaning />} />
-        <Route path="/services/furniture-rugs" element={<FurnitureRugs />} />
+        <Route path="/services/furniture-cleaning" element={<FurnitureCleaning />} />
+        <Route path="/services/rug-cleaning" element={<RugCleaning />} />
+        <Route path="/services/water-damage-mold" element={<WaterDamageMold />} />
         <Route path="/services/tile-grout" element={<TileGrout />} />
         <Route path="/services/pet-urine-removal" element={<PetUrineRemoval />} />
         <Route path="/services/carpet-installation-repair" element={<CarpetInstallRepair />} />
