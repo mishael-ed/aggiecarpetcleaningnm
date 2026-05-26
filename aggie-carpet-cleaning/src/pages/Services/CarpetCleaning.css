@@ -617,6 +617,29 @@
   margin: 0;
 }
 
+/* Photo Strip */
+.cp-photo-strip {
+  background: #f7fbfd;
+  padding: 0 3rem 5rem;
+}
+
+.cp-photo-strip-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+.cp-photo-strip-inner img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  display: block;
+}
+
 /* Responsive */
 @media (max-width: 900px) {
   .cp-hero { padding: 3rem 1.5rem 4rem; }
@@ -682,4 +705,7 @@
   .cp-areas-grid {
     grid-template-columns: 1fr;
   }
+
+  .cp-photo-strip { padding: 0 1.5rem 3rem; }
+  .cp-photo-strip-inner { grid-template-columns: 1fr; }
 }

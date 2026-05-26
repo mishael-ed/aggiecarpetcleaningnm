@@ -241,7 +241,8 @@ const TileGrout = () => {
             <ul className="tg-aside-links">
               <li><Link to="/services/carpet-cleaning">Carpet Cleaning</Link></li>
               <li><Link to="/services/tile-installation-repair">Tile Installation and Repair</Link></li>
-              <li><Link to="/services/furniture-rugs">Furniture and Rug Cleaning</Link></li>
+              <li><Link to="/services/furniture-cleaning">Furniture Cleaning</Link></li>
+              <li><Link to="/services/rug-cleaning">Rug Cleaning</Link></li>
               <li><Link to="/blog/el-paso-guide-tile-grout-cleaning">El Paso Tile and Grout Guide</Link></li>
             </ul>
             <p>Visit our <Link to="/info/areas-we-serve">areas we serve page</Link> to confirm coverage in your neighborhood.</p>

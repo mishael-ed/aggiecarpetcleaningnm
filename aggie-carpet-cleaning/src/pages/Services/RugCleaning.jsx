@@ -36,7 +36,7 @@ const RugCleaning = () => {
           </div>
           <div className="rc-hero-img">
             <img
-              src="/images/rugcleaning/rug-cleaning-las-cruces-nm.jpeg"
+              src="/images/rugcleaning/professional-rug-cleaning-las-cruces.jpeg"
               alt="Professional rug cleaning service in Las Cruces NM – area rug and Oriental rug deep cleaning by Aggie Carpet Cleaning"
             />
           </div>
@@ -74,8 +74,8 @@ const RugCleaning = () => {
           </div>
           <div className="rc-vs-image">
             <img
-              src="/images/rugcleaning/professional-rug-cleaning-las-cruces.jpeg"
-              alt="Professional rug cleaning equipment and service in Las Cruces NM – hot water extraction area rug cleaning"
+              src="/images/rugcleaning/rug-cleaning-service-el-paso-texas.jpeg"
+              alt="Professional rug cleaning equipment and service in El Paso Texas – hot water extraction area rug cleaning"
             />
           </div>
         </div>
@@ -162,8 +162,8 @@ const RugCleaning = () => {
           </div>
           <div className="rc-process-img">
             <img
-              src="/images/rugcleaning/rug-cleaning-service-el-paso-texas.jpeg"
-              alt="Rug cleaning service in El Paso Texas – professional hot water extraction and stain removal process"
+              src="/images/rugcleaning/rug-stain-removal-el-paso-tx.jpeg"
+              alt="Rug stain removal in El Paso TX – professional hot water extraction and spot treatment process by Aggie Carpet Cleaning"
             />
           </div>
         </div>
@@ -221,12 +221,6 @@ const RugCleaning = () => {
 
       {/* Specialty Rug Types */}
       <section className="rc-specialty">
-        <div className="rc-specialty-banner-wrap">
-          <img
-            src="/images/rugcleaning/oriental-rug-cleaning-las-cruces-nm.jpeg"
-            alt="Oriental and Persian rug cleaning in Las Cruces NM – specialty rug deep cleaning service by Aggie Carpet Cleaning"
-          />
-        </div>
         <div className="rc-specialty-inner">
           <div className="rc-specialty-card">
             <h2>Persian &amp; Oriental Rug Cleaning</h2>
@@ -393,16 +387,6 @@ const RugCleaning = () => {
               alt="Wool rug cleaning in Las Cruces NM – professional deep cleaning for wool and specialty area rugs"
             />
           </div>
-        </div>
-      </section>
-
-      {/* Photo Strip */}
-      <section className="rc-photo-strip">
-        <div className="rc-photo-strip-inner">
-          <img
-            src="/images/rugcleaning/rug-stain-removal-el-paso-tx.jpeg"
-            alt="Rug stain removal in El Paso TX – professional area rug cleaning and spot treatment by Aggie Carpet Cleaning"
-          />
         </div>
       </section>
 

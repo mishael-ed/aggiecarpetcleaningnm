@@ -218,8 +218,8 @@ const CarpetCleaning = () => {
 
           <div className="cp-expect-image">
             <img
-              src="/images/carpetcleaning/carpet-cleaning-with-chemical-el-paso-texas.jpeg"
-              alt="Carpet cleaning pre-treatment chemical application in El Paso Texas – professional hot water extraction process"
+              src="/images/carpetcleaning/carpet-cleaning-process-las-cruces-nm.jpeg"
+              alt="Professional carpet cleaning process in Las Cruces NM – hot water extraction and steam cleaning by Aggie Carpet Cleaning"
             />
           </div>
         </div>
@@ -521,6 +521,24 @@ const CarpetCleaning = () => {
               <p>Professional steam carpet cleaning can help remove dust, allergens, pet dander, and other contaminants trapped within carpet fibers.</p>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Photo Strip */}
+      <section className="cp-photo-strip">
+        <div className="cp-photo-strip-inner">
+          <img
+            src="/images/carpetcleaning/rug-cleaning-las-cruces-nm.jpeg"
+            alt="Rug and carpet cleaning in Las Cruces NM – professional area rug and carpet cleaning service by Aggie Carpet Cleaning"
+          />
+          <img
+            src="/images/carpetcleaning/oriental-rug-cleaning-las-cruces-nm.jpeg"
+            alt="Oriental rug cleaning in Las Cruces NM – professional deep cleaning for area rugs and carpets by Aggie Carpet Cleaning"
+          />
+          <img
+            src="/images/carpetcleaning/carpet-cleaning-done-las-cruces.jpeg"
+            alt="Completed carpet cleaning in Las Cruces NM – freshly cleaned carpet results by Aggie Carpet Cleaning"
+          />
         </div>
       </section>
 

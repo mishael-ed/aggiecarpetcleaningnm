@@ -296,10 +296,6 @@ const FurnitureCleaning = () => {
             alt="Sofa steam cleaning El Paso Texas – truck-mounted hot water extraction furniture cleaning"
           />
           <img
-            src="/images/furniturecleaning/furniture-cleaning-el-paso-service.jpeg"
-            alt="Furniture cleaning service El Paso Texas – Aggie Carpet Cleaning professional upholstery results"
-          />
-          <img
             src="/images/furniturecleaning/furniture-stain-removal-el-paso-tx.jpeg"
             alt="Furniture stain removal El Paso TX – professional upholstery cleaning before and after"
           />

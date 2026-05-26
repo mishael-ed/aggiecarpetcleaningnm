@@ -224,7 +224,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 4rem 2rem 28rem;
+  padding: 8rem 2rem 16rem;
 }
 
 .hero-overlay {
@@ -382,11 +382,11 @@ body {
 /* Service Cards */
 .service-cards {
   position: absolute;
-  bottom: -170px;
+  bottom: 3rem;
   left: 50%;
   transform: translateX(-50%);
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
   width: 90%;
   max-width: 1300px;
@@ -443,21 +443,6 @@ body {
   background-image: url('./tile-card-bg.jpg');
 }
 
-.card-carpet-install-repair {
-  background-image: url('./carpetinstallation.jpeg');
-}
-
-.card-tile-install-repair {
-  background-image: url('./tileinstallation.jpeg');
-}
-
-.card-laminate-install {
-  background-image: url('./laminateflooring.jpeg');
-}
-
-.card-vehicle-upholstery {
-  background-image: url('./cardetailing.jpeg');
-}
 
 .card:hover {
   transform: translateY(-8px);
@@ -501,7 +486,8 @@ body {
 /* Responsive Design */
 @media (max-width: 1200px) {
   .service-cards {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25rem;
   }
 }
 
@@ -607,7 +593,7 @@ body {
   background: #00bcd4;
   padding: 3rem 2rem;
   text-align: center;
-  margin-top: 240px;
+  margin-top: 0;
 }
 
 .spanish-content {

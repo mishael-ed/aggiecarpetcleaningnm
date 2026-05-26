@@ -73,8 +73,15 @@ const Home = () => {
           </div>
 
           <div className="card card-furniture">
-            <h3>Furniture and Rugs</h3>
-            <Link to="/services/furniture-rugs" className="card-arrow">
+            <h3>Furniture Cleaning</h3>
+            <Link to="/services/furniture-cleaning" className="card-arrow">
+              <div className="arrow-circle">&#8594;</div>
+            </Link>
+          </div>
+
+          <div className="card card-rug-cleaning" style={{ backgroundImage: "url('/images/rugcleaning/professional-rug-cleaning-las-cruces.jpeg')" }}>
+            <h3>Rug Cleaning</h3>
+            <Link to="/services/rug-cleaning" className="card-arrow">
               <div className="arrow-circle">&#8594;</div>
             </Link>
           </div>
@@ -82,34 +89,6 @@ const Home = () => {
           <div className="card card-tile">
             <h3>Tile and Grout</h3>
             <Link to="/services/tile-grout" className="card-arrow">
-              <div className="arrow-circle">&#8594;</div>
-            </Link>
-          </div>
-
-          <div className="card card-carpet-install-repair">
-            <h3>Carpet Installation and Repair</h3>
-            <Link to="/services/carpet-installation-repair" className="card-arrow">
-              <div className="arrow-circle">&#8594;</div>
-            </Link>
-          </div>
-
-          <div className="card card-tile-install-repair">
-            <h3>Tile Installation and Repair</h3>
-            <Link to="/services/tile-installation-repair" className="card-arrow">
-              <div className="arrow-circle">&#8594;</div>
-            </Link>
-          </div>
-
-          <div className="card card-laminate-install">
-            <h3>Laminate Flooring Installation</h3>
-            <Link to="/services/laminate-flooring-installation" className="card-arrow">
-              <div className="arrow-circle">&#8594;</div>
-            </Link>
-          </div>
-
-          <div className="card card-vehicle-upholstery">
-            <h3>Vehicle Upholstery and Carpet Cleaning</h3>
-            <Link to="/services/vehicle-upholstery-carpet-cleaning" className="card-arrow">
               <div className="arrow-circle">&#8594;</div>
             </Link>
           </div>
