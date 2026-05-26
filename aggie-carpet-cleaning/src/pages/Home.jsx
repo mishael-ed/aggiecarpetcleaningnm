@@ -166,22 +166,6 @@ const Home = () => {
               </div>
               <div className="service-item">
                 <span className="checkmark">&#10003;</span>
-                <span>Carpet installation and carpet repair services</span>
-              </div>
-              <div className="service-item">
-                <span className="checkmark">&#10003;</span>
-                <span>Tile installation and tile repair services</span>
-              </div>
-              <div className="service-item">
-                <span className="checkmark">&#10003;</span>
-                <span>Laminate flooring installation services</span>
-              </div>
-              <div className="service-item">
-                <span className="checkmark">&#10003;</span>
-                <span>Vehicle upholstery and carpet cleaning services</span>
-              </div>
-              <div className="service-item">
-                <span className="checkmark">&#10003;</span>
                 <span>Pet urine removal services</span>
               </div>
             </div>

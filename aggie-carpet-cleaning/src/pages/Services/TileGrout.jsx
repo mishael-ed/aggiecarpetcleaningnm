@@ -240,7 +240,6 @@ const TileGrout = () => {
             <p>Looking for more than tile cleaning? Explore our full range of flooring services for Las Cruces and El Paso.</p>
             <ul className="tg-aside-links">
               <li><Link to="/services/carpet-cleaning">Carpet Cleaning</Link></li>
-              <li><Link to="/services/tile-installation-repair">Tile Installation and Repair</Link></li>
               <li><Link to="/services/furniture-cleaning">Furniture Cleaning</Link></li>
               <li><Link to="/services/rug-cleaning">Rug Cleaning</Link></li>
               <li><Link to="/blog/el-paso-guide-tile-grout-cleaning">El Paso Tile and Grout Guide</Link></li>

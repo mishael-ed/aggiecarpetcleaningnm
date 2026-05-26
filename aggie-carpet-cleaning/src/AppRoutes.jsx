@@ -8,10 +8,6 @@ import RugCleaning from './pages/Services/RugCleaning';
 import WaterDamageMold from './pages/Services/WaterDamageMold';
 import TileGrout from './pages/Services/TileGrout';
 import PetUrineRemoval from './pages/Services/PetUrineRemoval';
-import CarpetInstallRepair from './pages/Services/CarpetInstallRepair';
-import TileInstallRepair from './pages/Services/TileInstallRepair';
-import LaminateFlooringInstallation from './pages/Services/LaminateFlooringInstallation';
-import VehicleUpholsteryCarpetCleaning from './pages/Services/VehicleUpholsteryCarpetCleaning';
 import AreasWeServe from './pages/Info/AreasWeServe';
 import Reviews from './pages/Info/Reviews';
 import FAQ from './pages/Info/FAQ';
@@ -31,10 +27,6 @@ export const prerenderRoutes = [
   '/services/water-damage-mold',
   '/services/tile-grout',
   '/services/pet-urine-removal',
-  '/services/carpet-installation-repair',
-  '/services/tile-installation-repair',
-  '/services/laminate-flooring-installation',
-  '/services/vehicle-upholstery-carpet-cleaning',
   '/info/areas-we-serve',
   '/info/our-favorite-places',
   '/info/reviews',
@@ -59,10 +51,6 @@ const AppRoutes = () => {
         <Route path="/services/water-damage-mold" element={<WaterDamageMold />} />
         <Route path="/services/tile-grout" element={<TileGrout />} />
         <Route path="/services/pet-urine-removal" element={<PetUrineRemoval />} />
-        <Route path="/services/carpet-installation-repair" element={<CarpetInstallRepair />} />
-        <Route path="/services/tile-installation-repair" element={<TileInstallRepair />} />
-        <Route path="/services/laminate-flooring-installation" element={<LaminateFlooringInstallation />} />
-        <Route path="/services/vehicle-upholstery-carpet-cleaning" element={<VehicleUpholsteryCarpetCleaning />} />
         <Route path="/info/areas-we-serve" element={<AreasWeServe />} />
         <Route path="/info/our-favorite-places" element={<OurFavoritePlaces />} />
         <Route path="/info/reviews" element={<Reviews />} />
